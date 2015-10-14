@@ -1,0 +1,35 @@
+Paradise:
+  - date: 1/4/2016 – 31/5/2016 
+    price: 168 euro per night
+  - date: 1/6/2015 – 30/6/2016 
+    price: 288 euro per night
+  - date: 1/7/2016 – 31/8/2016 
+    price: 348 euro per night
+  - date: 1/9/2016 – 30/9/2016 
+    price: 288 euro per night
+  - date: 1/10/2016 – 31/10/2016 
+    price: 168 euro per night
+
+Lila2:
+  - date: 1/4/2016 – 31/5/2016
+    price: 132 euro per night
+  - date: 1/6/2015 – 30/6/2016 
+    price: 228 euro per night
+  - date: 1/7/2016 – 31/8/2016 
+    price: 288 euro per night
+  - date: 1/9/2016 – 30/9/2016 
+    price: 228 euro per night
+  - date: 1/10/2016 – 31/10/2016 
+    price: 132 euro per night
+
+Bungalow:
+  - date: 1/4/2016 – 31/5/2016 
+    price: 96 euro per night
+  - date: 1/6/2015 – 30/6/2016 
+    price: 120 euro per night
+  - date: 1/7/2016 – 31/8/2016 
+    price: 120 euro per night
+  - date: 1/9/2016 – 30/9/2016 
+    price: 120 euro per night
+  - date: 1/10/2016 – 31/10/2016 
+    price: 96 euro per night

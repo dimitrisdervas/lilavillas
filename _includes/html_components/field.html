@@ -1,0 +1,8 @@
+
+{% assign fields = include.component-data.fields %} 
+
+{% for field in fields %} 
+           <div class="{{field.field}}{{field.data.class}}">
+                     {{ site.data.content.[include.component-data.content-type].[field.field] }}
+                     </div>
+   {% endfor %}

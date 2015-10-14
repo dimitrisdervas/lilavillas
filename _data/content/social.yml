@@ -1,0 +1,10 @@
+ - icon: facebook
+   path: test.html
+ - icon: twitter
+   path: test.html
+ - icon: youtube
+   path: test.html
+ - icon: pinterest
+   path: test.html
+ - icon: flickr
+   path: test.html

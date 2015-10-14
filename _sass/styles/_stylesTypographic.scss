@@ -1,0 +1,35 @@
+@include web-fonts(
+  'Open Sans',
+  'Open Sans Condensed',
+  'Fira Mono',
+  'Fira Sans',
+  'Roboto',
+  'Roboto Slab',
+  'Roboto Condensed',
+  ("Ubuntu": ("400", "italic")),
+  'Ubuntu Mono'
+  );
+
+ // 
+// TYPOGRAPHIC
+// Settings
+$xatzivei-font: 'Open Sans','Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+$xatzivei-font-headers: 'Open Sans Condensed','Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+
+$line-height-ratio  : 1.75 !default;
+$header-ratio       : $golden !default;
+$body-font          : $xatzivei-font !default;
+$body-font-weight   : 300 !default;
+$body-color         : #6f2941 !default;
+$header-font        : $xatzivei-font-headers !default;
+$header-font-weight : 500 !default;
+$header-color       : #111 !default;
+$min-font           : 12px !default;
+$max-font           : 20px !default;
+$min-width          : 600px !default;
+$max-width          : 1140px !default;
+$vertical-rhythm    : true !default;
+
+
+@include typographic;
+

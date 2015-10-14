@@ -1,0 +1,26 @@
+- section: 
+   data:
+    htmlelement: header
+   theme:
+    class: header
+  wrapperSection:
+   data:
+   theme:
+    class: header-wrapper
+    id: header-wrapper
+  divs:
+   - div: 
+      theme:
+       class: logo
+     components:
+       - component: logo
+         data:
+           text: Lila Villas
+   - div: 
+      theme:
+        class: menu
+     components:
+       - component: burgerMenu
+         data:
+          content-type: menu
+          data-type: data-list

@@ -1,0 +1,30 @@
+- name: Welcome
+  url: 
+
+- name: Map - Location
+  url: pages/nipiagogeio.html
+
+- name: Accomodation
+  url: pages/nipiagogeiov2.html
+  submenu:
+   - name: Paradise
+     url: 
+   - name: Lila 2
+     url: 
+   - name: Bungalows
+     url: 
+
+- name: Facilities
+  url: pages/nipiagogeio/atipa.html
+  
+- name: Prices
+  url: 
+  
+- name: Reviews
+  url: 
+
+- name: Special Offers
+  url: 
+
+- name: Contact us
+  url: 

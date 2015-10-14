@@ -1,0 +1,178 @@
+@include typographic;
+
+
+.map-canvas {
+   height: 500px;
+}
+
+section.slideshow {
+   .slideshow-title {
+       // position: relative;
+       // top: -250px;
+       line-height: 1.1;
+       font-size: 60px;
+       color: #fff;
+       padding: 0 60px;
+       text-shadow: 0 1px 0 black;
+       background: rgba(0, 0, 0, 0.15);
+       text-align: left;
+       -webkit-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+       -moz-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+       -ms-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+       -o-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+       box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+   }
+   .subtitle {
+       font-size: 36px;
+       color: #fff;
+      text-shadow: 0 1px 0 black;
+   }
+}
+
+.event-wrapper {
+  background: #F9B46B;
+   padding: 15px 0;
+   section.event {
+     text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      a {
+      }
+   }
+}
+
+section.contentmenu {
+   .post-image {
+       background-size: cover;
+       background-position: top center;
+       padding: 200px 0;
+   }
+    .name  a {
+          font-size: 36px;
+          color: #fff;
+          text-shadow: 0 1px 0 black;
+          background: rgba(0, 0, 0, 0.15);
+          text-align: left;
+          -webkit-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+          -moz-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+          -ms-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+          -o-box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+      }
+   .name a::before  {
+    ccontent: '';
+    position: absolute;
+    height: 36px;
+    width: 120%;
+    top: 50%;
+    margin-top: -18px;
+    left: -10%;
+    z-index: -1;
+    background: #F9F9F9;
+    -webkit-transform: rotate3d(0,0,1,45deg) scale3d(0,1,1);
+    transform: rotate3d(0,0,1,45deg) scale3d(0,1,1);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+   }
+   .name a::hover::before {
+    -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+    transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+}
+   .subtititle {
+    font-size: 20%;
+    font-weight: 400;
+    position: absolute;
+    right: 15px;
+    color: #e53369;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: translate3d(-10px,-10px,0);
+    transform: translate3d(-10px,-10px,0);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+   }
+   .subtitle:hover {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+   }
+   
+}
+
+
+section.newsandentipa {
+   .news  ul li {
+      display: flex;
+      .post-image {
+         margin-bottom: 15px;
+         img {
+          height: vr-block(5.25);
+          margin-bottom: vr-block(.25);
+         }
+      }
+      .nipiagogeio-title {
+         flex: 1;
+         @include t-h3;
+         color: $green1;
+         font-weight: bold;
+      }
+      .date {
+
+      }
+   }
+   .entipa {
+      ul li {
+         float: left;
+         margin-bottom: 25px;
+               .post-image {
+                   width: 45%;
+                   float: left;
+                   margin-right: 15px;
+                  }
+      }
+   }
+}
+section.openday {
+      .video-title {
+       font-size: 48px;
+       margin-bottom: 20px;
+      }
+}
+section.contact {
+      ul {
+         li {
+             @include gallery ( 2 of 10 );
+               svg {
+                  width: 100%;
+               }
+            }
+      }
+   .phone {
+    font-size: 48px;
+    color: #323232;
+    font-weight: bold;
+   }
+}
+button {
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+    font-family: Raleway, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: normal;
+    line-height: normal;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    -webkit-appearance: none;
+    border-radius: 0;
+    display: inline-block;
+    padding-top: 0.85714rem;
+    padding-right: 1.71429rem;
+    padding-bottom: 0.92857rem;
+    padding-left: 1.71429rem;
+    font-size: 1.14286rem;
+    background-color: #F9CE06;
+    border-color: #F9CE06;
+    color: #FFFFFF;
+    transition: background-color 300ms ease-out;
+}

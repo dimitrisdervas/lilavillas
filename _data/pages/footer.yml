@@ -1,0 +1,24 @@
+- section: 
+   data:
+    htmlelement: footer
+   theme:
+    class: footer
+  wrapperSection:
+   theme:
+    class: footer-wrapper
+  divs:
+   - div:
+      theme:
+       class: logo
+     components:
+       - component: logo
+         data:
+           text: Σχολή Χατζήβεη
+   - div: 
+      theme:
+        class: menu
+     components:
+       - component: menu
+         data:
+          content-type: menu
+          data-type: data-list

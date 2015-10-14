@@ -1,0 +1,58 @@
+---
+layout: default
+config:
+ - section: 
+    data:
+      htmlelement: section
+    theme:
+      class: slideshow 
+   divs:
+      - div: 
+         theme:
+          class: slideshowdiv     
+        components:
+         - component: posts-list
+           data:
+            javascript-plugin: owl-carousel
+            javascript-plugin-data:
+                 items: 1
+                 loop: true
+                 margin: 10
+                 dots: true
+                 autoplay: true
+            wrapperDiv:
+             theme:
+                class: owl-carousel owl-theme
+                id: slideshow
+            groupFieldsElement: div
+            content-type: gallery
+            folder: paradise
+            data-type: data-list
+            fields:
+                 - field: image
+                   data:
+                     image-hash: image
+                     images-path: /assets/images/
+                 - field: title
+                   data:
+                    class: slideshow-title
+ - section: 
+    data: 
+      htmlelement: section
+    theme:
+      class: facilities
+   divs:
+      - components:
+          - component: posts-list
+            data:
+               class: facility
+               content-type: facilities
+               folder: paradise
+               data-type: data-list
+               fields: 
+                - field: facility
+                  data:
+                    class: facility
+---
+
+{% include basic_components/page.html %}
