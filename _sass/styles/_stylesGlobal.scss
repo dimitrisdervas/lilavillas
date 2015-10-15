@@ -7,8 +7,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .component-header,
 .section-header {
-      background-color: #FFCB00;
-      margin-bottom: 2em;
    .component-title,
    .section-title {
     @include t-header;
@@ -16,7 +14,6 @@ h1,h2,h3,h4,h5,h6 {
    }
    .component-subtitle,
    .section-subtitle {
-       color: #1b1b1b;
        text-transform: uppercase;
    }
 }

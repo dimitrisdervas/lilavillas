@@ -20,7 +20,7 @@
       theme:
         class: menu
      components:
-       - component: burgerMenu
+       - component: menu
          data:
           content-type: menu
           data-type: data-list
