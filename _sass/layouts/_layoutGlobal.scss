@@ -12,10 +12,15 @@
 }
 /* HEADER */
 .header-wrapper {
-   @include span( 2 of 12);
+   @include span( 3 of 12);
    height: 100%;
    text-align: center;
    min-width: 200px;
+}
+.gallery {
+   .header-wrapper {
+
+   }
 }
 /* TOP SPACER */
 .topspacer {
@@ -25,11 +30,17 @@
 }
 /* CONTENT */
 .content {
-   @include span( 10 of 12 );
+   @include span( 9 of 12 );
    height: 100%;
 }
 .content-gallery {
+    @include span( 9 of 12 );
+   min-width: 400px;
    height: 100%;
+}
+.content-nobg {
+   @include span( 9 of 12 last);
+   @include push( 3 of 12 );
 }
 .mainbar {    
    @include layout( $symmetric );  
@@ -47,10 +58,7 @@
    min-width: 220px;
 }
 
-.content-nobg {
-   @include span( 10 of 12 last);
-   @include push( 2 of 12 );
-}
+
 /* MAP */
 #map-canvas {
    width: 100%;

@@ -135,13 +135,14 @@
                 {% endfor %}   
 
            {% else %}
-
+               
                         <!-- Just print the fields -->
                         <!-- Loop each field in the component -->
                          {% assign fields = include.component-data.fields %}    
                            <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
                            <!-- Just print the fields -->
                            {% for field in fields  %}
+                  <div {% include basic_components/pageIncludes/themeElement.html elementData=field.wrapperDiv.theme %}>
                            <!--  Check what type of field we are prinitng -->
                               <label for="{{ field.data.id }}">{{ field.data.label }}</label>
 
@@ -171,8 +172,10 @@
                               <!--  End case of fields -->
                                {% endcase %}
                            <!--  End loop in fields -->
+                                </div>
                              {% endfor %} 
                         <!--  END IF to check for GROUP -->
+          
            {% endif %}
    
     </form>

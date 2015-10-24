@@ -643,7 +643,7 @@ td {
 
 /* HEADER */
 .header-wrapper {
-  width: 16.66667%;
+  width: 25%;
   float: left;
   height: 100%;
   text-align: center;
@@ -657,12 +657,21 @@ td {
 
 /* CONTENT */
 .content {
-  width: 83.33333%;
+  width: 75%;
   float: left;
   height: 100%; }
 
 .content-gallery {
+  width: 75%;
+  float: left;
+  min-width: 400px;
   height: 100%; }
+
+.content-nobg {
+  width: 75%;
+  float: right;
+  margin-right: 0;
+  margin-left: 25%; }
 
 .mainbar {
   width: 28.57143%;
@@ -680,12 +689,6 @@ td {
   padding: 30px 25px 20px;
   max-width: 280px;
   min-width: 220px; }
-
-.content-nobg {
-  width: 83.05085%;
-  float: right;
-  margin-right: 0;
-  margin-left: 16.94915%; }
 
 /* MAP */
 #map-canvas {
@@ -1101,12 +1104,11 @@ section.content-gallery,
       line-height: 18px; }
 
 .contact-form {
-  width: 28.57143%;
+  width: 38.77551%;
   float: left;
   margin-right: 2.04082%;
   margin-left: 2.04082%;
   max-width: 300px;
-  min-width: 230px;
   background: #EEECE1;
   padding: 20px 35px 20px 20px; }
   .contact-form .component-title {
@@ -1170,6 +1172,21 @@ button {
 
 button:hover {
   background: #4979B3; }
+
+/*  */
+/* RESERVATION */
+/*  */
+.checkout,
+.villa {
+  width: 48%;
+  float: right;
+  margin-right: 0; }
+
+.checkin,
+.persons {
+  width: 48%;
+  float: left;
+  margin-right: 1.69492%; }
 
 #map-canvas .map-title {
   font-size: 48px;

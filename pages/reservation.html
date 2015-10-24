@@ -40,6 +40,9 @@ config:
                     type: text
                     name: Checkin
                     label: Checkin
+                   wrapperDiv:
+                     theme:
+                        class: checkin   
                  - field: input
                    data: 
                     class: input
@@ -47,9 +50,14 @@ config:
                     type: text
                     name: Checkout
                     label: Checkout
+                   wrapperDiv:
+                     theme:
+                        class: checkout   
                  - field: select
-                   data: 
-                     class: persons
+                   wrapperDiv:
+                     theme:
+                        class: persons    
+                   data:                  
                      name: persons
                      label: Persons
                      options:
@@ -63,8 +71,10 @@ config:
                         - option: 7
                         - option: 8 
                  - field: select
-                   data: 
-                     class: villa
+                   wrapperDiv:
+                     theme:
+                        class: villa 
+                   data:   
                      name: villa-type
                      label: Villa
                      options:

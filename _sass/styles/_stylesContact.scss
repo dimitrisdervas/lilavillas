@@ -1,8 +1,7 @@
 .contact-form {
-   @include span( 3 of 10 );
+   @include span( 4 of 10 );
    margin-left: gutters(10);
    max-width: 300px;
-   min-width: 230px;
    background: #EEECE1;
    padding: 20px 35px 20px 20px;
    .component-title {
@@ -63,4 +62,15 @@ button {
 }
 button:hover {
     background: #4979B3;
+}
+/*  */
+/* RESERVATION */
+/*  */
+.checkout,
+.villa {
+   @include span(48% last);
+}
+.checkin,
+.persons {
+   @include span(48%);
 }
