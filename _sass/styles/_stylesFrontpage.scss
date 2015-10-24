@@ -1,8 +1,27 @@
-.frontpage-slideshow {
+   section.content-gallery,
+   .frontpage-slideshow,
+   .slideshow-item,
    .post-image {
-      
+      height: 100%;
+   }
+   .owl-carousel,
+   .owl-stage-outer,
+   .owl-stage,
+   .owl-item {
+     height: 100% !important;    
+   }
+   .post-image {
+       display: flex;
+       align-items: center;
+       font-size: 48px;
+       color: #FFF;
+       background-size: cover;
+       
    }
    .slideshow-title {
-      margin: 0;
+       box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+       background: transparent;
+       background: rgba(0, 0, 0, 0.15);
+       padding: 140px 0px 0 80px;
+       line-height: 1em;
    }
-}

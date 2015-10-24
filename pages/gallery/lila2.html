@@ -1,0 +1,46 @@
+---
+layout: default-gallery
+config:
+ - section: 
+    data:
+      htmlelement: section
+    theme:
+      class: content-gallery
+   divs:
+      - div: 
+         theme:
+          class: gallery-slideshow     
+        components:
+         - component: posts-list
+           data:
+            javascript-plugin: owl-carousel
+            javascript-plugin-data:
+                 items: 1
+                 loop: true
+                 autoplay: true
+                 margin: 10
+                 dots: false
+            wrapperDiv:
+             theme:
+                class: owl-carousel owl-theme
+                id: slideshow
+            groupFieldsElement: div
+            groupFieldsElement-data:
+             class: slideshow-item
+            content-type: gallery
+            folder: lila2
+            data-type: data-list
+            fields:
+                 - field: group
+                   background:
+                     image-hash: image
+                     images-path: /assets/images/
+                     class: gallery-image
+                   fields:
+                     - field: title
+                       data:
+                        class: gallery-title
+
+---
+
+{% include basic_components/page.html %}

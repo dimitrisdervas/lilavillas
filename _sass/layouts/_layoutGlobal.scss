@@ -5,7 +5,10 @@
 }
 .bg {
     background: url(../assets/images/AMP_1146.jpg);
-   background-size: cover;  
+    background-size: cover;  
+}
+.gallery {
+
 }
 /* HEADER */
 .header-wrapper {
@@ -23,6 +26,9 @@
 /* CONTENT */
 .content {
    @include span( 10 of 12 );
+   height: 100%;
+}
+.content-gallery {
    height: 100%;
 }
 .mainbar {    

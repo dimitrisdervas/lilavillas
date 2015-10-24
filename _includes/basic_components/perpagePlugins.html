@@ -26,7 +26,6 @@
 
   <script type="text/javascript">
        $(document).ready(function() {
-          
             {% case component.data.javascript-plugin %}  
           
                {% when 'gmap' %}
@@ -45,8 +44,11 @@
                 {% when 'jplist' %}                
                   {% include basic_components/javascriptPluginsCases/jplist.js jplistData= component.data.javascript-plugin-data %}
                 
-               {% when 'masonry' %}  
+               {% when 'masonry' %}               
                
+               {% when 'rome' %} 
+                  {% include basic_components/javascriptPluginsCases/rome.js %}
+                  
                {% when 'dropjs' %} 
                   {% include basic_components/javascriptPluginsCases/dropdown.js dropdownData= component.data.javascript-plugin-data %}
                 

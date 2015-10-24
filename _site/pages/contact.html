@@ -504,7 +504,7 @@
       
          
             <li class="menu-item menu-reservation" data-theme-menu="">
-            <a class="drop-target" href="/pages/reseration.com">Reservation
+            <a class="drop-target" href="/pages/reservation.html">Reservation
                
                </a>
           
@@ -769,7 +769,7 @@
 <!-- Check if there is a title for the html component and print it-->
       
          <div class="component-header">
-            <div class="component-title ">Contacts  </div>
+            <div class="component-title ">Contact us  </div>
 
 
                <!-- COMPONENT SUBTITLE -->
@@ -802,7 +802,7 @@
   
   <!-- FROM HERE -->
 <!--  https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/The_native_form_widgets#Auto-complete_content -->
-<form>
+<form data-parsley-validate>
 <!-- Just print the fields -->
 <!-- Loop each field in the component -->
    <!--  If there is grouping div got fields -->
@@ -819,7 +819,13 @@
                               <label for=""></label>
 
                               
-                                       <input class="name"  type="text" placeholder="name">
+                                       <input 
+ 		class="name"
+	
+ 		type="text"
+	
+ 		placeholder="name"
+	>
                               <!-- DROPDOWN BOX --> 
                                  
                            <!--  End loop in fields -->
@@ -828,7 +834,13 @@
                               <label for=""></label>
 
                               
-                                       <input class="email"  type="text" placeholder="email">
+                                       <input 
+ 		class="email"
+	
+ 		type="text"
+	
+ 		placeholder="email"
+	>
                               <!-- DROPDOWN BOX --> 
                                  
                            <!--  End loop in fields -->
@@ -837,7 +849,13 @@
                               <label for=""></label>
 
                               
-                                       <input class="phone"  type="text" placeholder="phone">
+                                       <input 
+ 		class="phone"
+	
+ 		type="text"
+	
+ 		placeholder="phone"
+	>
                               <!-- DROPDOWN BOX --> 
                                  
                            <!--  End loop in fields -->
@@ -847,9 +865,27 @@
 
                               
 
-                                       <input class="message"  type="text" placeholder="message">
+                                       <textarea 
+ 		class="message"
+	
+ 		type="text"
+	
+ 		placeholder="message"
+	>
+   </textarea>
                               <!-- INPUT --> 
                                  
+                           <!--  End loop in fields -->
+                             
+                           <!--  Check what type of field we are prinitng -->
+                              <label for=""></label>
+
+                              
+                                       <button type="">
+                                             Ask Owner
+                                       </button>
+                              <!--  End case of fields -->
+                               
                            <!--  End loop in fields -->
                               
                         <!--  END IF to check for GROUP -->

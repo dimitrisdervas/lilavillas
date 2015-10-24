@@ -1,6 +1,6 @@
 <!-- FROM HERE -->
 <!--  https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/The_native_form_widgets#Auto-complete_content -->
-<form>
+<form data-parsley-validate>
 <!-- Just print the fields -->
 <!-- Loop each field in the component -->
    <!--  If there is grouping div got fields -->
@@ -19,12 +19,12 @@
                                     {% case field.field  %}
                                     <!--  TEXTAREA -->
                                        {% when 'textarea' %}
-                                          <input  {% for data in field.data %}                                                     
+                                          <textarea  {% for data in field.data %}                                                     
                                                         {% unless data[0] == 'options' or data[0] == 'conditions' %}
                                                            {{ data[0] }}="{{ data[1] }}" 
                                                          {% endunless %}
                                                       {% endfor %}>
-                                
+                                         </textarea>
                                     <!-- INPUT --> 
                                        {% when 'input' %}
                                           <input  {% for data in field.data %}
@@ -148,13 +148,14 @@
                               {% case field.field  %}
                                  {% when 'textarea' %}
 
-                                       <input class="{{ field.data.class }}"  type="{{ field.data.type }}" placeholder="{{ field.data.placeholder }}">
+                                       <textarea {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}>
+   </textarea>
                               <!-- INPUT --> 
                                  {% when 'input' %}
-                                       <input class="{{ field.data.class }}"  type="{{ field.data.type }}" placeholder="{{ field.data.placeholder }}">
+                                       <input {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}>
                               <!-- DROPDOWN BOX --> 
                                  {% when 'select' %}
-                                       <select>
+                                       <select {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}>
                                           {% for option in field.data.options %}
                                              <option value="{{ option.option }}">{{ option.option }}</option>
                                           {%  endfor %}
@@ -165,9 +166,8 @@
                               <!-- BUTTONS -->
                                  {% when 'button' %}
                                        <button type="{{ field.data.type }}">
-                                              This a <br><strong>submit button</strong>
+                                             {{ field.data.button-text }}
                                        </button>
-                                       <input type="{{ include.field_Data.data.type }}" value="This is a submit button">
                               <!--  End case of fields -->
                                {% endcase %}
                            <!--  End loop in fields -->

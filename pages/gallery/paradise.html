@@ -1,15 +1,15 @@
 ---
-layout: default
+layout: default-gallery
 config:
  - section: 
     data:
       htmlelement: section
     theme:
-      class: content-nobg
+      class: content-gallery
    divs:
       - div: 
          theme:
-          class: slideshowdiv     
+          class: gallery-slideshow     
         components:
          - component: posts-list
            data:
@@ -17,6 +17,7 @@ config:
             javascript-plugin-data:
                  items: 1
                  loop: true
+                 autoplay: true
                  margin: 10
                  dots: false
             wrapperDiv:
@@ -34,10 +35,11 @@ config:
                    background:
                      image-hash: image
                      images-path: /assets/images/
+                     class: gallery-image
                    fields:
                      - field: title
                        data:
-                        class: slideshow-title
+                        class: gallery-title
 
 ---
 

@@ -1,0 +1,105 @@
+---
+layout: default
+config:
+ - section: 
+    data:
+      htmlelement: section
+    theme:
+      class: content 
+   divs:
+      - div:
+         theme:
+          class: contact-form mainbar
+        components:                
+         - component: form
+           data:
+            title: Reservation
+            javascript-plugin: rome
+            theme:
+              class: form    
+            fields:
+                 - field: input
+                   data: 
+                    class: name
+                    type: text
+                    placeholder: name
+                 - field: input
+                   data: 
+                    class: email
+                    type: text
+                    placeholder: email
+                 - field: input
+                   data: 
+                     class: phone
+                     type: text      
+                     placeholder: phone
+                 - field: input
+                   data: 
+                    class: input
+                    id: checkin
+                    type: text
+                    name: Checkin
+                    label: Checkin
+                 - field: input
+                   data: 
+                    class: input
+                    id: checkout
+                    type: text
+                    name: Checkout
+                    label: Checkout
+                 - field: select
+                   data: 
+                     class: persons
+                     name: persons
+                     label: Persons
+                     options:
+                        - option: "- Select -"
+                        - option: 1
+                        - option: 2
+                        - option: 3
+                        - option: 4 
+                        - option: 5
+                        - option: 6
+                        - option: 7
+                        - option: 8 
+                 - field: select
+                   data: 
+                     class: villa
+                     name: villa-type
+                     label: Villa
+                     options:
+                        - option: "- Select -"
+                        - option: Paradise
+                        - option: Lila2
+                        - option: Beach Bungalow
+                 - field: textarea
+                   data:
+                    class: message
+                    type: text
+                    placeholder: message
+                 - field: button
+                   data:
+                    class: submit-button
+                    button-text: Ask Owner
+      - div: 
+         theme:
+          class: contact-details
+        components:
+         - component: field
+           data:
+              content-type: contact
+              data-type: data-list
+              fields:
+                - field: phone
+                  data:
+                     label: Phone
+                - field: email
+                  data:
+                     label: email
+                - field: address
+                  data:
+                     label: Address
+---
+
+
+{% include basic_components/page.html %}

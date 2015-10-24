@@ -12,11 +12,11 @@ config:
           class: topspacer  
       - div:
          theme:
-          class: contact-form
+          class: contact-form 
         components:                
          - component: form
            data:
-            title: Contacts
+            title: Contact us
             theme:
               class: form    
             fields:
@@ -40,6 +40,10 @@ config:
                     class: message
                     type: text
                     placeholder: message
+                 - field: button
+                   data:
+                    class: submit-button
+                    button-text: Ask Owner
       - div: 
          theme:
           class: contact-details     

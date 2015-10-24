@@ -19,7 +19,6 @@
   js: js/remove-accents.js
 
 - name: webfontloader
-  state: active
   js: js/webfontloader.js
 
 - name: countTo
@@ -54,18 +53,22 @@
   js: bower_components/simpsum/dist/simpsum.js
   
 - name: burger
-  state: active
   js: bower_components/burger/dist/scripts/burger.min.js
   css:
    - css: bower_components/burger/dist/css/burger.min.css
    
 - name: photoswipe
-  state: active
   js: bower_components/photoswipe/dist/photoswipe.min.js
   css:
    - css: bower_components/photoswipe/dist/photoswipe.css
  
 - name: photoswipe-ui
-  state: active
   js: bower_components/photoswipe/dist/photoswipe-ui-default.min.js
 
+- name: rome
+  js: bower_components/rome/dist/rome.min.js
+  css:
+  - css: bower_components/rome/dist/rome.min.css
+  
+- name: parsleyjs
+  js: bower_components/parsleyjs/dist/parsley.min.js

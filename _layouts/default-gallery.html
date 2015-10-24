@@ -8,22 +8,19 @@
 
   <body>
     
-      {% include basic_components/page.html config-file='header-gallery' %} 
-         <div class="page-gallery">
+     
+         <div class="page gallery">
 
-                       
+                  {% include basic_components/page.html config-file='header' %}       
                   
-            <div class="content-gallery">
-               {{ content }}
-            </div>
-                  
+                  {{ content }}
                                   
-<!--                    {% include basic_components/page.html config-file='footer' %} -->
+                   
             
 
                </div>
  
-     
+     {% include basic_components/page.html config-file='footer' %}
 
       <script type="text/javascript" src="{{ site.baseurl }}/js/components.js"></script> 
             {% include basic_components/perpagePlugins.html %}

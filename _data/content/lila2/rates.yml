@@ -1,9 +1,11 @@
-  - date: "1/4/2016 – 31/5/2016 , 1/10/2016 – 31/10/2016 "
+  - date1: "1/4/2016 – 31/5/2016" 
+    date2: "1/10/2016 – 31/10/2016"
     price: 132€/night
-    season: low
-  - date: "1/6/2015 – 30/6/2016 , 1/9/2016 – 30/9/2016 "
+    season: low 
+  - date1: "1/6/2015 – 30/6/2016"
+    date2: "1/9/2016 – 30/9/2016"
     price: 228€/night
-    season: medium
-  - date: 1/7/2016 – 31/8/2016 
-    price: 288€/night
-    season: high
+    season: mid
+  - date1: "1/7/2016 – 31/8/2016" 
+    price: 228€/night
+    season: high    

@@ -47,6 +47,7 @@
 
 .sidebar {
 }
+/* LINKS */
 .links {
    margin-bottom: 3em;
    li {
@@ -60,6 +61,10 @@
       color: #fff;
       background: #77933C;
       display: block;
+   }
+   a:hover {
+      background: #94B946;
+      color: #323232;
    }
 }
 /*  */
@@ -105,6 +110,26 @@
       color: #323232;
       line-height: 1.5;
    }
+}
+/* VILLAS GALLERY */
+   .gallery-slideshow {
+      height: 100%;
+      .post-image {
+         align-items: flex-start;
+      }
+   }
+.gallery-title {
+box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+    background: transparent;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0px 0px 0 80px;
+    line-height: 1em;
+    /* margin-top: -80px; */
+    font-size: 20px;
+    width: 100%;
+    background: #323232;
+    padding: 10px;
+    opacity: 0.9;
 }
 /*  */
 /* FOOTER */
