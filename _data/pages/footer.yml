@@ -7,18 +7,23 @@
    theme:
     class: footer-wrapper
   divs:
+   - div: 
+      theme:
+       class: contact-footer     
+     components:
+       - component: field
+         data:
+              content-type: contact
+              data-type: data-list
+              fields:
+                - field: phone
+                - field: email
+                - field: address
+
    - div:
       theme:
        class: logo
      components:
        - component: logo
          data:
-           text: Σχολή Χατζήβεη
-   - div: 
-      theme:
-        class: menu
-     components:
-       - component: menu
-         data:
-          content-type: menu
-          data-type: data-list
+           text: Lila Villas                     

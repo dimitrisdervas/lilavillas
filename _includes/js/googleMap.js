@@ -1,5 +1,5 @@
 var LocationData = [
-    [39.424656, 23.12378, "Astromeria Studios","6936.969.942","Makrirachi, Pelion"],
+    [35.513830, 24.018037, "Lila Villas","6936.969.942","SomePlace, Crete"],
 ];
 
     
@@ -10,7 +10,7 @@ function initialize()
                     zoom: 12,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(39.424656, 23.12378),
+                    center: new google.maps.LatLng(35.513830, 24.018037),
                        
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
@@ -258,19 +258,19 @@ function initialize()
         var marker = new google.maps.Marker({
             position: latlng,
             map: map,
-            title: p[3],
-            mob: p[4],
-            by: p[2],
-            address: p[5]
+            title: p[2],
+            mob: p[3],
+            address: p[4]
         });
         
         
         google.maps.event.addListener(marker, 'click', function() {
-            infowindow.setContent( "<h2>" + this.title + "</h2>" + "<h3>" + this.by + "</h3>" + "<h3>" + this.mob + "</h3>" + "<p>" + this.address + "</p>" );
+            infowindow.setContent( "<div class='map-title'>" + this.title + "</div>" + "<div class='map-phone'>" + this.mob + "</div>" + "<div class='map-address'>" + this.address + "</div>" );
             infowindow.open(map, this);
         });
     }
-    
+            
+   
     var listener = google.maps.event.addListener(map, "idle", function() { 
       if (map.getZoom() > 16) map.setZoom(12); 
       google.maps.event.removeListener(listener); 

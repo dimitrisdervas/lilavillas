@@ -58,3 +58,14 @@
   js: bower_components/burger/dist/scripts/burger.min.js
   css:
    - css: bower_components/burger/dist/css/burger.min.css
+   
+- name: photoswipe
+  state: active
+  js: bower_components/photoswipe/dist/photoswipe.min.js
+  css:
+   - css: bower_components/photoswipe/dist/photoswipe.css
+ 
+- name: photoswipe-ui
+  state: active
+  js: bower_components/photoswipe/dist/photoswipe-ui-default.min.js
+

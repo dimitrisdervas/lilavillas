@@ -1,15 +1,15 @@
 ---
-layout: default
+layout: default-gallery
 config:
  - section: 
     data:
       htmlelement: section
     theme:
-      class: slideshow 
+      class: content-gallery
    divs:
       - div: 
          theme:
-          class: slideshowdiv     
+          class: frontpage-slideshow     
         components:
          - component: posts-list
            data:
@@ -17,194 +17,27 @@ config:
             javascript-plugin-data:
                  items: 1
                  loop: true
+                 autoplay: true
                  margin: 10
-                 nav: true
-                 dots: true
+                 dots: false
             wrapperDiv:
              theme:
                 class: owl-carousel owl-theme
                 id: slideshow
-            groupFieldsElement: no
-            content-type: homepage.slideshow
+            groupFieldsElement: div
+            groupFieldsElement-data:
+             class: slideshow-item
+            content-type: slideshow
             data-type: data-list
             fields:
-                 - field: image
-                   data:
+                 - field: group
+                   background:
                      image-hash: image
-                 - field: title
-                   data:
-                    class: slideshow-title
-                    subfields:
-                      - field: subtitle
- - section: 
-    data: 
-      htmlelement: section
-    theme:
-      class: event
-   wrapperSection:
-    theme:
-     class: event-wrapper marginBottom
-   divs:
-      - components:
-          - component: posts-list
-            data:
-               class: events
-               limit: 1
-               postTag: frontpage
-               groupFieldsElement: no
-               content-type: events
-               fields: 
-                - field: title
-                  data:
-                    class: event-title 
-                    link: posts
- - section: 
-    data: 
-      htmlelement: section
-    theme:
-      class: contentmenu
-   wrapperSection:
-    theme:
-     class: contentmenu-wrapper marginBottom
-   divs:
-      - div: 
-        components:
-          - component: posts-list
-            data:
-             content-type: contentmenu
-             data-type: data-list
-             fields:
-               - field: group
-                 background: 
-                     image-hash: image
-                 fields:
-                    - field: name
-                      data:
-                        link: posts
-                    - field: subtitle
-
-
- - section: 
-    data: 
-      htmlelement: section
-    theme:
-      class: newsandentipa marginBottom
-   divs:
-     - div: 
-        theme:
-          class: news
-       components:
-          - component: posts-list
-            data:
-             title: Νέα
-             content-type: news
-             data-type: collection
-             fields:
-               - field: images
-                 data:
-                   image-hash: image
-                   tag: main
-                   link: post
-               - field: group
-                 class: content
-                 fields:
+                     images-path: /assets/images/
+                   fields:
                      - field: title
                        data:
-                          class: nipiagogeio-title
-                     - field: tags
-                     - field: text
-                       data:
-                        text-teaser: yes
-                        text-words: 30
-     - div: 
-        theme:
-          class: entipa
-       components:
-          - component: posts-list
-            theme:
-              class: entipa
-            data:
-             title: "Έντυπα"
-             content-type: entipa
-             data-type: data-list
-             fields:
-               - field: image
-                 data:
-                   image-hash: image
-                   images-path: /assets/
-                   link: post
-               - field: title
-                 data:
-                   class: entipo-title
-                   link: posts
-               - field: icon
- - section: 
-    data: 
-      htmlelement: section
-    theme:
-      class: contentmenu
-   wrapperSection:
-    data:
-     class: contentmenu-wrapper marginBottom
-   divs:
-      - div: 
-        components:
-          - component: posts-list
-            data:
-             offset: 3
-             content-type: menu
-             data-type: data-list
-             fields:
-                - field: group
-                  link: posts
-                  fields:
-                     - field: icon
-                     - field: name
-
- - section: 
-    data: 
-      htmlelement: section
-    theme:
-      class: openday marginBottom
-   divs:
-      - div: video
-        components:
-          - component: video
-            data:
-             service: youtube
-             video-id: J9KSTIzuNk4
-      - div: video-content
-        components:
-         - component: posts-list
-           data:
-              content-type: video
-              data-type: data-list
-              fields:
-                  - field: title
-                    data:
-                     class: video-title
-                  - field: link
-                    data:
-                     label: Ενημερωθείτε για το επόμενο Open Day
-                     link: /
-                   
- - section: 
-    data: 
-      htmlelement: section
-    theme:
-      class: contact marginBottom
-   divs:
-      - div: contact-details
-        components:
-         - component: field
-           data:
-              content-type: contact
-              fields:
-                - field: phone
-                - field: email
-      - components:
-         - component: social
-
+                        class: slideshow-title
 
 ---
 

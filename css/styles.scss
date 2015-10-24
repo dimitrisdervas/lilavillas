@@ -40,11 +40,12 @@
 /* Layouts */
 /*  */
 @import 
-      "layouts/layoutDefault",   
+       "layouts/layoutDefault",   
        "layouts/layoutGlobal",
        "layouts/layoutHeader",
        "layouts/layoutFrontpage",
-       "layouts/layoutFooter"
+       "layouts/layoutFooter",
+       "layouts/layoutTasos"
    ;
 
 
@@ -57,7 +58,10 @@
       "styles/stylesBasicComponents",
       "styles/stylesHeader",      
       "styles/stylesFrontpage",
-      "styles/stylesFooter"      
+      "styles/stylesFooter",
+      "styles/stylesPrices",
+         "styles/stylesFacilities",
+       "styles/stylesMap" 
    ;
       
 

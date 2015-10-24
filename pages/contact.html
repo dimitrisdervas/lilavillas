@@ -1,4 +1,64 @@
 ---
 layout: default
-title: επικοινωνία
+config:
+ - section: 
+    data:
+      htmlelement: section
+    theme:
+      class: content 
+   divs:
+      - div: 
+         theme:
+          class: topspacer  
+      - div:
+         theme:
+          class: contact-form
+        components:                
+         - component: form
+           data:
+            title: Contacts
+            theme:
+              class: form    
+            fields:
+                 - field: input
+                   data: 
+                    class: name
+                    type: text
+                    placeholder: name
+                 - field: input
+                   data: 
+                    class: email
+                    type: text
+                    placeholder: email
+                 - field: input
+                   data: 
+                     class: phone
+                     type: text      
+                     placeholder: phone
+                 - field: textarea
+                   data:
+                    class: message
+                    type: text
+                    placeholder: message
+      - div: 
+         theme:
+          class: contact-details     
+        components:
+         - component: field
+           data:
+              content-type: contact
+              data-type: data-list
+              fields:
+                - field: phone
+                  data:
+                     label: Phone
+                - field: email
+                  data:
+                     label: email
+                - field: address
+                  data:
+                     label: Address
 ---
+
+
+{% include basic_components/page.html %}

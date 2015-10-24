@@ -1,0 +1,88 @@
+---
+layout: default-bg
+config:
+ - section: 
+    data:
+      htmlelement: section
+    theme:
+     class: section-facilities 
+   divs:
+      - div: 
+         theme:
+          class: facilities-list     
+        components:
+          - component: field
+            data:
+               class: facility
+               content-type: title
+               folder: paradise
+               data-type: data-list
+               fields: 
+                - field: title
+                - field: text
+          - component: posts-list
+            data:
+               title: Facilities
+               class: facility
+               content-type: facilities
+               folder: paradise
+               groupFieldsElement: ul
+               data-type: data-list
+               fields: 
+                - field: facility
+                  data:
+                    class: facility
+      - div: 
+         theme:
+          class: facilities-list     
+        components:
+          - component: field
+            data:
+               class: facility
+               content-type: title
+               folder: lila2
+               data-type: data-list
+               fields: 
+                - field: title
+                - field: text
+          - component: posts-list
+            data:
+               title: Facilities
+               class: facility
+               content-type: facilities
+               folder: lila2
+               groupFieldsElement: ul
+               data-type: data-list
+               fields: 
+                - field: facility
+                  data:
+                    class: facility
+      - div: 
+         theme:
+          class: facilities-list     
+        components:
+          - component: field
+            data:
+               class: facility
+               content-type: title
+               folder: bungalow
+               data-type: data-list
+               fields: 
+                - field: title
+                - field: text
+          - component: posts-list
+            data:
+               title: Facilities
+               class: facility
+               content-type: facilities
+               folder: bungalow
+               groupFieldsElement: ul
+               data-type: data-list
+               fields: 
+                - field: facility
+                  data:
+                    class: facility
+
+---
+
+{% include basic_components/page.html %}

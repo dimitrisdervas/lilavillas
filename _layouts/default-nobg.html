@@ -1,0 +1,37 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="gr">
+
+  {% include basic_components/head.html %}
+
+  <body>
+    
+      {% include basic_components/page.html config-file='header' %} 
+         <div class="page">
+
+                       
+                  
+            <div class="content-nobg">
+               <div class="topspacer"></div>
+               {{ content }}
+            </div>
+                  
+                                  
+                   {% include basic_components/page.html config-file='footer' %}
+            
+
+               </div>
+ 
+     
+
+      <script type="text/javascript" src="{{ site.baseurl }}/js/components.js"></script> 
+            {% include basic_components/perpagePlugins.html %}
+
+                  
+
+     
+  </body>
+
+</html>

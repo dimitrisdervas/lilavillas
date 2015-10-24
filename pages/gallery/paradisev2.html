@@ -5,24 +5,11 @@ config:
     data:
       htmlelement: section
     theme:
-      class: content 
+      class: content-nobg
    divs:
       - div: 
          theme:
-          class: villas     
-        components:
-          - component: field
-            data:
-               class: facility
-               content-type: title
-               folder: paradise
-               data-type: data-list
-               fields: 
-                - field: title
-                - field: text
-      - div: 
-         theme:
-          class: slideshow-wrapper    
+          class: slideshowdiv     
         components:
          - component: posts-list
            data:
@@ -32,53 +19,41 @@ config:
                  loop: true
                  margin: 10
                  dots: false
-                 autoplay: true
             wrapperDiv:
              theme:
                 class: owl-carousel owl-theme
                 id: slideshow
             groupFieldsElement: div
+            groupFieldsElement-data:
+             class: slideshow-item
             content-type: gallery
             folder: paradise
             data-type: data-list
             fields:
-                  - field: image
-                    data:
+                 - field: image
+                   data:
                      image-hash: image
                      images-path: /assets/images/
-                  - field: title
-                    data:
+                 - field: title
+                   data:
                       class: slideshow-title
-      - div: 
-         theme:
-          class: facilities     
-        components:
-          - component: posts-list
-            data:
-               title: Facilities
-               class: facility
-               content-type: facilities
-               folder: paradise
-               data-type: data-list
-               fields: 
-                - field: facility
-                  data:
-                    class: facility
       - div: 
          theme:
           class: rates     
         components:
           - component: posts-list
             data:
-               title: "Rates in euros per night."
+               title: Seasons
                class: rate
                content-type: rates
                folder: paradise
                data-type: data-list
+               groupFieldsElement: ul
                fields: 
+                - field: price 
                 - field: season
                 - field: date
-                - field: price 
+
 ---
 
 {% include basic_components/page.html %}

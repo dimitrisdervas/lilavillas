@@ -112,6 +112,10 @@
                                     <!-- EndIF htmlComponent.component -->
                                     {% endif %}
       
+                                          {% if htmlComponent.data.javascript-plugin == 'photoswipe' %}
+                                             <!-- PHOTOSWIPE -->
+                                              {% include html_components/component_includes/photoswipeDom.html %}        
+                                          {% endif %}
       
 
 

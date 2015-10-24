@@ -1,12 +1,3 @@
-.footer-wrapper {
-   @include full;
-   .footer {
-      @include container();
-      .section {
-         @include gallery ( 3 of 12 );
-      }
-   }
-}
 
 
 

@@ -1,0 +1,36 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="gr">
+
+  {% include basic_components/head.html %}
+
+  <body>
+    
+      {% include basic_components/page.html config-file='header-gallery' %} 
+         <div class="page-gallery">
+
+                       
+                  
+            <div class="content-gallery">
+               {{ content }}
+            </div>
+                  
+                                  
+<!--                    {% include basic_components/page.html config-file='footer' %} -->
+            
+
+               </div>
+ 
+     
+
+      <script type="text/javascript" src="{{ site.baseurl }}/js/components.js"></script> 
+            {% include basic_components/perpagePlugins.html %}
+
+                  
+
+     
+  </body>
+
+</html>

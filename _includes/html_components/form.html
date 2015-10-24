@@ -19,8 +19,7 @@
                                     {% case field.field  %}
                                     <!--  TEXTAREA -->
                                        {% when 'textarea' %}
-                                          <input  {% for data in field.data %}
-                                                     
+                                          <input  {% for data in field.data %}                                                     
                                                         {% unless data[0] == 'options' or data[0] == 'conditions' %}
                                                            {{ data[0] }}="{{ data[1] }}" 
                                                          {% endunless %}

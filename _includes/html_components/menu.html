@@ -7,20 +7,26 @@
 <ul>
 {% for menu in posts limit:{{include.component-data.limit}} offset:{{include.component-data.offset}} %}
 
-      <li class="menu-item menu-{{ menu.name }}" data-theme-menu="{{ include.component-data.theme }}">
-         <a class="drop-target" href="{{ site.baseurl }}/{{ menu.url }}">{{ menu.name }}
-            {% case include.component-data.icon %}
-                {% when 'et-line' %}
-                  <i class="icon-{{ menu.icon }}"></i>
-                {% when 'font-awesome' %}
-                  <i class="fa fa-{{ menu.icon }}"></i>
-               {% endcase %}
-            </a>
+      
+         {% if menu.url %}
+            <li class="menu-item menu-{{ menu.name | slugify }}" data-theme-menu="{{ include.component-data.theme }}">
+            <a class="drop-target" href="{{ site.baseurl }}/{{ menu.url }}">{{ menu.name }}
+               {% case include.component-data.icon %}
+                   {% when 'et-line' %}
+                     <i class="icon-{{ menu.icon }}"></i>
+                   {% when 'font-awesome' %}
+                     <i class="fa fa-{{ menu.icon }}"></i>
+                  {% endcase %}
+               </a>
+          {% else %}
+             <li class="menu-item nolink menu-{{ menu.name | slugify }}" data-theme-menu="{{ include.component-data.theme }}">
+               <div class="menu-title">{{ menu.name }}</div>
+         {% endif %}
 
 
-   {% if menu.subfields %}
+   {% if menu.submenu %}
 <ul>
-      {% for submenu in menu.subfields  %}
+      {% for submenu in menu.submenu %}
           <li class="submenu-item" data-theme-menu="{{ include.component-data.theme }}">
             <a href="{{ site.baseurl }}/{{ submenu.url }}">{{ submenu.name }}
                {% case include.component-data.icon %}

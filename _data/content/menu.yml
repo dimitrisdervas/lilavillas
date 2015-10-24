@@ -1,30 +1,29 @@
 - name: Welcome
-  url: 
-
-- name: Map - Location
-  url: pages/nipiagogeio.html
+  url: /
 
 - name: Accomodation
-  url: pages/nipiagogeiov2.html
   submenu:
-   - name: Paradise
-     url: 
-   - name: Lila 2
-     url: 
-   - name: Bungalows
-     url: 
-
+   - name: Villa Paradise
+     url: pages/accomodation/paradise.html
+   - name: Villa Lila 2
+     url: pages/accomodation/lila2.html
+   - name: Villa Beach Bungalow
+     url: pages/accomodation/bungalow.html
+     
+- name: Map - Location
+  url: pages/map.html
+  
 - name: Facilities
-  url: pages/nipiagogeio/atipa.html
+  url: pages/facilities.html
   
 - name: Prices
-  url: 
+  url: pages/prices.html
   
 - name: Reviews
-  url: 
+  url: /
 
 - name: Special Offers
-  url: 
+  url: /
 
 - name: Contact us
-  url: 
+  url: pages/contact.html

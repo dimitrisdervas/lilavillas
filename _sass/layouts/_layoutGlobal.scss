@@ -1,0 +1,44 @@
+.page {
+   @include layout($full-width);
+   @include container;
+}
+
+
+.content-nobg {
+      @include span( 10 of 12 last);
+      @include push( 2 of 12 );
+}
+
+.header-wrapper {
+   @include span( 2 of 12);
+   position: fixed;
+   height: 100%;
+   text-align: center;
+
+}
+
+.topspacer {
+   height: 20vh;
+   background: transparent;
+   width: 100%;
+}
+
+
+.content {
+      @include span( 10 of 12 last);
+      background: url(../assets/images/AMP_1146.jpg);
+      background-size: cover;
+}
+
+
+#map-canvas {
+   width: 100%;
+}
+
+.footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+       z-index: 3;
+   height: 5vh;
+}

@@ -1,19 +1,66 @@
-body {
+.header-wrapper {
+   background: #4979B3;
+   background: #2E4E75;   
+   .header {
+         .logo {
+              padding: 30px 20px;
+             text-align: center;            
+            a {
+               color: #fff;
+               font-size: 48px;
+               font-family: $lila-logo;
+                line-height: 1.2;
+               }
+            }
+           .menu ul {
+              li {
+                 font-size: 18px;
+              }
+              a {
+                 color: #f4f0f0;
+                 display: block;
+                 display: block;
+                 font-size: 18px;
+                 padding: 10px;
+                 line-height: 1em;
+              }
+              a:hover {
+                 color: #d8c6bc;
+                 background: #1C3048;
+                 }
+              .nolink {
+                 display: block;
+                 font-size: 18px;
+                 padding: 10px 0;
+                 line-height: 1em;
+              }
+              .menu-title {
+                   color: #d8c6bc;
+                   padding: 5px;
+                   line-height: 1.3em;
+                   background: #463E41;
+                   font-size: 19px;
+                   border-bottom: 1px solid #5F5F5F;
+              }
+              .submenu-item {
+                text-align: right;
+                background: #463E41;
+              }
+             }
+          }                 
+      }
+
+.first-column {
+      @include span( 5 of 12 );
+      max-width: 452px;
+      margin-left: 40px;
+      background: #ffffff;
+      padding: 40px 40px 20px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-
-}
-
-.component-header,
-.section-header {
-   .component-title,
-   .section-title {
-    @include t-header;
-    @include t-h5;
-   }
-   .component-subtitle,
-   .section-subtitle {
-       text-transform: uppercase;
-   }
+.footer-wrapper {
+    padding: 5px;
+    border-top: 1px solid #ccc;
+    background: #fff;
+    text-align: right;
 }

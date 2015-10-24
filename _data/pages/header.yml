@@ -15,7 +15,7 @@
      components:
        - component: logo
          data:
-           text: Lila Villas
+           text: Lila Beach Front Villas
    - div: 
       theme:
         class: menu

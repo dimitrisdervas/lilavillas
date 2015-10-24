@@ -9,6 +9,9 @@
    <!--  One images --> 
                               {% when 'image' %}
                                 {% include html_components/fieldsCases/imageCase.html field_Data=field.data field_Field=field.field content-type=include.component.content-type %}
+  <!--  Photoswipe --> 
+                              {% when 'photoswipe' %}
+                                {% include html_components/fieldsCases/photoswipeCase.html field_Data=field.data field_Field=field.field content-type=include.component.content-type %}
    <!-- LINK  -->                 
                               {% when 'link' %}
                                 {% include html_components/fieldsCases/linkCase.html field_Data=field.data field_Field=field.field %}

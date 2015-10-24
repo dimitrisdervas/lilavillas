@@ -2,11 +2,23 @@
 {% assign fields = include.component-data.fields %} 
 
 {% for field in fields %} 
-           <div class="{{field.field}}{{field.data.class}}">
+
+
+
+
+               {% if field.data.label %}
+                  <div class="label {{field.data.class}}-{{field.data.label}}">
+                     {{ field.data.label }}
+                  </div>
+              {% endif %}
+           <div class="field {{field.field}} {{field.data.class}}">
               {% if include.component-data.folder %}
                       {{ site.data.content.[include.component-data.folder].[include.component-data.content-type].[field.field] }}
               {% else %}
                      {{ site.data.content.[include.component-data.content-type].[field.field] }}
               {% endif %}
                      </div>
+
+
+
    {% endfor %}
