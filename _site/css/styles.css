@@ -744,11 +744,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 100%, transparent 100%);
-  background-size: 8.33333%;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top; }
+  height: 100%; }
   .page:after {
     content: " ";
     display: block;
@@ -1162,11 +1158,18 @@ a {
       line-height: 18px; }
 
 #map-canvas .map-title {
-  font-size: 24px;
+  font-size: 48px;
+  font-family: "Tangerine", "Damion", "Grand+Hotel" "Cambria", "Georgia", "serif";
+  color: #2E4E75;
   font-weight: bold;
-  color: #517686; }
+  padding: 10px 10px 10px 0px; }
 #map-canvas .map-phone {
-  font-size: 18px;
-  color: #82787B; }
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  color: #323232;
+  font-weight: bold;
+  font-size: 18px; }
 #map-canvas .map-address {
-  color: #82787B; }
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  color: #323232;
+  font-weight: bold;
+  font-size: 18px; }

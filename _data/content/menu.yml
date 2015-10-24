@@ -19,11 +19,8 @@
 - name: Prices
   url: pages/prices.html
   
-- name: Reviews
-  url: /
-
-- name: Special Offers
-  url: /
+- name: Reservation
+  url: pages/reseration.com
 
 - name: Contact us
   url: pages/contact.html

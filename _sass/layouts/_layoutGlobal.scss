@@ -1,6 +1,7 @@
 .page {
    @include layout($full-width);
    @include container;
+   height: 100%;
 }
 .bg {
     background: url(../assets/images/AMP_1146.jpg);

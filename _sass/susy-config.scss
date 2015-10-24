@@ -17,7 +17,7 @@ $symmetric: (
   container: auto,
   gutters: .25,
   output: float,
-  debug: (image: show) 
+/*   debug: (image: show), */
 );
 
 $header: (
@@ -40,6 +40,6 @@ $full-width: (
   container: auto,
   gutters: 0,
   output: float,
-  debug: (image: show),
+/*   debug: (image: show), */
 );
 
