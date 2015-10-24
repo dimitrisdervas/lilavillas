@@ -1,65 +1,115 @@
-.header-wrapper {
-   background: #4979B3;
-   background: #2E4E75;   
-   .header {
-         .logo {
-              padding: 30px 20px;
-             text-align: center;            
-            a {
-               color: #fff;
-               font-size: 48px;
-               font-family: $lila-logo;
-                line-height: 1.2;
-               }
-            }
-           .menu ul {
-              li {
-                 font-size: 18px;
-              }
-              a {
-                 color: #f4f0f0;
-                 display: block;
-                 display: block;
-                 font-size: 18px;
-                 padding: 10px;
-                 line-height: 1em;
-              }
-              a:hover {
-                 color: #d8c6bc;
-                 background: #1C3048;
-                 }
-              .nolink {
-                 display: block;
-                 font-size: 18px;
-                 padding: 10px 0;
-                 line-height: 1em;
-              }
-              .menu-title {
-                   color: #d8c6bc;
-                   padding: 5px;
-                   line-height: 1.3em;
-                   background: #463E41;
-                   font-size: 19px;
-                   border-bottom: 1px solid #5F5F5F;
-              }
-              .submenu-item {
-                text-align: right;
-                background: #463E41;
-              }
-             }
-          }                 
-      }
-
-.first-column {
-      @include span( 5 of 12 );
-      max-width: 452px;
-      margin-left: 40px;
-      background: #ffffff;
-      padding: 40px 40px 20px;
+/*  */
+/* FACILITIES */
+/*  */
+.facilities {
+   background: #EEECE1;
+   .title {
+      padding: 0 5px;
+      margin-bottom: 0;
+      color: #c1935c;
+      font-size: 40px;
+      line-height: .9em;
+      letter-spacing: -3px;
+      margin-left: -4px;
+      margin-bottom: 0.3em;
+   }
+   .subtitle1,
+   .subtitle2 {
+      color: #79797a;
+      font-size: 17px;
+      line-height: 20px;
+   }
+   .subtitle2 {
+      margin-bottom: 20px;
+   }
+   .component-title {
+      padding: 0 5px;
+      margin-bottom: 0;
+      color: #000;
+      font-size: 19px;
+      margin-bottom: 9px;
+      padding-left: 15px;
+   }
+   ul {
+      border: 1px solid #ccc;
+      padding: 5px;
+      background: #fff;
+   }
+   li {
+      padding: 5px 10px;
+      list-style: none;
+    font-style: italic;
+    color: #79797a;
+    font-size: 15px;
+    line-height: 0.9em;
+   }
 }
 
+.sidebar {
+}
+.links {
+   margin-bottom: 3em;
+   li {
+      background: transparent;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+   }
+   a {
+      padding: 5px 25px;
+      color: #fff;
+      background: #77933C;
+      display: block;
+   }
+}
+/*  */
+/* RATES */
+/*  */
+.component-title.rate {
+   background: #C4BD97;
+   color: #000;
+   font-size: 17px;
+   padding: 0px 5px;
+   margin-bottom: 5px;
+}
+.rates {
+   background: transparent;
+   ul {
+
+      li {
+         background: #C4BD97;
+         margin: 5px 0;
+         float: left;
+         padding: 10px;
+      }
+   }
+   .season {
+      float: left;
+      font-size: 22px;
+      color: #000;
+      font-weight: bold;
+      margin-bottom: 8px;
+   }
+   .price {
+      background: transparent;
+      float: right;
+      margin-bottom: 3px;
+      font-size: 24px;
+      line-height: 1.2;
+      overflow: hidden;
+      color: #fff;
+   }
+   .date {
+      @include span( 100% );
+      font-size: 13px;
+      color: #323232;
+      line-height: 1.5;
+   }
+}
+/*  */
+/* FOOTER */
+/*  */
 .footer-wrapper {
-    padding: 5px;
     border-top: 1px solid #ccc;
     background: #fff;
     text-align: right;

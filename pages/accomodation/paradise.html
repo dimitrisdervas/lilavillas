@@ -5,14 +5,11 @@ config:
     data:
       htmlelement: section
     theme:
-      class: content 
+       class: mainbar facilities  
    divs:
       - div: 
          theme:
-          class: topspacer  
-      - div: 
-         theme:
-          class: facilities     
+          class:  mainbar-inside
         components:
           - component: field
             data:
@@ -35,37 +32,51 @@ config:
                 - field: facility
                   data:
                     class: facility
+ - section: 
+    data:
+      htmlelement: section
+    theme:
+       class: sidebar  
+   divs:
       - div: 
          theme:
-          class: rates     
+          class: sidebar-inside     
         components:
           - component: posts-list
             data:
-               title: Seasons
+               wrapperDiv: 
+                  theme:
+                     class: links
+               class: rate
+               content-type: tasos
+               data-type: data-list
+               groupFieldsElement: ul
+               groupFieldsElement-data-li:
+                  class: link
+               fields: 
+                - field: title
+                  data: 
+                    link: posts
+          - component: posts-list
+            data:
+               wrapperDiv: 
+                  theme:
+                     class: rates
+               title: "Rates"
                class: rate
                content-type: rates
                folder: paradise
                data-type: data-list
                groupFieldsElement: ul
                fields: 
-                - field: price 
                 - field: season
-                - field: date
-          - component: posts-list
-            data:
-               title: Gallery
-               wrapperDiv:
-                  theme:
-                    class: gallery
-               content-type: gallery
-               folder: paradise
-               data-type: data-list
-               groupFieldsElement: ul
-               fields: 
-                - field: image
+                - field: price 
+                - field: date1
                   data:
-                    image-hash: image
-                    images-path: /assets/images/
+                     class: date
+                - field: date2
+                  data:
+                     class: date
 ---
 
 {% include basic_components/page.html %}

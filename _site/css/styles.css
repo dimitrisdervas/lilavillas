@@ -412,7 +412,7 @@ table {
   margin-bottom: 1.75em; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-weight: 500;
   color: #111;
   clear: both; }
@@ -627,59 +627,6 @@ td {
 /*  */
 /* Layouts */
 /*  */
-.facilities .title {
-  color: #c1935c;
-  font-family: 'Vollkorn',"Arial",sans-serif;
-  font-size: 48px;
-  line-height: .9em;
-  letter-spacing: -3px;
-  margin-left: -4px; }
-.facilities .text {
-  color: #79797a;
-  margin-bottom: 20px; }
-.facilities .component-title {
-  color: #000;
-  font-size: 17px;
-  margin-bottom: 9px; }
-.facilities ul {
-  margin-left: 16px; }
-.facilities li {
-  list-style: square;
-  padding: 4px 0 4px 3px;
-  font-style: italic;
-  color: #79797a;
-  font-size: 17px;
-  line-height: 18px; }
-
-.rates {
-  background: #F1F1F1;
-  color: #79797a;
-  font-size: 17px;
-  line-height: 21px;
-  font-weight: normal; }
-  .rates .component-title {
-    color: #000;
-    font-size: 17px;
-    padding: 10px; }
-  .rates .season {
-    font-size: 22px;
-    color: #000;
-    font-weight: bold;
-    margin-bottom: 8px; }
-  .rates .price {
-    margin-bottom: 3px;
-    font-size: 24px;
-    background: #C1935C;
-    padding: 5px 8px;
-    line-height: 1.2;
-    overflow: hidden;
-    color: #fff; }
-  .rates .date {
-    width: 100%;
-    float: left;
-    margin-right: 5.26316%;
-    font-size: 13px; }
-
 .gallery .post-image {
   float: left;
   width: 60px;
@@ -796,40 +743,69 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 .page {
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 100%, transparent 100%);
+  background-size: 8.33333%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top; }
   .page:after {
     content: " ";
     display: block;
     clear: both; }
 
-.content-nobg {
-  width: 83.33333%;
-  float: right;
-  margin-right: 0;
-  margin-left: 16.66667%; }
+.bg {
+  background: url(../assets/images/AMP_1146.jpg);
+  background-size: cover; }
 
+/* HEADER */
 .header-wrapper {
   width: 16.66667%;
   float: left;
-  position: fixed;
   height: 100%;
-  text-align: center; }
+  text-align: center;
+  min-width: 200px; }
 
+/* TOP SPACER */
 .topspacer {
   height: 20vh;
   background: transparent;
   width: 100%; }
 
+/* CONTENT */
 .content {
   width: 83.33333%;
+  float: left;
+  height: 100%; }
+
+.mainbar {
+  width: 28.57143%;
+  float: left;
+  margin-right: 2.04082%;
+  margin-left: 2.04082%;
+  max-width: 300px;
+  min-width: 230px;
+  padding: 30px 20px; }
+
+.sidebar {
+  width: 28.57143%;
+  float: left;
+  margin-right: 2.04082%;
+  padding: 30px 25px 20px;
+  max-width: 280px;
+  min-width: 220px; }
+
+.content-nobg {
+  width: 83.05085%;
   float: right;
   margin-right: 0;
-  background: url(../assets/images/AMP_1146.jpg);
-  background-size: cover; }
+  margin-left: 16.94915%; }
 
+/* MAP */
 #map-canvas {
   width: 100%; }
 
+/* FOOTER */
 .footer-wrapper {
   position: fixed;
   bottom: 0;
@@ -837,26 +813,11 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   z-index: 3;
   height: 5vh; }
 
-#header-gallery {
-  background: #4979B3;
-  background: #538ED5;
-  background: #2E4E75; }
-  #header-gallery .submenu-item {
-    text-align: right;
-    background: #3F81D0; }
-  #header-gallery .menu-title {
-    color: #efefef;
-    padding: 5px;
-    line-height: 1.3em;
-    background: #4979B3;
-    font-size: 19px;
-    border-bottom: 1px solid #769ECE; }
-
 .page-gallery {
-  width: 83.33333%;
+  width: 83.05085%;
   float: right;
   margin-right: 0;
-  margin-left: 16.66667%;
+  margin-left: 16.94915%;
   height: 100%; }
   .page-gallery .content-gallery {
     height: 100%; }
@@ -882,84 +843,6 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
     background: transparent;
     background: rgba(0, 0, 0, 0.15); }
-
-.page-tasos {
-  height: 95vh; }
-  .page-tasos #header-wrapper {
-    height: 100%;
-    background: #4979B3;
-    background: #538ED5;
-    background: #2E4E75; }
-    .page-tasos #header-wrapper .submenu-item {
-      text-align: right;
-      background: #3F81D0; }
-    .page-tasos #header-wrapper .menu-title {
-      color: #efefef;
-      padding: 5px;
-      line-height: 1.3em;
-      background: #4979B3;
-      font-size: 19px;
-      border-bottom: 1px solid #769ECE; }
-  .page-tasos .content {
-    height: 100%; }
-  .page-tasos .facilities {
-    background: #EEECE1;
-    height: 100%; }
-    .page-tasos .facilities .title {
-      padding: 0 5px;
-      margin-bottom: 0; }
-    .page-tasos .facilities .component-title {
-      padding: 0 5px;
-      margin-bottom: 0;
-      color: #000;
-      font-size: 19px;
-      margin-bottom: 9px;
-      padding-left: 15px; }
-    .page-tasos .facilities ul {
-      border: 1px solid #ccc;
-      padding: 5px;
-      background: #fff;
-      margin-left: 0; }
-    .page-tasos .facilities li {
-      padding: 5px 10px;
-      list-style: none; }
-  .page-tasos .sidebar {
-    width: 25%;
-    float: left;
-    padding: 40px 40px 20px;
-    max-width: 320px;
-    display: flex;
-    flex-direction: column;
-    height: 100%; }
-  .page-tasos .links {
-    flex: 1; }
-    .page-tasos .links li {
-      background: transparent;
-      font-size: 24px;
-      text-transform: uppercase;
-      margin-bottom: 10px; }
-    .page-tasos .links a {
-      padding: 5px 25px;
-      color: #fff;
-      background: #77933C;
-      display: block; }
-  .page-tasos .rates {
-    align-self: flex-end;
-    background: transparent; }
-    .page-tasos .rates .rate.component-header {
-      background: #C4BD97;
-      margin-bottom: 5px; }
-    .page-tasos .rates ul li {
-      background: #C4BD97;
-      margin: 5px 0;
-      float: left;
-      padding: 10px; }
-    .page-tasos .rates .season {
-      float: left;
-      padding: 5px; }
-    .page-tasos .rates .price {
-      background: transparent;
-      float: right; }
 
 /*  */
 /* Styles */
@@ -990,55 +873,102 @@ a:hover {
 a:hover, a:focus {
   color: #d6b105; }
 
-.header-wrapper {
-  background: #4979B3;
-  background: #2E4E75; }
-  .header-wrapper .header .logo {
-    padding: 30px 20px;
-    text-align: center; }
-    .header-wrapper .header .logo a {
-      color: #fff;
-      font-size: 48px;
-      font-family: "Tangerine", "Damion", "Grand+Hotel" "Cambria", "Georgia", "serif";
-      line-height: 1.2; }
-  .header-wrapper .header .menu ul li {
-    font-size: 18px; }
-  .header-wrapper .header .menu ul a {
-    color: #f4f0f0;
-    display: block;
-    display: block;
-    font-size: 18px;
-    padding: 10px;
-    line-height: 1em; }
-  .header-wrapper .header .menu ul a:hover {
-    color: #d8c6bc;
-    background: #1C3048; }
-  .header-wrapper .header .menu ul .nolink {
-    display: block;
-    font-size: 18px;
-    padding: 10px 0;
-    line-height: 1em; }
-  .header-wrapper .header .menu ul .menu-title {
-    color: #d8c6bc;
-    padding: 5px;
-    line-height: 1.3em;
-    background: #463E41;
+/*  */
+/* FACILITIES */
+/*  */
+.facilities {
+  background: #EEECE1; }
+  .facilities .title {
+    padding: 0 5px;
+    margin-bottom: 0;
+    color: #c1935c;
+    font-size: 40px;
+    line-height: .9em;
+    letter-spacing: -3px;
+    margin-left: -4px;
+    margin-bottom: 0.3em; }
+  .facilities .subtitle1,
+  .facilities .subtitle2 {
+    color: #79797a;
+    font-size: 17px;
+    line-height: 20px; }
+  .facilities .subtitle2 {
+    margin-bottom: 20px; }
+  .facilities .component-title {
+    padding: 0 5px;
+    margin-bottom: 0;
+    color: #000;
     font-size: 19px;
-    border-bottom: 1px solid #5F5F5F; }
-  .header-wrapper .header .menu ul .submenu-item {
-    text-align: right;
-    background: #463E41; }
+    margin-bottom: 9px;
+    padding-left: 15px; }
+  .facilities ul {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #fff; }
+  .facilities li {
+    padding: 5px 10px;
+    list-style: none;
+    font-style: italic;
+    color: #79797a;
+    font-size: 15px;
+    line-height: 0.9em; }
 
-.first-column, .facilities {
-  width: 41.66667%;
-  float: left;
-  max-width: 452px;
-  margin-left: 40px;
-  background: #ffffff;
-  padding: 40px 40px 20px; }
+.links {
+  margin-bottom: 3em; }
+  .links li {
+    background: transparent;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .links a {
+    padding: 5px 25px;
+    color: #fff;
+    background: #77933C;
+    display: block; }
 
+/*  */
+/* RATES */
+/*  */
+.component-title.rate {
+  background: #C4BD97;
+  color: #000;
+  font-size: 17px;
+  padding: 0px 5px;
+  margin-bottom: 5px; }
+
+.rates {
+  background: transparent; }
+  .rates ul li {
+    background: #C4BD97;
+    margin: 5px 0;
+    float: left;
+    padding: 10px; }
+  .rates .season {
+    float: left;
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 8px; }
+  .rates .price {
+    background: transparent;
+    float: right;
+    margin-bottom: 3px;
+    font-size: 24px;
+    line-height: 1.2;
+    overflow: hidden;
+    color: #fff; }
+  .rates .date {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    font-size: 13px;
+    color: #323232;
+    line-height: 1.5; }
+
+/*  */
+/* FOOTER */
+/*  */
 .footer-wrapper {
-  padding: 5px;
   border-top: 1px solid #ccc;
   background: #fff;
   text-align: right; }
@@ -1068,6 +998,47 @@ a {
   line-height: inherit;
   background-color: transparent; }
 
+.header-wrapper {
+  height: 100%;
+  background: #4979B3;
+  background: #538ED5;
+  background: #2E4E75; }
+  .header-wrapper .header .logo {
+    padding: 30px 20px;
+    text-align: center; }
+    .header-wrapper .header .logo a {
+      color: #fff;
+      font-size: 48px;
+      font-family: "Tangerine", "Damion", "Grand+Hotel" "Cambria", "Georgia", "serif";
+      line-height: 1.2; }
+  .header-wrapper .header .menu ul li {
+    font-size: 18px; }
+  .header-wrapper .header .menu ul a {
+    color: #f4f0f0;
+    display: block;
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    line-height: 1em; }
+  .header-wrapper .header .menu ul a:hover {
+    color: #d8c6bc;
+    background: #1C3048; }
+  .header-wrapper .header .menu ul .nolink {
+    display: block;
+    font-size: 18px;
+    padding: 10px 0;
+    line-height: 1em; }
+  .header-wrapper .header .menu ul .menu-title {
+    color: #efefef;
+    padding: 5px;
+    line-height: 1.3em;
+    background: #4979B3;
+    font-size: 19px;
+    border-bottom: 1px solid #769ECE; }
+  .header-wrapper .header .menu ul .submenu-item {
+    text-align: right;
+    background: #3F81D0; }
+
 .frontpage-slideshow .slideshow-title {
   margin: 0; }
 
@@ -1091,7 +1062,7 @@ a {
   margin-left: 40px;
   max-width: 1050px; }
 .content .prices-list {
-  width: 33.33333%;
+  width: 32.20339%;
   float: left;
   max-width: 280px;
   margin-left: 40px;
@@ -1103,11 +1074,11 @@ a {
     clear: both;
     margin-left: 0; }
   .content .prices-list:nth-child(3n + 2) {
-    margin-left: 33.33333%;
+    margin-left: 33.89831%;
     margin-right: -100%;
     clear: none; }
   .content .prices-list:nth-child(3n + 3) {
-    margin-left: 66.66667%;
+    margin-left: 67.79661%;
     margin-right: -100%;
     clear: none; }
   .content .prices-list .title {
@@ -1139,6 +1110,7 @@ a {
   .content .prices-list .date {
     width: 100%;
     float: left;
+    margin-right: 1.69492%;
     font-size: 13px;
     margin-bottom: 20px;
     line-height: 1.5em; }
@@ -1147,7 +1119,7 @@ a {
   margin-left: 40px;
   max-width: 1050px; }
   .content .section-facilities .facilities-list {
-    width: 33.33333%;
+    width: 32.20339%;
     float: left;
     max-width: 280px;
     margin-left: 40px;
@@ -1159,11 +1131,11 @@ a {
       clear: both;
       margin-left: 0; }
     .content .section-facilities .facilities-list:nth-child(3n + 2) {
-      margin-left: 33.33333%;
+      margin-left: 33.89831%;
       margin-right: -100%;
       clear: none; }
     .content .section-facilities .facilities-list:nth-child(3n + 3) {
-      margin-left: 66.66667%;
+      margin-left: 67.79661%;
       margin-right: -100%;
       clear: none; }
     .content .section-facilities .facilities-list .title {

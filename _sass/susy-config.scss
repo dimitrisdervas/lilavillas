@@ -14,10 +14,10 @@ $susy: (
 
 $symmetric: (
   columns: 12,
-  container: 1170px,
+  container: auto,
   gutters: .25,
   output: float,
-  // debug: (image: show) 
+  debug: (image: show) 
 );
 
 $header: (
@@ -37,8 +37,9 @@ $map-portofolio: (
 
 $full-width: (
   columns: 12,
-  container: 100%,
+  container: auto,
   gutters: 0,
   output: float,
+  debug: (image: show),
 );
 

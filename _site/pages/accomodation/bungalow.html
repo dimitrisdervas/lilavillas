@@ -40,7 +40,7 @@
   <body>
     
      
-         <div class="page">
+         <div class="page bg">
 
                   <!--      -->
 <!-- PAGE -->
@@ -656,7 +656,7 @@
 <!-- DEBUG FILE: html_components/basic_components/page.html -->
 <!-- INCLUDE basic_components/pageIncludes/themeElement.html -->  
    <section 
- 		class="content"
+ 		class="mainbar facilities"
 	>
 
 
@@ -693,46 +693,7 @@
       
 
 <div 
- 		class="topspacer"
-	>
-
-
-            <!-- LOOP THROUGH THE COMPONENTS OF THE CURENT DIV -->   
-                                    
-                        <!-- End DIV for simple divClass -->
-                        </div>      
-                     <!--  End DIVS LOOP -->
-                     
-
-
-
-                  <!--            -->
-                  <!-- ALIAS DIVS -->
-                  <!--            -->                  
-                  
-                  
-                  
-
-
-
-
-
-                        <!--                  -->
-                        <!--  DIVS            -->
-                        <!--                  -->
-                        <!-- DEBUG FILE: html_components/basic_components/page.html -->
-                        <!-- INCLUDE basic_components/pageIncludes/pageDivs.html -->
-                           <!--       -->
-<!-- ALIAS -->
-<!--       -->
-
-
-
-  
-      
-
-<div 
- 		class="facilities"
+ 		class="mainbar-inside"
 	>
 
 
@@ -829,10 +790,23 @@
 
 
                
-           <div class="field text ">
+           <div class="field subtitle1 ">
               
                       Your romantic getaway by the sea.
-1 bedroom, sleeps 2-3 persons.
+              
+                     </div>
+
+
+
+    
+
+
+
+
+               
+           <div class="field subtitle2 ">
+              
+                       1 bedroom, sleeps 2-3 persons.
               
                      </div>
 
@@ -1577,7 +1551,87 @@
                         <!-- End DIV for simple divClass -->
                         </div>      
                      <!--  End DIVS LOOP -->
-                     
+                                       
+                <!-- END section -->
+            </section>
+           <!-- EndSection name cases -->
+        
+      <!-- SECTION WRAPPER END -->
+   
+  <!-- End loop in sections -->
+
+<!--  -->
+<!-- ALIAS SECTION-->
+<!--  -->
+
+
+
+
+
+
+<!-- CASES SECTION NAME -->
+   <!-- Check for custom staff -->
+   
+<!--               -->
+<!-- SECTION TITLE -->
+<!--               -->
+<!-- DEBUG FILE: html_components/basic_components/page.html -->
+<!-- INCLUDE basic_components/pageIncludes/title.html -->
+    <!--  -->
+<!-- ALIAS TITLE-->
+<!--  -->
+
+
+
+
+
+
+
+
+
+
+<!--                 -->
+<!-- TITLE -->
+<!--                 -->
+<!-- DEBUG FILE: html_components/component_includes/componentsTitle.html -->
+<!-- Check if there is a title for the html component and print it-->
+      
+
+
+<!--                  -->
+<!--  SECTION WRAPPER -->
+<!--                  -->
+<!-- DEBUG FILE: html_components/basic_components/page.html -->
+<!-- INCLUDE basic_components/pageIncludes/pageSectionWrapper.html -->
+   <!--       -->
+<!-- ALIAS -->
+<!--       -->
+
+
+
+ <!--                 -->
+<!--  SECTION WRAPPER -->
+<!--                 -->
+
+   
+      
+   
+
+
+<!--                 -->
+<!-- SECTION         -->
+<!--                 -->
+<!-- DEBUG FILE: html_components/basic_components/page.html -->
+<!-- INCLUDE basic_components/pageIncludes/themeElement.html -->  
+   <section 
+ 		class="sidebar"
+	>
+
+
+
+
+                  <!-- DIVS LOOP - Loop through the divs to create them -->   
+                  
 
 
 
@@ -1607,11 +1661,303 @@
       
 
 <div 
- 		class="rates"
+ 		class="sidebar-inside"
 	>
 
 
             <!-- LOOP THROUGH THE COMPONENTS OF THE CURENT DIV -->   
+                           
+
+                            <!--                  -->
+                            <!-- ALIAS COMPONENTS -->
+                            <!--                  -->                  
+                            
+                            
+                            
+
+
+
+                              <!--                        -->
+                              <!-- CUSTOM HTML SHORT CODE -->
+                              <!--                        -->
+                              <!-- CheckIF we have custom html code code - short e.x. <i class="material-icons">menu</i> -->         
+                                 
+
+
+
+
+                                 <!--                 -->
+                                 <!-- HTML COMPONENTS -->
+                                 <!--                 -->                      
+                                    
+                                    <!-- Include the html component template and bring it's details -->
+                                       <!--       -->
+<!-- ALIAS -->
+<!--       -->
+
+
+
+
+
+<!--  -->
+<!-- PAGE COMPONENTS -->
+<!--  -->
+<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
+
+<!-- TITLE COMPONENT -->
+  <!--                 -->
+<!-- COMPONENT TITLE -->
+<!--                 -->
+<!-- DEBUG FILE: html_components/component_includes/componentsTitle.html -->
+<!-- Check if there is a title for the html component and print it-->
+      
+
+
+<!--                       -->
+<!-- COMPONENT WRAPPER DIV -->
+<!--                       -->
+<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
+<!-- INCLUDE basic_components/pageIncludes/pageComponentsWrapper.html -->
+   
+   
+   
+
+
+<div 
+ 		class="links"
+	>
+
+<!--                   -->
+<!-- COMPONENT CONTENT -->
+<!--                   -->
+<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
+<!-- Include the html component template and bring it's details -->
+<!-- Capture the html component template -->
+  
+
+
+  
+  <!--             -->
+<!-- COMPONENT POSTS LISTS -->
+<!--             -->
+<!-- DEBUG FILE: html_components/posts-list.html -->
+<!-- Check the content type - Data or Collections - Posts -->
+   <!--                        -->
+<!-- COMPONENT CONTENT TYPE -->
+<!--                        -->
+<!-- DEBUG FILE: html_components/component_includes/componentsContentType.html -->
+
+<!--  -->
+<!-- ALIAS -->
+
+
+
+
+
+<!-- If data type is from yml or other data file  sent to find file in _data/content folder -->
+
+   
+<!-- If there is no post-tile it will look only for the file not inside the file -->
+<!-- Filter file of data -->
+<!--  -->
+<!-- POST TAG -->
+<!--  -->
+   <!-- END If there is include.component.tag -->
+
+      
+            
+      
+<!--  -->
+<!-- POST TITLE -->
+<!--  -->
+   
+        
+   
+
+
+
+
+<!-- MASONRY -->
+   <!-- DEBUG FILE: html_components/component_includes/divMasonrySizer.html -->
+<!--            Masonry -->
+   
+
+<!--    GROUP FIELDS ELEMENT -->
+   <!-- Check the group  html element -->  
+
+
+
+   
+        
+
+         
+
+          
+<!-- JUST IN CASE -->
+
+
+
+
+<!-- LIST JS FILTERS HTML -->
+   <!--                   -->
+<!-- LIST.js - FILTERS -->
+<!--                   -->
+
+
+
+   
+            <ul >
+            
+<!-- Loop through the posts and set a limit if there it exists -->
+    
+<!--  Component group fields html element-->  
+   
+            <li 
+               class="link"
+               >
+           
+
+<!--  If there is grouping div got fields -->
+          
+    
+
+
+<!-- Just print the fields -->
+<!-- Loop each field in the component -->
+              
+              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
+<!-- Just print the fields -->
+              
+<!--  Check what type of field we are prinitng -->
+                     
+                                <!-- DEBUG FILE: html_components/fieldsCases/titleCase.html -->
+<!-- TITLE CASE -->
+<div 
+           
+         >
+      
+            <a href="/">contact</a>
+      
+
+   </div>
+   <!-- ICON  -->             
+                              
+<!--  End loop in fields -->
+                  
+
+<!--  END IF to check for GROUP -->
+           
+<!--    END Component HTML WRAPPER ELEMENT -->         
+<!--          </li> -->
+
+         </li>
+       
+<!--  Component group fields html element-->  
+   
+            <li 
+               class="link"
+               >
+           
+
+<!--  If there is grouping div got fields -->
+          
+    
+
+
+<!-- Just print the fields -->
+<!-- Loop each field in the component -->
+              
+              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
+<!-- Just print the fields -->
+              
+<!--  Check what type of field we are prinitng -->
+                     
+                                <!-- DEBUG FILE: html_components/fieldsCases/titleCase.html -->
+<!-- TITLE CASE -->
+<div 
+           
+         >
+      
+            <a href="/">offers</a>
+      
+
+   </div>
+   <!-- ICON  -->             
+                              
+<!--  End loop in fields -->
+                  
+
+<!--  END IF to check for GROUP -->
+           
+<!--    END Component HTML WRAPPER ELEMENT -->         
+<!--          </li> -->
+
+         </li>
+       
+<!--  Component group fields html element-->  
+   
+            <li 
+               class="link"
+               >
+           
+
+<!--  If there is grouping div got fields -->
+          
+    
+
+
+<!-- Just print the fields -->
+<!-- Loop each field in the component -->
+              
+              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
+<!-- Just print the fields -->
+              
+<!--  Check what type of field we are prinitng -->
+                     
+                                <!-- DEBUG FILE: html_components/fieldsCases/titleCase.html -->
+<!-- TITLE CASE -->
+<div 
+           
+         >
+      
+            <a href="/">view gallery</a>
+      
+
+   </div>
+   <!-- ICON  -->             
+                              
+<!--  End loop in fields -->
+                  
+
+<!--  END IF to check for GROUP -->
+           
+<!--    END Component HTML WRAPPER ELEMENT -->         
+<!--          </li> -->
+
+         </li>
+       
+   </ul>
+
+
+
+
+ 
+
+
+
+
+</div>
+
+ 
+                                    <!-- EndIF htmlComponent.component -->
+                                    
+      
+                                          
+      
+
+
+
+                           <!--  End Component Loop -->
                            
 
                             <!--                  -->
@@ -1677,7 +2023,9 @@
    
 
 
-
+<div 
+ 		class="rates"
+	>
 
 <!--                   -->
 <!-- COMPONENT CONTENT -->
@@ -1817,12 +2165,30 @@
 <!--  Check what type of field we are prinitng -->
                      
 <!-- Print every field as separate div -->
-                           <div class="date ">
+                           <div class="date1 date">
                               
                                         
                                  
 
+                                 1/4/2016 – 31/5/2016
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
+<!--  End loop in fields -->
+                  
+<!--  Check what type of field we are prinitng -->
+                     
+<!-- Print every field as separate div -->
+                           <div class="date2 date">
+                              
+                                        
                                  
+
+                                 1/10/2016 – 31/10/2016
 
                                  </div>
 
@@ -1895,12 +2261,30 @@
 <!--  Check what type of field we are prinitng -->
                      
 <!-- Print every field as separate div -->
-                           <div class="date ">
+                           <div class="date1 date">
                               
                                         
                                  
 
+                                 1/6/2015 – 30/6/2016
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
+<!--  End loop in fields -->
+                  
+<!--  Check what type of field we are prinitng -->
+                     
+<!-- Print every field as separate div -->
+                           <div class="date2 date">
+                              
+                                        
                                  
+
+                                 1/9/2016 – 30/9/2016
 
                                  </div>
 
@@ -1973,7 +2357,25 @@
 <!--  Check what type of field we are prinitng -->
                      
 <!-- Print every field as separate div -->
-                           <div class="date ">
+                           <div class="date1 date">
+                              
+                                        
+                                 
+
+                                 1/7/2016 – 31/8/2016
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
+<!--  End loop in fields -->
+                  
+<!--  Check what type of field we are prinitng -->
+                     
+<!-- Print every field as separate div -->
+                           <div class="date2 date">
                               
                                         
                                  
@@ -1986,385 +2388,6 @@
                    
 <!--  End case of fields -->
                     
-<!--  End loop in fields -->
-                  
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-   </ul>
-
-
-
-
- 
-
-
-
-
-
-
- 
-                                    <!-- EndIF htmlComponent.component -->
-                                    
-      
-                                          
-      
-
-
-
-                           <!--  End Component Loop -->
-                           
-
-                            <!--                  -->
-                            <!-- ALIAS COMPONENTS -->
-                            <!--                  -->                  
-                            
-                            
-                            
-
-
-
-                              <!--                        -->
-                              <!-- CUSTOM HTML SHORT CODE -->
-                              <!--                        -->
-                              <!-- CheckIF we have custom html code code - short e.x. <i class="material-icons">menu</i> -->         
-                                 
-
-
-
-
-                                 <!--                 -->
-                                 <!-- HTML COMPONENTS -->
-                                 <!--                 -->                      
-                                    
-                                    <!-- Include the html component template and bring it's details -->
-                                       <!--       -->
-<!-- ALIAS -->
-<!--       -->
-
-
-
-
-
-<!--  -->
-<!-- PAGE COMPONENTS -->
-<!--  -->
-<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
-
-<!-- TITLE COMPONENT -->
-  <!--                 -->
-<!-- COMPONENT TITLE -->
-<!--                 -->
-<!-- DEBUG FILE: html_components/component_includes/componentsTitle.html -->
-<!-- Check if there is a title for the html component and print it-->
-      
-         <div class="component-header">
-            <div class="component-title ">Gallery  </div>
-
-
-               <!-- COMPONENT SUBTITLE -->
-            
-      </div>
-      
-
-
-<!--                       -->
-<!-- COMPONENT WRAPPER DIV -->
-<!--                       -->
-<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
-<!-- INCLUDE basic_components/pageIncludes/pageComponentsWrapper.html -->
-   
-   
-   
-
-
-<div 
- 		class="gallery"
-	>
-
-<!--                   -->
-<!-- COMPONENT CONTENT -->
-<!--                   -->
-<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
-<!-- Include the html component template and bring it's details -->
-<!-- Capture the html component template -->
-  
-
-
-  
-  <!--             -->
-<!-- COMPONENT POSTS LISTS -->
-<!--             -->
-<!-- DEBUG FILE: html_components/posts-list.html -->
-<!-- Check the content type - Data or Collections - Posts -->
-   <!--                        -->
-<!-- COMPONENT CONTENT TYPE -->
-<!--                        -->
-<!-- DEBUG FILE: html_components/component_includes/componentsContentType.html -->
-
-<!--  -->
-<!-- ALIAS -->
-
-
-
-
-
-<!-- If data type is from yml or other data file  sent to find file in _data/content folder -->
-
-   
-<!-- If there is no post-tile it will look only for the file not inside the file -->
-<!-- Filter file of data -->
-<!--  -->
-<!-- POST TAG -->
-<!--  -->
-   <!-- END If there is include.component.tag -->
-
-      
-             
-      
-<!--  -->
-<!-- POST TITLE -->
-<!--  -->
-   
-        
-   
-
-
-
-
-<!-- MASONRY -->
-   <!-- DEBUG FILE: html_components/component_includes/divMasonrySizer.html -->
-<!--            Masonry -->
-   
-
-<!--    GROUP FIELDS ELEMENT -->
-   <!-- Check the group  html element -->  
-
-
-
-   
-        
-
-         
-
-          
-<!-- JUST IN CASE -->
-
-
-
-
-<!-- LIST JS FILTERS HTML -->
-   <!--                   -->
-<!-- LIST.js - FILTERS -->
-<!--                   -->
-
-
-
-   
-            <ul >
-            
-<!-- Loop through the posts and set a limit if there it exists -->
-    
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
-<!--  Check what type of field we are prinitng -->
-                     
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/ROUB-9636.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
-                              
-<!--  End loop in fields -->
-                  
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
-<!--  Check what type of field we are prinitng -->
-                     
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/ROUA-2726.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
-                              
-<!--  End loop in fields -->
-                  
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
-<!--  Check what type of field we are prinitng -->
-                     
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/ROUA-2737.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
-                              
-<!--  End loop in fields -->
-                  
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
-<!--  Check what type of field we are prinitng -->
-                     
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/ROUA-2739.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
-                              
-<!--  End loop in fields -->
-                  
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
-<!--  Check what type of field we are prinitng -->
-                     
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/ROUA-2752.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
-                              
 <!--  End loop in fields -->
                   
 
@@ -2830,15 +2853,15 @@
     
     
    
-       
-     
-   
       
          
        
          
         
-     
+    
+ 
+    
+    
    
       
          

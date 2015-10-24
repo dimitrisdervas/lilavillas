@@ -40,7 +40,7 @@
   <body>
     
      
-         <div class="page">
+         <div class="page bg">
 
                   <!--      -->
 <!-- PAGE -->
@@ -656,7 +656,7 @@
 <!-- DEBUG FILE: html_components/basic_components/page.html -->
 <!-- INCLUDE basic_components/pageIncludes/themeElement.html -->  
    <section 
- 		class="content"
+ 		class="mainbar facilities"
 	>
 
 
@@ -693,46 +693,7 @@
       
 
 <div 
- 		class="topspacer"
-	>
-
-
-            <!-- LOOP THROUGH THE COMPONENTS OF THE CURENT DIV -->   
-                                    
-                        <!-- End DIV for simple divClass -->
-                        </div>      
-                     <!--  End DIVS LOOP -->
-                     
-
-
-
-                  <!--            -->
-                  <!-- ALIAS DIVS -->
-                  <!--            -->                  
-                  
-                  
-                  
-
-
-
-
-
-                        <!--                  -->
-                        <!--  DIVS            -->
-                        <!--                  -->
-                        <!-- DEBUG FILE: html_components/basic_components/page.html -->
-                        <!-- INCLUDE basic_components/pageIncludes/pageDivs.html -->
-                           <!--       -->
-<!-- ALIAS -->
-<!--       -->
-
-
-
-  
-      
-
-<div 
- 		class="facilities"
+ 		class="mainbar-inside"
 	>
 
 
@@ -1661,7 +1622,87 @@
                         <!-- End DIV for simple divClass -->
                         </div>      
                      <!--  End DIVS LOOP -->
-                     
+                                       
+                <!-- END section -->
+            </section>
+           <!-- EndSection name cases -->
+        
+      <!-- SECTION WRAPPER END -->
+   
+  <!-- End loop in sections -->
+
+<!--  -->
+<!-- ALIAS SECTION-->
+<!--  -->
+
+
+
+
+
+
+<!-- CASES SECTION NAME -->
+   <!-- Check for custom staff -->
+   
+<!--               -->
+<!-- SECTION TITLE -->
+<!--               -->
+<!-- DEBUG FILE: html_components/basic_components/page.html -->
+<!-- INCLUDE basic_components/pageIncludes/title.html -->
+    <!--  -->
+<!-- ALIAS TITLE-->
+<!--  -->
+
+
+
+
+
+
+
+
+
+
+<!--                 -->
+<!-- TITLE -->
+<!--                 -->
+<!-- DEBUG FILE: html_components/component_includes/componentsTitle.html -->
+<!-- Check if there is a title for the html component and print it-->
+      
+
+
+<!--                  -->
+<!--  SECTION WRAPPER -->
+<!--                  -->
+<!-- DEBUG FILE: html_components/basic_components/page.html -->
+<!-- INCLUDE basic_components/pageIncludes/pageSectionWrapper.html -->
+   <!--       -->
+<!-- ALIAS -->
+<!--       -->
+
+
+
+ <!--                 -->
+<!--  SECTION WRAPPER -->
+<!--                 -->
+
+   
+      
+   
+
+
+<!--                 -->
+<!-- SECTION         -->
+<!--                 -->
+<!-- DEBUG FILE: html_components/basic_components/page.html -->
+<!-- INCLUDE basic_components/pageIncludes/themeElement.html -->  
+   <section 
+ 		class="sidebar"
+	>
+
+
+
+
+                  <!-- DIVS LOOP - Loop through the divs to create them -->   
+                  
 
 
 
@@ -1691,7 +1732,7 @@
       
 
 <div 
- 		class="rates"
+ 		class="sidebar-inside"
 	>
 
 
@@ -1741,14 +1782,6 @@
 <!-- DEBUG FILE: html_components/component_includes/componentsTitle.html -->
 <!-- Check if there is a title for the html component and print it-->
       
-         <div class="component-header">
-            <div class="component-title rate">Seasons  </div>
-
-
-               <!-- COMPONENT SUBTITLE -->
-            
-      </div>
-      
 
 
 <!--                       -->
@@ -1761,7 +1794,9 @@
    
 
 
-
+<div 
+ 		class="links"
+	>
 
 <!--                   -->
 <!-- COMPONENT CONTENT -->
@@ -1801,7 +1836,7 @@
    <!-- END If there is include.component.tag -->
 
       
-             
+            
       
 <!--  -->
 <!-- POST TITLE -->
@@ -1848,7 +1883,9 @@
     
 <!--  Component group fields html element-->  
    
-            <li  >
+            <li 
+               class="link"
+               >
            
 
 <!--  If there is grouping div got fields -->
@@ -1864,56 +1901,18 @@
               
 <!--  Check what type of field we are prinitng -->
                      
-<!-- Print every field as separate div -->
-                           <div class="price ">
+                                <!-- DEBUG FILE: html_components/fieldsCases/titleCase.html -->
+<!-- TITLE CASE -->
+<div 
+           
+         >
+      
+            <a href="/">contact</a>
+      
+
+   </div>
+   <!-- ICON  -->             
                               
-                                        
-                                 
-
-                                 168€/night
-
-                                 </div>
-
-
-                   
-<!--  End case of fields -->
-                    
-<!--  End loop in fields -->
-                  
-<!--  Check what type of field we are prinitng -->
-                     
-<!-- Print every field as separate div -->
-                           <div class="season ">
-                              
-                                        
-                                 
-
-                                 low
-
-                                 </div>
-
-
-                   
-<!--  End case of fields -->
-                    
-<!--  End loop in fields -->
-                  
-<!--  Check what type of field we are prinitng -->
-                     
-<!-- Print every field as separate div -->
-                           <div class="date ">
-                              
-                                        
-                                 
-
-                                 1/4/2016 – 31/5/2016 , 1/10/2016 – 31/10/2016 
-
-                                 </div>
-
-
-                   
-<!--  End case of fields -->
-                    
 <!--  End loop in fields -->
                   
 
@@ -1926,7 +1925,9 @@
        
 <!--  Component group fields html element-->  
    
-            <li  >
+            <li 
+               class="link"
+               >
            
 
 <!--  If there is grouping div got fields -->
@@ -1942,56 +1943,18 @@
               
 <!--  Check what type of field we are prinitng -->
                      
-<!-- Print every field as separate div -->
-                           <div class="price ">
+                                <!-- DEBUG FILE: html_components/fieldsCases/titleCase.html -->
+<!-- TITLE CASE -->
+<div 
+           
+         >
+      
+            <a href="/">offers</a>
+      
+
+   </div>
+   <!-- ICON  -->             
                               
-                                        
-                                 
-
-                                 288€/night
-
-                                 </div>
-
-
-                   
-<!--  End case of fields -->
-                    
-<!--  End loop in fields -->
-                  
-<!--  Check what type of field we are prinitng -->
-                     
-<!-- Print every field as separate div -->
-                           <div class="season ">
-                              
-                                        
-                                 
-
-                                 medium
-
-                                 </div>
-
-
-                   
-<!--  End case of fields -->
-                    
-<!--  End loop in fields -->
-                  
-<!--  Check what type of field we are prinitng -->
-                     
-<!-- Print every field as separate div -->
-                           <div class="date ">
-                              
-                                        
-                                 
-
-                                 1/6/2015 – 30/6/2016 , 1/9/2016 – 30/9/2016 
-
-                                 </div>
-
-
-                   
-<!--  End case of fields -->
-                    
 <!--  End loop in fields -->
                   
 
@@ -2004,7 +1967,9 @@
        
 <!--  Component group fields html element-->  
    
-            <li  >
+            <li 
+               class="link"
+               >
            
 
 <!--  If there is grouping div got fields -->
@@ -2020,56 +1985,18 @@
               
 <!--  Check what type of field we are prinitng -->
                      
-<!-- Print every field as separate div -->
-                           <div class="price ">
+                                <!-- DEBUG FILE: html_components/fieldsCases/titleCase.html -->
+<!-- TITLE CASE -->
+<div 
+           
+         >
+      
+            <a href="/">view gallery</a>
+      
+
+   </div>
+   <!-- ICON  -->             
                               
-                                        
-                                 
-
-                                 348€/night
-
-                                 </div>
-
-
-                   
-<!--  End case of fields -->
-                    
-<!--  End loop in fields -->
-                  
-<!--  Check what type of field we are prinitng -->
-                     
-<!-- Print every field as separate div -->
-                           <div class="season ">
-                              
-                                        
-                                 
-
-                                 high
-
-                                 </div>
-
-
-                   
-<!--  End case of fields -->
-                    
-<!--  End loop in fields -->
-                  
-<!--  Check what type of field we are prinitng -->
-                     
-<!-- Print every field as separate div -->
-                           <div class="date ">
-                              
-                                        
-                                 
-
-                                 1/7/2016 – 31/8/2016
-
-                                 </div>
-
-
-                   
-<!--  End case of fields -->
-                    
 <!--  End loop in fields -->
                   
 
@@ -2090,7 +2017,7 @@
 
 
 
-
+</div>
 
  
                                     <!-- EndIF htmlComponent.component -->
@@ -2148,7 +2075,7 @@
 <!-- Check if there is a title for the html component and print it-->
       
          <div class="component-header">
-            <div class="component-title ">Gallery  </div>
+            <div class="component-title rate">Rates  </div>
 
 
                <!-- COMPONENT SUBTITLE -->
@@ -2168,7 +2095,7 @@
 
 
 <div 
- 		class="gallery"
+ 		class="rates"
 	>
 
 <!--                   -->
@@ -2272,19 +2199,74 @@
               
 <!--  Check what type of field we are prinitng -->
                      
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/AMP_1146.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
+<!-- Print every field as separate div -->
+                           <div class="season ">
                               
+                                        
+                                 
+
+                                 low
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
+<!--  End loop in fields -->
+                  
+<!--  Check what type of field we are prinitng -->
+                     
+<!-- Print every field as separate div -->
+                           <div class="price ">
+                              
+                                        
+                                 
+
+                                 168€/night
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
+<!--  End loop in fields -->
+                  
+<!--  Check what type of field we are prinitng -->
+                     
+<!-- Print every field as separate div -->
+                           <div class="date1 date">
+                              
+                                        
+                                 
+
+                                 
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
+<!--  End loop in fields -->
+                  
+<!--  Check what type of field we are prinitng -->
+                     
+<!-- Print every field as separate div -->
+                           <div class="date2 date">
+                              
+                                        
+                                 
+
+                                 
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
 <!--  End loop in fields -->
                   
 
@@ -2313,19 +2295,74 @@
               
 <!--  Check what type of field we are prinitng -->
                      
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/AMP_1131.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
+<!-- Print every field as separate div -->
+                           <div class="season ">
                               
+                                        
+                                 
+
+                                 medium
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
+<!--  End loop in fields -->
+                  
+<!--  Check what type of field we are prinitng -->
+                     
+<!-- Print every field as separate div -->
+                           <div class="price ">
+                              
+                                        
+                                 
+
+                                 288€/night
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
+<!--  End loop in fields -->
+                  
+<!--  Check what type of field we are prinitng -->
+                     
+<!-- Print every field as separate div -->
+                           <div class="date1 date">
+                              
+                                        
+                                 
+
+                                 
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
+<!--  End loop in fields -->
+                  
+<!--  Check what type of field we are prinitng -->
+                     
+<!-- Print every field as separate div -->
+                           <div class="date2 date">
+                              
+                                        
+                                 
+
+                                 
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
 <!--  End loop in fields -->
                   
 
@@ -2354,347 +2391,74 @@
               
 <!--  Check what type of field we are prinitng -->
                      
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/AMP_7862.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
+<!-- Print every field as separate div -->
+                           <div class="season ">
                               
+                                        
+                                 
+
+                                 high
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
 <!--  End loop in fields -->
                   
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
 <!--  Check what type of field we are prinitng -->
                      
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/AMP_1181.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
+<!-- Print every field as separate div -->
+                           <div class="price ">
                               
+                                        
+                                 
+
+                                 348€/night
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
 <!--  End loop in fields -->
                   
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
 <!--  Check what type of field we are prinitng -->
                      
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/AMP_1192.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
+<!-- Print every field as separate div -->
+                           <div class="date1 date">
                               
+                                        
+                                 
+
+                                 
+
+                                 </div>
+
+
+                   
+<!--  End case of fields -->
+                    
 <!--  End loop in fields -->
                   
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
 <!--  Check what type of field we are prinitng -->
                      
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/AMP_1210.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
+<!-- Print every field as separate div -->
+                           <div class="date2 date">
                               
-<!--  End loop in fields -->
-                  
+                                        
+                                 
 
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
+                                 
 
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
+                                 </div>
 
 
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
-<!--  Check what type of field we are prinitng -->
-                     
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/AMP_1228.jpg" alt="">
                    
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
-                              
-<!--  End loop in fields -->
-                  
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
-<!--  Check what type of field we are prinitng -->
-                     
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/AMP_1248.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
-                              
-<!--  End loop in fields -->
-                  
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
-<!--  Check what type of field we are prinitng -->
-                     
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/AMP_7827.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
-                              
-<!--  End loop in fields -->
-                  
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
-<!--  Check what type of field we are prinitng -->
-                     
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/AMP_1231.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
-                              
-<!--  End loop in fields -->
-                  
-
-<!--  END IF to check for GROUP -->
-           
-<!--    END Component HTML WRAPPER ELEMENT -->         
-<!--          </li> -->
-
-         </li>
-       
-<!--  Component group fields html element-->  
-   
-            <li  >
-           
-
-<!--  If there is grouping div got fields -->
-          
-    
-
-
-<!-- Just print the fields -->
-<!-- Loop each field in the component -->
-              
-              <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
-<!-- Just print the fields -->
-              
-<!--  Check what type of field we are prinitng -->
-                     
-                                <!-- DEBUG FILE: html_components/fieldsCases/imageCase.html -->
-<!-- Loop through the images and set limit -->
-   <div class="post-image " data-eq-pts="">
-      
-            
-       
-          <img src="/assets/images/AMP_1172.jpg" alt="">
-                   
-                 
-      </a>           
-   </div>   
-  <!--  Photoswipe --> 
-                              
+<!--  End case of fields -->
+                    
 <!--  End loop in fields -->
                   
 
@@ -3160,15 +2924,15 @@
     
     
    
-       
-     
-   
       
          
        
          
         
-     
+    
+ 
+    
+    
    
       
          
