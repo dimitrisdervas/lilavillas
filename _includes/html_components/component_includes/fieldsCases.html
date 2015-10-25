@@ -9,6 +9,9 @@
    <!--  One images --> 
                               {% when 'image' %}
                                 {% include html_components/fieldsCases/imageCase.html field_Data=field.data field_Field=field.field content-type=include.component.content-type %}
+<!-- Slideshow thumbnails -->
+                              {% when 'thumbnail' %}
+                                {% include html_components/fieldsCases/thumbnailCase.html field_Data=field.data field_Field=field.field  %}
   <!--  Photoswipe --> 
                               {% when 'photoswipe' %}
                                 {% include html_components/fieldsCases/photoswipeCase.html field_Data=field.data field_Field=field.field content-type=include.component.content-type %}
@@ -51,9 +54,9 @@
                                           <div class="post-image {{ field.class }}"
                                                
                                                {% if post.[field.background.image-hash] contains 'https://' or post.[field.background.image-hash] contains 'http://'%}
-                                                    style="background-image:url({{ post.[field.background.image-hash] }})">
+                                                    style="background-image:url({{ post.[field.background.image-hash] }})" data-hash="{{ post.[field.background.image-hash] }}">
                                                  {% else %}
-                                                    style="background-image:url({{ site.baseurl}}{{ field.background.images-path }}{{ post.[field.background.image-hash] }})">
+                                                    style="background-image:url({{ site.baseurl}}{{ field.background.images-path }}{{ post.[field.background.image-hash] }})" data-hash="{{ post.[field.background.image-hash] }}">
                                               {% endif %}
                                              
                                           {% capture divEnd %}</div>{% endcapture %}

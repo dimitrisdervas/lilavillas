@@ -13,7 +13,7 @@
 }
 /* HEADER */
 .header-wrapper {
-   @include span( 3 of 12);
+   @include span( 2 of 12);
    height: 100%;
    text-align: center;
    min-width: 200px;
@@ -31,17 +31,17 @@
 }
 /* CONTENT */
 .content {
-   @include span( 9 of 12 );
+   @include span( 10 of 12 );
    height: 100%;
 }
 .content-gallery {
-    @include span( 9 of 12 );
+   @include span( 10 of 12 );
    min-width: 400px;
    height: 100%;
 }
 .content-nobg {
-   @include span( 9 of 12 last);
-   @include push( 3 of 12 );
+   @include span( 10 of 12 last);
+   @include push( 2 of 12 );
 }
 .mainbar {    
    @include layout( $symmetric );  
@@ -58,7 +58,17 @@
    max-width: 280px;
    min-width: 220px;
 }
-
+/* VILLAS GALLERY */
+.gallery-slideshow {
+   height: 100%;
+   .post-image {
+      align-items: flex-start;
+   }
+}
+.gallery-thumbnails {
+   display: flex;
+   flex-wrap: nowrap;
+}
 
 /* MAP */
 #map-canvas {

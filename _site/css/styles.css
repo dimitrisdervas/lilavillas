@@ -559,7 +559,7 @@ label {
 
 /* HEADER */
 .header-wrapper {
-  width: 25%;
+  width: 16.66667%;
   float: left;
   height: 100%;
   text-align: center;
@@ -573,21 +573,21 @@ label {
 
 /* CONTENT */
 .content {
-  width: 75%;
+  width: 83.33333%;
   float: left;
   height: 100%; }
 
 .content-gallery {
-  width: 75%;
+  width: 83.33333%;
   float: left;
   min-width: 400px;
   height: 100%; }
 
 .content-nobg {
-  width: 75%;
+  width: 83.33333%;
   float: right;
   margin-right: 0;
-  margin-left: 25%; }
+  margin-left: 16.66667%; }
 
 .mainbar {
   width: 28.57143%;
@@ -605,6 +605,16 @@ label {
   padding: 30px 25px 20px;
   max-width: 280px;
   min-width: 220px; }
+
+/* VILLAS GALLERY */
+.gallery-slideshow {
+  height: 100%; }
+  .gallery-slideshow .post-image {
+    align-items: flex-start; }
+
+.gallery-thumbnails {
+  display: flex;
+  flex-wrap: nowrap; }
 
 /* MAP */
 #map-canvas {
@@ -773,25 +783,6 @@ a:hover, a:focus {
     font-size: 13px;
     color: #323232;
     line-height: 1.5; }
-
-/* VILLAS GALLERY */
-.gallery-slideshow {
-  height: 100%; }
-  .gallery-slideshow .post-image {
-    align-items: flex-start; }
-
-.gallery-title {
-  box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
-  background: transparent;
-  background: rgba(0, 0, 0, 0.15);
-  padding: 0px 0px 0 80px;
-  line-height: 1em;
-  /* margin-top: -80px; */
-  font-size: 20px;
-  width: 100%;
-  background: #323232;
-  padding: 10px;
-  opacity: 0.9; }
 
 /*  */
 /* FOOTER */
@@ -1018,6 +1009,21 @@ section.content-gallery,
       color: #79797a;
       font-size: 17px;
       line-height: 18px; }
+
+.gallery-title {
+  box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+  background: transparent;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0px 0px 0 80px;
+  line-height: 1em;
+  font-size: 20px;
+  width: 100%;
+  background: #323232;
+  padding: 10px;
+  opacity: 0.9; }
+
+.gallery-thumb {
+  padding: 3px 1px; }
 
 .contact-form {
   width: 38.77551%;

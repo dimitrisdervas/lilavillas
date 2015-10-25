@@ -40,6 +40,20 @@ config:
                      - field: title
                        data:
                         class: gallery-title
+         - component: posts-list
+           data:
+            wrapperDiv:
+             theme:
+                class: gallery-thumbnails
+            content-type: gallery
+            folder: lila2
+            data-type: data-list
+            fields:
+                 - field: thumbnail
+                   data:
+                     image-hash: image
+                     images-path: /assets/thumbnails/
+                     class: gallery-thumb
 
 ---
 
