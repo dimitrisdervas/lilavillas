@@ -878,7 +878,7 @@ section.content-gallery,
 
 .post-image {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   font-size: 48px;
   color: #FFF;
   background-size: cover; }
@@ -887,7 +887,7 @@ section.content-gallery,
   box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
   background: transparent;
   background: rgba(0, 0, 0, 0.15);
-  padding: 140px 0px 0 80px;
+  margin: 0 0px 140px 80px;
   line-height: 1em; }
 
 .footer {
