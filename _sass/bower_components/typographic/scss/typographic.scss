@@ -606,7 +606,7 @@ $palatino      : 'Palatino', 'Palatino Linotype', 'Palatino LT STD', "Book Antiq
     @include t-reset;
   }
 
-  p, blockquote, pre,
+/*   p, blockquote, pre,
   address,
   dl, ol, ul,
   table {
@@ -667,9 +667,9 @@ $palatino      : 'Palatino', 'Palatino Linotype', 'Palatino LT STD', "Book Antiq
 
   dt {
     @include t-dt;
-  }
+  } */
 
-  ul {
+/*   ul {
     padding-left: 1.1em;
   }
 
@@ -685,18 +685,19 @@ $palatino      : 'Palatino', 'Palatino Linotype', 'Palatino LT STD', "Book Antiq
     @include t-legend;
   }
 
-  input[type="text"], input[type="email"], input[type="password"], textarea {
+*/   
+   input[type="text"], input[type="email"], input[type="password"], textarea {
     @include t-input;
   }
 
   input[type="submit"], button {
     @include t-button;
-  }
+  } 
 
   label {
     @include t-label;
   }
-
+/*
   table {
     @include t-table;
   }
@@ -708,5 +709,5 @@ $palatino      : 'Palatino', 'Palatino Linotype', 'Palatino LT STD', "Book Antiq
   td {
     @include t-td;
   }
-
+ */
 }
