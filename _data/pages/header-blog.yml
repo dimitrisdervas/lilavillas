@@ -7,7 +7,7 @@
    data:
    theme:
     class: header-wrapper
-    id: header-gallery
+    id: header-wrapper
   divs:
    - div: 
       theme:

@@ -1,0 +1,7 @@
+.blog {
+   @include layout($symmetric);
+   @include container;
+   .header-wrapper {
+      @include container;      
+   }
+}
