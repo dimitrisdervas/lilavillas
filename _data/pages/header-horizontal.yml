@@ -6,8 +6,8 @@
   wrapperSection:
    data:
    theme:
-    class: header-wrapper
-    id: header-wrapper
+    class: header-wrapper-horizontal 
+    id: header-wrapper-horizontal
   divs:
    - div: 
       theme:

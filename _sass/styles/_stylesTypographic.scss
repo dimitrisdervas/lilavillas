@@ -1,27 +1,13 @@
-@include web-fonts(
-  'Open Sans',
-  'Open Sans Condensed',
-  'Fira Mono',
-  'Fira Sans',
-  'Roboto',
-  'Roboto Slab',
-  'Roboto Condensed',
-  'Vollkorn',
-  'Ubuntu Mono',
-  'Courgette',
-  'Damion',
-  'Grand+Hotel',
+@include web-fonts (
    'Tangerine',
-   'Raleway',
-   'Josefin Sans',
-   'Dosis'
-  );
+   'Raleway'
+   );
 
  // 
 // TYPOGRAPHIC
 // Settings
 $lila-font-headers: 'Raleway','Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-$lila-logo: 'Tangerine', 'Damion','Grand+Hotel''Cambria', 'Georgia', 'serif';
+$lila-logo: 'Tangerine','Damion','Grand+Hotel','Cambria','Georgia','serif';
 $lila-body: 'Raleway','Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 
 $line-height-ratio  : 1.75 !default;

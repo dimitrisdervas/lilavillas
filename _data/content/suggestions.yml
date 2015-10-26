@@ -1,20 +1,27 @@
 - place: "Balos (45km)"
   description: "Balos lagoon famous for it’s white sand and turquoise water"
+  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg
 
 - place: "Falassarna (48km)"
   description: "On the far west end of Crete, with golden sand and crystal clear water"
-
+  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg
+  
 - place: "Elafonissi (68km)"
   description: "On the southwest tip of Crete, discover it’s pink sand and deep blue water"
-    
+  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg    
+  
 - place: "Sfakia region (75km)"
   description: "Combining the roughness of the mountains with the pebble beaches and deep blue water."
-   
+  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg   
+  
 - place: "Kournas-Aptera(48km)"
   description: "Visit the largest natural lake of Crete and take a detour to one archaeological site with minoan and roman ruins and majestic views."
-    
+  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg    
+  
 - place: "Samaria gorge (40km)"
   description: "The longest gorge in Europe, with the unique flora and fauna; hike from  the white mountains to the Libyan sea."
-    
+  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg    
+  
 - place: "Therisso gorge (20km) (link Google maps)"
   description: "A beautiful drive through the breathtaking scenery."
+  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg

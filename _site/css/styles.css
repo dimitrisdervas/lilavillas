@@ -5,7 +5,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url("//fonts.googleapis.com/css?family=Open%20Sans|Open%20Sans%20Condensed|Fira%20Mono|Fira%20Sans|Roboto|Roboto%20Slab|Roboto%20Condensed|Vollkorn|Ubuntu%20Mono|Courgette|Damion|Grand%2BHotel|Tangerine|Raleway|Josefin%20Sans|Dosis");
+@import url("//fonts.googleapis.com/css?family=Tangerine|Raleway");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -628,36 +628,24 @@ label {
   z-index: 3;
   height: 5vh; }
 
-.page-gallery {
-  width: 83.05085%;
-  float: right;
-  margin-right: 0;
-  margin-left: 16.94915%;
-  height: 100%; }
-  .page-gallery .content-gallery {
-    height: 100%; }
-  .page-gallery section.content-gallery,
-  .page-gallery .frontpage-slideshow,
-  .page-gallery .slideshow-item,
-  .page-gallery .post-image {
-    height: 100%; }
-  .page-gallery .owl-carousel,
-  .page-gallery .owl-stage-outer,
-  .page-gallery .owl-stage,
-  .page-gallery .owl-item {
-    height: 100% !important; }
-  .page-gallery .post-image {
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 200px;
-    font-size: 48px;
-    padding-left: 40px;
-    color: #FFF;
-    background-size: cover; }
-  .page-gallery .slideshow-title {
-    box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
-    background: transparent;
-    background: rgba(0, 0, 0, 0.15); }
+.blog {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .blog:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .blog .header-wrapper-horizontal,
+  .blog .suggestions {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto; }
+    .blog .header-wrapper-horizontal:after,
+    .blog .suggestions:after {
+      content: " ";
+      display: block;
+      clear: both; }
 
 /*  */
 /* Styles */
@@ -834,7 +822,7 @@ a {
     .header-wrapper .header .logo a {
       color: #fff;
       font-size: 48px;
-      font-family: "Tangerine", "Damion", "Grand+Hotel" "Cambria", "Georgia", "serif";
+      font-family: "Tangerine", "Damion", "Grand+Hotel", "Cambria", "Georgia", "serif";
       line-height: 1.2; }
   .header-wrapper .header .menu ul li {
     font-size: 18px; }
@@ -1110,9 +1098,50 @@ button:hover {
   float: left;
   margin-right: 1.69492%; }
 
+.header-wrapper {
+  height: 100%;
+  background: #4979B3;
+  background: #538ED5;
+  background: #2E4E75; }
+  .header-wrapper .header .logo {
+    padding: 30px 20px;
+    text-align: center; }
+    .header-wrapper .header .logo a {
+      color: #fff;
+      font-size: 48px;
+      font-family: "Tangerine", "Damion", "Grand+Hotel", "Cambria", "Georgia", "serif";
+      line-height: 1.2; }
+  .header-wrapper .header .menu ul li {
+    font-size: 18px; }
+  .header-wrapper .header .menu ul a {
+    color: #f4f0f0;
+    display: block;
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    line-height: 1em; }
+  .header-wrapper .header .menu ul a:hover {
+    color: #d8c6bc;
+    background: #1C3048; }
+  .header-wrapper .header .menu ul .nolink {
+    display: block;
+    font-size: 18px;
+    padding: 10px 0;
+    line-height: 1em; }
+  .header-wrapper .header .menu ul .menu-title {
+    color: #efefef;
+    padding: 5px;
+    line-height: 1.3em;
+    background: #4979B3;
+    font-size: 19px;
+    border-bottom: 1px solid #769ECE; }
+  .header-wrapper .header .menu ul .submenu-item {
+    text-align: right;
+    background: #3F81D0; }
+
 #map-canvas .map-title {
   font-size: 48px;
-  font-family: "Tangerine", "Damion", "Grand+Hotel" "Cambria", "Georgia", "serif";
+  font-family: "Tangerine", "Damion", "Grand+Hotel", "Cambria", "Georgia", "serif";
   color: #2E4E75;
   font-weight: bold;
   padding: 10px 10px 10px 0px; }

@@ -26,8 +26,7 @@
    
    <link rel="stylesheet" href="/lilavillas/css/styles.css">
    <link rel="stylesheet" href="/lilavillas/css/components.css">                      
-   <link rel="canonical" href="lilavillas.gr/lilavillas/pages/accomodation/bungalow.html">
-             
+   <link rel="canonical" href="lilavillas.gr/lilavillas/pages/accomodation/bungalow.html">     
    <style>
 
       
@@ -2857,7 +2856,16 @@
     
  
 
-                  
+       <script>
+                      $(window).scroll(function() {
+                        if ($(this).scrollTop() > 1){  
+                            $('#header-wrapper').addClass("sticky");
+                          }
+                          else{
+                            $('#header-wrapper').removeClass("sticky");
+                          }
+                        });
+                  </script>                
 
      
   </body>

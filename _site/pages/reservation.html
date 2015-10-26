@@ -26,8 +26,7 @@
    
    <link rel="stylesheet" href="/lilavillas/css/styles.css">
    <link rel="stylesheet" href="/lilavillas/css/components.css">                      
-   <link rel="canonical" href="lilavillas.gr/lilavillas/pages/reservation.html">
-             
+   <link rel="canonical" href="lilavillas.gr/lilavillas/pages/reservation.html">     
    <style>
 
       
@@ -1655,7 +1654,16 @@ var tomorrow = rome.moment().add( 2 ,'days');
     
  
 
-                  
+       <script>
+                      $(window).scroll(function() {
+                        if ($(this).scrollTop() > 1){  
+                            $('#header-wrapper').addClass("sticky");
+                          }
+                          else{
+                            $('#header-wrapper').removeClass("sticky");
+                          }
+                        });
+                  </script>                
 
      
   </body>

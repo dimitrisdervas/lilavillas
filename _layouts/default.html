@@ -25,7 +25,16 @@
       <script type="text/javascript" src="{{ site.baseurl }}/js/components.js"></script> 
             {% include basic_components/perpagePlugins.html %}
 
-                  
+       <script>
+                      $(window).scroll(function() {
+                        if ($(this).scrollTop() > 1){  
+                            $('#header-wrapper').addClass("sticky");
+                          }
+                          else{
+                            $('#header-wrapper').removeClass("sticky");
+                          }
+                        });
+                  </script>                
 
      
   </body>

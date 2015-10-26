@@ -26,8 +26,7 @@
    
    <link rel="stylesheet" href="/lilavillas/css/styles.css">
    <link rel="stylesheet" href="/lilavillas/css/components.css">                      
-   <link rel="canonical" href="lilavillas.gr/lilavillas/pages/gallery/paradise-swipe.html">
-             
+   <link rel="canonical" href="lilavillas.gr/lilavillas/pages/gallery/paradise-swipe.html">     
    <style>
 
       
@@ -3258,7 +3257,16 @@ $pic.on('click', 'figure', function(event) {
     
  
 
-                  
+       <script>
+                      $(window).scroll(function() {
+                        if ($(this).scrollTop() > 1){  
+                            $('#header-wrapper').addClass("sticky");
+                          }
+                          else{
+                            $('#header-wrapper').removeClass("sticky");
+                          }
+                        });
+                  </script>                
 
      
   </body>

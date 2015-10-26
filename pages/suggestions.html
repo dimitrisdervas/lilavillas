@@ -1,0 +1,27 @@
+---
+layout: default-blog
+config:
+ - section: 
+    data:
+      htmlelement: section
+    theme:
+     class: section-suggestions
+   divs:
+      - div: 
+         theme:
+          class: suggestions     
+        components:
+          - component: posts-list
+            data:
+               class: suggestion
+               content-type: suggestions
+               data-type: data-list
+               fields: 
+                - field: place
+                - field: description
+                - field: image
+                  data:
+                    image-hash: image
+---
+
+{% include basic_components/page.html %}
