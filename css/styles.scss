@@ -40,11 +40,14 @@
 /* Layouts */
 /*  */
 @import 
-       "layouts/layoutDefault",   
-       "layouts/layoutGlobal",
+/*        "layouts/layoutGlobal", */
        "layouts/layoutHeader",
        "layouts/layoutFrontpage",
        "layouts/layoutBlog",
+       "layouts/layoutWide",
+       "layouts/layoutNormal",
+       "layouts/layoutNarrower",   
+       "layouts/layoutMobile",
        "layouts/layoutFooter"
    ;
 

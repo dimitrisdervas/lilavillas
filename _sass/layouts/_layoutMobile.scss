@@ -1,0 +1,91 @@
+@include susy-media(mobile) {
+  .page {
+      @include layout($full-width);
+      @include container;  
+  }
+   .bg {
+       background: none;
+   }
+   .gallery {
+       height: 100%;
+   }
+   /* HEADER */
+   .header-wrapper {
+      @include span( 12 of 12);
+      text-align: center;
+      height: auto;
+      .header .menu a {
+         text-align: center;
+      }
+   }
+   /* CONTENT */
+   .content, 
+   .content-gallery {
+      @include span( 12 of 12 );
+      height: auto;
+   }
+   .content-nobg {
+      @include span( 12 of 12 last);
+      @include push( 2 of 12 );
+   }
+   .mainbar {    
+      @include layout( $symmetric );  
+      @include span( 12 of 12 );
+      padding: 30px 20px;
+   }
+   .sidebar {
+      @include layout( $symmetric );
+      @include span( 12 of 12 ); 
+      padding: 30px 25px 20px;
+   }
+   /* VILLAS GALLERY */
+   .gallery-slideshow {
+      @include span( 12 of 12 );  
+      height: 100%;
+      .post-image {
+         align-items: flex-end;
+      }
+   }
+   .owl-carousel {
+      @include span( 12 of 12 ); 
+   }
+   .gallery-thumbnails {
+      @include span( 12 of 12 ); 
+      display: flex;
+      flex-wrap: nowrap;
+   }
+/* RESERVATION - CONTACT */
+   .contact-form {
+      @include span( 12 of 12 );
+   }
+   .contact-details {
+      @include span( 12 of 12 );
+      padding: 30px 25px 20px;
+   }
+   /* MAP */
+   #map-canvas {
+      width: 100%;
+   }
+   /* FOOTER */
+   .footer-wrapper {
+      @include span( 12 of 12 ); 
+      display: flex;
+      flex-direction: column;
+      text-align: center; 
+   }
+   .footer {
+      display: block;
+   .logo {
+      }
+   }
+   .contact-footer {
+      display: block;
+      .field {
+         color: #999;
+         font-weight: normal;      
+         font-size: 13px;
+         padding: 0 20px;
+         line-height: 1.75em;
+      }
+   }
+}

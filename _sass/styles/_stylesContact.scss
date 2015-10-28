@@ -1,7 +1,4 @@
 .contact-form {
-   @include span( 4 of 10 );
-   margin-left: gutters(10);
-   max-width: 300px;
    background: #EEECE1;
    padding: 20px 35px 20px 20px;
    .component-title {
@@ -33,11 +30,8 @@ label {
    
 }
 .contact-details {
-      @include layout( $symmetric );
-      @include span( 3 of 10 ); 
-      padding: 30px 25px 20px;
-      max-width: 280px;
-      min-width: 220px;
+/*       max-width: 280px;
+      min-width: 220px; */
       background: #C4BD97;
       color: #79797a;
       font-size: 17px;

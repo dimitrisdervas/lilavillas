@@ -359,28 +359,6 @@ th {
 /* Colors */
 /*  */
 /* Defaults */
-body {
-  background: #ffffff;
-  color: #2E4E75; }
-
-.header-wrapper {
-  background: #ffffff;
-  color: #6F2941; }
-
-.footer-wrapper a {
-  color: #999; }
-.footer-wrapper a:hover {
-  color: #eee; }
-
-a {
-  color: #6f2941; }
-
-a:hover {
-  color: #999; }
-
-a:hover, a:focus {
-  color: #d6b105; }
-
 html {
   font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-weight: 300;
@@ -540,94 +518,6 @@ label {
 /*  */
 /* Layouts */
 /*  */
-.page {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  .page:after {
-    content: " ";
-    display: block;
-    clear: both; }
-
-.bg {
-  background: url(../assets/images/AMP_1146.jpg);
-  background-size: cover;
-  height: 100%; }
-
-.gallery {
-  height: 100%; }
-
-/* HEADER */
-.header-wrapper {
-  width: 16.66667%;
-  float: left;
-  height: 100%;
-  text-align: center;
-  min-width: 200px; }
-
-/* TOP SPACER */
-.topspacer {
-  height: 20vh;
-  background: transparent;
-  width: 100%; }
-
-/* CONTENT */
-.content {
-  width: 83.33333%;
-  float: left;
-  height: 100%; }
-
-.content-gallery {
-  width: 83.33333%;
-  float: left;
-  min-width: 400px;
-  height: 100%; }
-
-.content-nobg {
-  width: 83.33333%;
-  float: right;
-  margin-right: 0;
-  margin-left: 16.66667%; }
-
-.mainbar {
-  width: 28.57143%;
-  float: left;
-  margin-right: 2.04082%;
-  margin-left: 2.04082%;
-  max-width: 300px;
-  min-width: 230px;
-  padding: 30px 20px; }
-
-.sidebar {
-  width: 28.57143%;
-  float: left;
-  margin-right: 2.04082%;
-  padding: 30px 25px 20px;
-  max-width: 280px;
-  min-width: 220px; }
-
-/* VILLAS GALLERY */
-.gallery-slideshow {
-  height: 100%; }
-  .gallery-slideshow .post-image {
-    align-items: flex-start; }
-
-.gallery-thumbnails {
-  display: flex;
-  flex-wrap: nowrap; }
-
-/* MAP */
-#map-canvas {
-  width: 100%; }
-
-/* FOOTER */
-.footer-wrapper {
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-  z-index: 3;
-  height: 5vh; }
-
 .blog {
   max-width: 100%;
   margin-left: auto;
@@ -647,6 +537,302 @@ label {
       display: block;
       clear: both; }
 
+@media (max-width: 1140px) {
+  .page {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .page:after {
+      content: " ";
+      display: block;
+      clear: both; }
+
+  .bg {
+    background: url(../assets/images/AMP_1146.jpg);
+    background-size: cover;
+    height: 100%; }
+
+  .gallery {
+    height: 100%; }
+
+  /* HEADER */
+  .header-wrapper {
+    width: 16.66667%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    /*    min-width: 200px;
+       max-width: 250px; */ }
+
+  /* TOP SPACER */
+  .topspacer {
+    height: 20vh;
+    background: transparent;
+    width: 100%; }
+
+  /* CONTENT */
+  .content {
+    width: 83.33333%;
+    float: left;
+    height: 100%; }
+
+  .content-gallery {
+    width: 83.33333%;
+    float: left;
+    min-width: 400px;
+    height: 100%; }
+
+  .content-nobg {
+    width: 83.33333%;
+    float: right;
+    margin-right: 0;
+    margin-left: 16.66667%; }
+
+  .mainbar {
+    width: 28.57143%;
+    float: left;
+    margin-right: 2.04082%;
+    margin-left: 2.04082%;
+    /*    max-width: 300px;
+       min-width: 230px; */
+    padding: 30px 20px; }
+
+  .sidebar {
+    width: 28.57143%;
+    float: left;
+    margin-right: 2.04082%;
+    padding: 30px 25px 20px;
+    /*    max-width: 280px;
+       min-width: 220px; */ }
+
+  /* VILLAS GALLERY */
+  .gallery-slideshow {
+    height: 100%; }
+    .gallery-slideshow .post-image {
+      align-items: flex-start; }
+
+  .gallery-thumbnails {
+    display: flex;
+    flex-wrap: nowrap; }
+
+  /* MAP */
+  #map-canvas {
+    width: 100%; }
+
+  /* FOOTER */
+  .footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: 3;
+    height: 5vh; } }
+@media (min-width: 768px) and (max-width: 1140px) {
+  .page {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .page:after {
+      content: " ";
+      display: block;
+      clear: both; }
+
+  .bg {
+    background: url(../assets/images/AMP_1146.jpg);
+    background-size: cover;
+    height: 100%; }
+
+  .gallery {
+    height: 100%; }
+
+  /* HEADER */
+  .header-wrapper {
+    width: 25%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    max-width: 250px; }
+
+  /* TOP SPACER */
+  .topspacer {
+    height: 20vh;
+    background: transparent;
+    width: 100%; }
+
+  /* CONTENT */
+  .content {
+    width: 83.33333%;
+    float: left;
+    height: 100%; }
+
+  .content-gallery {
+    width: 83.33333%;
+    float: left;
+    min-width: 400px;
+    height: 100%; }
+
+  .content-nobg {
+    width: 83.33333%;
+    float: right;
+    margin-right: 0;
+    margin-left: 16.66667%; }
+
+  .mainbar {
+    width: 28.57143%;
+    float: left;
+    margin-right: 2.04082%;
+    margin-left: 2.04082%;
+    /*    max-width: 300px;
+       min-width: 230px; */
+    padding: 30px 20px; }
+
+  .sidebar {
+    width: 28.57143%;
+    float: left;
+    margin-right: 2.04082%;
+    padding: 30px 25px 20px;
+    /*    max-width: 280px;
+       min-width: 220px; */ }
+
+  /* VILLAS GALLERY */
+  .gallery-slideshow {
+    height: 100%; }
+    .gallery-slideshow .post-image {
+      align-items: flex-start; }
+
+  .gallery-thumbnails {
+    display: flex;
+    flex-wrap: nowrap; }
+
+  /* MAP */
+  #map-canvas {
+    width: 100%; }
+
+  /* FOOTER */
+  .footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: 3;
+    height: 5vh; } }
+@media (max-width: 736px) {
+  .page {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .page:after {
+      content: " ";
+      display: block;
+      clear: both; }
+
+  .bg {
+    background: none; }
+
+  .gallery {
+    height: 100%; }
+
+  /* HEADER */
+  .header-wrapper {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    height: auto; }
+    .header-wrapper .header .menu a {
+      text-align: center; }
+
+  /* CONTENT */
+  .content,
+  .content-gallery {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto; }
+
+  .content-nobg {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    margin-left: 16.66667%; }
+
+  .mainbar {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 30px 20px; }
+
+  .sidebar {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 30px 25px 20px; }
+
+  /* VILLAS GALLERY */
+  .gallery-slideshow {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%; }
+    .gallery-slideshow .post-image {
+      align-items: flex-end; }
+
+  .owl-carousel {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+
+  .gallery-thumbnails {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-wrap: nowrap; }
+
+  /* RESERVATION - CONTACT */
+  .contact-form {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+
+  .contact-details {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 30px 25px 20px; }
+
+  /* MAP */
+  #map-canvas {
+    width: 100%; }
+
+  /* FOOTER */
+  .footer-wrapper {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+
+  .footer {
+    display: block; }
+
+  .contact-footer {
+    display: block; }
+    .contact-footer .field {
+      color: #999;
+      font-weight: normal;
+      font-size: 13px;
+      padding: 0 20px;
+      line-height: 1.75em; } }
 /*  */
 /* Styles */
 /*  */
@@ -654,28 +840,6 @@ label {
 /* Colors */
 /*  */
 /* Defaults */
-body {
-  background: #ffffff;
-  color: #2E4E75; }
-
-.header-wrapper {
-  background: #ffffff;
-  color: #6F2941; }
-
-.footer-wrapper a {
-  color: #999; }
-.footer-wrapper a:hover {
-  color: #eee; }
-
-a {
-  color: #6f2941; }
-
-a:hover {
-  color: #999; }
-
-a:hover, a:focus {
-  color: #d6b105; }
-
 /*  */
 /* FACILITIES */
 /*  */
@@ -749,7 +913,8 @@ a:hover, a:focus {
     background: #C4BD97;
     margin: 5px 0;
     float: left;
-    padding: 10px; }
+    padding: 10px;
+    width: 100%; }
   .rates .season {
     float: left;
     font-size: 22px;
@@ -772,13 +937,10 @@ a:hover, a:focus {
     color: #323232;
     line-height: 1.5; }
 
-/*  */
-/* FOOTER */
-/*  */
-.footer-wrapper {
-  border-top: 1px solid #ccc;
-  background: #fff;
-  text-align: right; }
+/* DATE POPUP */
+.rd-back,
+.rd-next {
+  color: #323232; }
 
 html {
   box-sizing: border-box; }
@@ -812,7 +974,6 @@ a {
   background-color: transparent; }
 
 .header-wrapper {
-  height: 100%;
   background: #4979B3;
   background: #538ED5;
   background: #2E4E75; }
@@ -878,22 +1039,26 @@ section.content-gallery,
   margin: 0 0px 140px 80px;
   line-height: 1em; }
 
-.footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
-  .footer .logo {
-    padding: 0 25px; }
+@media (max-width: 1280px) {
+  .footer-wrapper {
+    border-top: 1px solid #ccc;
+    background: #fff; }
 
-.contact-footer {
-  display: flex; }
-  .contact-footer .field {
-    color: #999;
-    font-weight: normal;
-    font-size: 13px;
-    padding: 0 20px;
-    line-height: 1.75em; }
+  .footer {
+    /*       display: flex;
+          justify-content: flex-end;
+          align-items: center; */ }
+    .footer .logo {
+      padding: 0 25px; }
 
+  .contact-footer {
+    /*          display: flex; */ }
+    .contact-footer .field {
+      color: #999;
+      font-weight: normal;
+      font-size: 13px;
+      padding: 0 20px;
+      line-height: 1.75em; } }
 .content .section-prices {
   margin-left: 40px;
   max-width: 1050px; }
@@ -1014,11 +1179,6 @@ section.content-gallery,
   padding: 3px 1px; }
 
 .contact-form {
-  width: 38.77551%;
-  float: left;
-  margin-right: 2.04082%;
-  margin-left: 2.04082%;
-  max-width: 300px;
   background: #EEECE1;
   padding: 20px 35px 20px 20px; }
   .contact-form .component-title {
@@ -1054,12 +1214,8 @@ label {
   font-size: 13px; }
 
 .contact-details {
-  width: 28.57143%;
-  float: left;
-  margin-right: 2.04082%;
-  padding: 30px 25px 20px;
-  max-width: 280px;
-  min-width: 220px;
+  /*       max-width: 280px;
+        min-width: 220px; */
   background: #C4BD97;
   color: #79797a;
   font-size: 17px;
@@ -1098,47 +1254,59 @@ button:hover {
   float: left;
   margin-right: 1.69492%; }
 
-.header-wrapper {
-  height: 100%;
-  background: #4979B3;
-  background: #538ED5;
-  background: #2E4E75; }
-  .header-wrapper .header .logo {
-    padding: 30px 20px;
-    text-align: center; }
-    .header-wrapper .header .logo a {
-      color: #fff;
-      font-size: 48px;
-      font-family: "Tangerine", "Damion", "Grand+Hotel", "Cambria", "Georgia", "serif";
-      line-height: 1.2; }
-  .header-wrapper .header .menu ul li {
-    font-size: 18px; }
-  .header-wrapper .header .menu ul a {
-    color: #f4f0f0;
-    display: block;
-    display: block;
-    font-size: 18px;
-    padding: 10px;
-    line-height: 1em; }
-  .header-wrapper .header .menu ul a:hover {
-    color: #d8c6bc;
-    background: #1C3048; }
-  .header-wrapper .header .menu ul .nolink {
-    display: block;
-    font-size: 18px;
-    padding: 10px 0;
-    line-height: 1em; }
-  .header-wrapper .header .menu ul .menu-title {
-    color: #efefef;
-    padding: 5px;
-    line-height: 1.3em;
-    background: #4979B3;
-    font-size: 19px;
-    border-bottom: 1px solid #769ECE; }
-  .header-wrapper .header .menu ul .submenu-item {
-    text-align: right;
-    background: #3F81D0; }
-
+/* .header-wrapper {
+   height: 100%;
+   background: #4979B3;
+   background: #538ED5; 
+   background: #2E4E75;
+   .header {
+         .logo {
+             padding: 30px 20px;
+             text-align: center;            
+            a {
+               color: #fff;
+               font-size: 48px;
+               font-family: $lila-logo;
+               line-height: 1.2;
+               }
+            }
+           .menu ul {
+              li {
+                 font-size: 18px;
+              }
+              a {
+                 color: #f4f0f0;
+                 display: block;
+                 display: block;
+                 font-size: 18px;
+                 padding: 10px;
+                 line-height: 1em;
+              }
+              a:hover {
+                 color: #d8c6bc;
+                 background: #1C3048;
+                 }
+              .nolink {
+                 display: block;
+                 font-size: 18px;
+                 padding: 10px 0;
+                 line-height: 1em;
+              }
+              .menu-title {
+                  color: #efefef;
+                  padding: 5px;
+                  line-height: 1.3em;
+                  background: #4979B3;
+                  font-size: 19px;
+                  border-bottom: 1px solid #769ECE;
+              }
+              .submenu-item {
+                  text-align: right;
+                  background: #3F81D0;
+              }
+             }
+          }                 
+      } */
 #map-canvas .map-title {
   font-size: 48px;
   font-family: "Tangerine", "Damion", "Grand+Hotel", "Cambria", "Georgia", "serif";

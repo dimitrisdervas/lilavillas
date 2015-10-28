@@ -1,11 +1,12 @@
 $susy-media: (
   wide: max-width 1280px,
   normal: max-width 1140px,
-  narrower: max-width 768px,
+  narrower: 768px 1140px,
   mobile: max-width 736px,
 );
 
-.page {
+@include susy-media(normal) {
+  .page {
    @include layout($full-width);
    @include container;  
 }
@@ -83,4 +84,5 @@ $susy-media: (
     width: 100vw;
        z-index: 3;
    height: 5vh;
+}
 }

@@ -83,27 +83,15 @@ $page-title: $light-grey;
 // IMAGES
 // 
 body {
-	background: $bodyBg;
-	color: $bodyText;
+
 }
-.header-wrapper{
-	background: $headerBg;
-	color: $headerText;
-}
-.footer-wrapper{
-	   a {
-      color: #999;
-      }
-   a:hover {
-      color: #eee;
-      } 
-}
+
 a {
-  color: #6f2941;
+
 }
 a:hover {
-    color: #999;
+
 }
 a:hover, a:focus {
-    color: #d6b105;
+
 }

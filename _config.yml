@@ -11,6 +11,10 @@ url: "lilavillas.gr" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
+# Compress layout - Settings
+compress_html:
+  comments: ["<!-- ", " -->"]
+    
 collections:
   rooms:
     output: true

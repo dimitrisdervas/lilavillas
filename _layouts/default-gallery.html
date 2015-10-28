@@ -1,4 +1,5 @@
 ---
+layout: compress
 ---
 
 <!DOCTYPE html>
@@ -14,27 +15,13 @@
                   {% include basic_components/page.html config-file='header' %}       
                   
                   {{ content }}
-                                  
-                   
-            
 
                </div>
  
-     {% include basic_components/page.html config-file='footer' %}
+{% include basic_components/page.html config-file='footer' %}
 
       <script type="text/javascript" src="{{ site.baseurl }}/js/components.js"></script> 
             {% include basic_components/perpagePlugins.html %}
-
-                       <script>
-                      $(window).scroll(function() {
-                        if ($(this).scrollTop() > 1){  
-                            $('#header-wrapper').addClass("sticky");
-                          }
-                          else{
-                            $('#header-wrapper').removeClass("sticky");
-                          }
-                        });
-                  </script>
 
      
   </body>

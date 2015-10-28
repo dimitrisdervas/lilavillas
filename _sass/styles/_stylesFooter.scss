@@ -1,19 +1,25 @@
-.footer {
-      display: flex;
+@include susy-media(wide) { 
+.footer-wrapper {
+    border-top: 1px solid #ccc;
+    background: #fff;
+}
+   .footer {
+/*       display: flex;
       justify-content: flex-end;
-      align-items: center;
+      align-items: center; */
    .logo {
       padding: 0 25px;
+      }
+   }
+   .contact-footer {
+/*          display: flex; */
+      .field {
+         color: #999;
+         font-weight: normal;      
+         font-size: 13px;
+         padding: 0 20px;
+         line-height: 1.75em;
+      }
    }
 }
-.contact-footer {
 
-      display: flex;
-   .field {
-      color: #999;
-      font-weight: normal;      
-      font-size: 13px;
-      padding: 0 20px;
-      line-height: 1.75em;
-   }
-}

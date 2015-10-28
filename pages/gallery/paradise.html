@@ -40,11 +40,12 @@ config:
                      - field: title
                        data:
                         class: gallery-title
+      - div: 
+         theme:
+          class: gallery-thumbnails    
+        components:
          - component: posts-list
            data:
-            wrapperDiv:
-             theme:
-                class: gallery-thumbnails
             content-type: gallery
             folder: paradise
             data-type: data-list
