@@ -2,26 +2,29 @@
 <!-- USE DATA FROM _data/content -->
 <!-- Check the content type - Datat or Collections - Posts -->
 {% include html_components/component_includes/componentContentType.html %}
-<nav>
+
   <ul class="right hide-on-med-and-down">
+     
       {% for menu in posts limit:{{include.component-data.limit}} offset:{{include.component-data.offset}} %}
         {% if menu.url %}
             <li class="menu-item menu-{{ menu.name | slugify }}">
              <a href='{{ site.baseurl }}/{{ menu.url }}'>{{ menu.name }}</a></li>
        {% else %}
-           <li><a class='menu-item dropdown-button btn' href='#' data-activates='{{ menu.name | sluggify }}'>{{ menu.name }}</a></li>
+           <li><a class='menu-item dropdown-button' href='#' data-activates='{{ menu.name | sluggify }}'>{{ menu.name }}</a></li>
          {% endif %}
       {% endfor %}  
    </ul>
               
                 
                 
-  <ul id="slide-out" class="side-nav">
+  <ul id="slide-out" class="side-nav fixed">
        {% for menu in posts limit:{{include.component-data.limit}} offset:{{include.component-data.offset}} %}
         {% if menu.url %}
             <li class="menu-item menu-{{ menu.name | slugify }}">
-             <a class='dropdown-button btn' href='{{ site.baseurl }}/{{ menu.url }}'>{{ menu.name }}</a>
+             <a href='{{ site.baseurl }}/{{ menu.url }}'>{{ menu.name }}</a>
                  </li>
+       {% else %}
+           <li><a class='menu-item dropdown-button' href='#' data-activates='{{ menu.name | sluggify }}'>{{ menu.name }}</a></li>
          {% endif %}
       {% endfor %}  
   </ul>

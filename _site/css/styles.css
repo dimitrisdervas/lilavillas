@@ -1013,6 +1013,47 @@ a {
     text-align: right;
     background: #3F81D0; }
 
+.side-nav.fixed {
+  background: #4979B3;
+  background: #538ED5;
+  background: #2E4E75; }
+  .side-nav.fixed .logo {
+    padding: 30px 20px;
+    text-align: center; }
+    .side-nav.fixed .logo a {
+      color: #fff;
+      font-size: 48px;
+      font-family: "Tangerine", "Damion", "Grand+Hotel", "Cambria", "Georgia", "serif";
+      line-height: 1.2;
+      height: auto; }
+  .side-nav.fixed li:hover {
+    color: #d8c6bc;
+    background: #1C3048; }
+  .side-nav.fixed a {
+    color: #f4f0f0;
+    display: block;
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    line-height: 1em;
+    height: auto; }
+  .side-nav.fixed .waves-btn .waves-ripple {
+   /* The alpha value allows the text and background color
+  of the button to still show through. */
+    background-color: rgba(3, 65, 244, 0.65); }
+  .side-nav.fixed li.active a.collapsible-header {
+    color: #2E4E75; }
+  .side-nav.fixed .menu-title {
+    color: #efefef;
+    padding: 5px;
+    line-height: 1.3em;
+    background: #4979B3;
+    font-size: 19px;
+    border-bottom: 1px solid #769ECE; }
+  .side-nav.fixed .submenu-item {
+    text-align: right;
+    background: #3F81D0; }
+
 section.content-gallery,
 .frontpage-slideshow,
 .slideshow-item,
