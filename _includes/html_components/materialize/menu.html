@@ -1,0 +1,45 @@
+<!-- DATA -->
+<!-- USE DATA FROM _data/content -->
+<!-- Check the content type - Datat or Collections - Posts -->
+{% include html_components/component_includes/componentContentType.html %}
+<nav>
+  <ul class="right hide-on-med-and-down">
+      {% for menu in posts limit:{{include.component-data.limit}} offset:{{include.component-data.offset}} %}
+        {% if menu.url %}
+            <li class="menu-item menu-{{ menu.name | slugify }}">
+             <a href='{{ site.baseurl }}/{{ menu.url }}'>{{ menu.name }}</a></li>
+       {% else %}
+           <li><a class='menu-item dropdown-button btn' href='#' data-activates='{{ menu.name | sluggify }}'>{{ menu.name }}</a></li>
+         {% endif %}
+      {% endfor %}  
+   </ul>
+              
+                
+                
+  <ul id="slide-out" class="side-nav">
+       {% for menu in posts limit:{{include.component-data.limit}} offset:{{include.component-data.offset}} %}
+        {% if menu.url %}
+            <li class="menu-item menu-{{ menu.name | slugify }}">
+             <a class='dropdown-button btn' href='{{ site.baseurl }}/{{ menu.url }}'>{{ menu.name }}</a>
+                 </li>
+         {% endif %}
+      {% endfor %}  
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+</nav>
+               
+ <!-- Dropdown Structure -->
+{% for menu in posts limit:{{include.component-data.limit}} offset:{{include.component-data.offset}} %}   
+   {% if menu.submenu %}
+       <ul id='{{ menu.name | sluggify }}' class='dropdown-content'>
+            {% for submenu in menu.submenu %}
+                <li class="submenu-item" data-theme-menu="{{ include.component-data.theme }}">
+                  <a href="{{ site.baseurl }}/{{ submenu.url }}">{{ submenu.name }} </a>
+                    </li>
+                {% endfor %}
+         </ul>
+   {% endif %}
+{% endfor %}
+
+
+

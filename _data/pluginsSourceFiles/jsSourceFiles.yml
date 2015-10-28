@@ -25,7 +25,10 @@
   js: bower_components/jquery-countTo/jquery.countTo.js
   
 - name: materialize
+  state: active
   js: bower_components/materialize/dist/js/materialize.js
+  css:
+   - css: bower_components/materialize/dist/css/materialize.css
   
 - name: eqjs
   js: bower_components/eq.js/dist/eq.min.js
