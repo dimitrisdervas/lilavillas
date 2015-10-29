@@ -1,5 +1,5 @@
 var LocationData = [
-    [35.513830, 24.018037, "Lila Villas","6936.969.942","SomePlace, Crete"],
+    [35.514523, 23.943559, "Lila Villas","+30 6976.68.33.14","Stalos, Chania, Crete"],
 ];
 
     
@@ -10,7 +10,7 @@ function initialize()
                     zoom: 12,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(35.513830, 24.018037),
+                    center: new google.maps.LatLng(35.514523, 23.943559),
                        
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
