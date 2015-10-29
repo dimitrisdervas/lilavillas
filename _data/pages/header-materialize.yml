@@ -9,6 +9,7 @@
        - component: materialize/sidenav-fixed
          data:
           logo:
-           text: Lila Beach Front Villas
+           title: Lila 
+           subtitle: Beach Front Villas
           content-type: menu
           data-type: data-list

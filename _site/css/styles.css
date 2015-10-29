@@ -560,8 +560,8 @@ th {
     float: left;
     margin-right: 2.04082%;
     padding: 30px 25px 20px;
-    /*    max-width: 280px;
-       min-width: 220px; */ }
+    max-width: 280px;
+    /*       min-width: 220px; */ }
 
   /* VILLAS GALLERY */
   .gallery-slideshow {
@@ -801,7 +801,8 @@ th {
 /* FACILITIES */
 /*  */
 .facilities {
-  background: #EEECE1; }
+  background: #EEECE1;
+  height: 100%; }
   .facilities .title {
     padding: 0 5px;
     margin-bottom: 0;
@@ -852,6 +853,16 @@ th {
     display: block; }
   .links a:hover {
     background: #94B946;
+    color: #323232; }
+  .links ul li.bungalow .waves-effect.waves-greenlila .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+    background-color: rgba(119, 147, 60, 0.65); }
+  .links ul li.bungalow a {
+    padding: 0;
+    color: #fff;
+    display: block; }
+  .links ul li.bungalow a:hover {
     color: #323232; }
 
 /*  */
@@ -910,7 +921,8 @@ html, body {
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
-  font-weight: 500; }
+  font-weight: 500;
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
 
 img {
   width: 100%;
@@ -935,7 +947,7 @@ a {
   background: #538ED5;
   background: #2E4E75; }
   .header-wrapper .header .logo {
-    padding: 30px 20px;
+    padding: 30px 10px;
     text-align: center; }
     .header-wrapper .header .logo a {
       color: #fff;
@@ -978,7 +990,7 @@ a {
   .side-nav.fixed li.logo.active {
     background: transparent; }
   .side-nav.fixed .logo {
-    padding: 30px 20px;
+    padding: 30px 10px;
     text-align: center; }
     .side-nav.fixed .logo a {
       color: #fff;
@@ -986,6 +998,10 @@ a {
       font-family: "Tangerine", "Damion", "Grand+Hotel", "Cambria", "Georgia", "serif";
       line-height: 1.2;
       height: auto; }
+  .side-nav.fixed .logo-title {
+    font-size: 1.5em; }
+  .side-nav.fixed .logo-subtitle {
+    font-size: 0.8em; }
   .side-nav.fixed li.menu-item:hover,
   .side-nav.fixed li.menu-item.active {
     color: #d8c6bc;

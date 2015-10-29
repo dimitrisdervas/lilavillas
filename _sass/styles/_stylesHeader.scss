@@ -4,7 +4,7 @@
    background: #2E4E75;
    .header {
          .logo {
-             padding: 30px 20px;
+             padding: 30px 10px;
              text-align: center;            
             a {
                color: #fff;
@@ -13,6 +13,7 @@
                line-height: 1.2;
                }
             }
+
            .menu ul {
               li {
                  font-size: 18px;
@@ -60,7 +61,7 @@
       background: transparent;
    }   
    .logo {
-         padding: 30px 20px;
+         padding: 30px 10px;
          text-align: center;            
          a {
             color: #fff;
@@ -70,6 +71,12 @@
             height: auto;
          }
       }
+   .logo-title {
+      font-size: 1.5em;
+   }
+   .logo-subtitle {
+      font-size: 0.8em;
+   }
    li.menu-item:hover,
    li.menu-item.active {
          color: #d8c6bc;

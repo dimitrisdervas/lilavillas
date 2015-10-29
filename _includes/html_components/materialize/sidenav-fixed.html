@@ -9,7 +9,8 @@
            {% if include.component-data.image %}
            <img src="{{include.component-data.logo.image}}" alt="{{ site.title }}">
            {% else %}
-           {{ include.component-data.logo.text}}
+              <div class="logo-title">{{ include.component-data.logo.title}}</div>
+              <div class="logo-subtitle">{{ include.component-data.logo.subtitle}}</div>
            {% endif %}
          </a>   
      </li>
@@ -25,7 +26,7 @@
            <li class="menu-title">
               <ul class="collapsible" data-collapsible="accordion" >
                  <li>
-                    <a class='collapsible-header waves-effect waves-btn active'>{{ menu.name }}</a>
+                    <a class='collapsible-header waves-effect waves-btn'>{{ menu.name }}</a>
                     <div class="collapsible-body">
                         <ul>
                            {% for submenu in menu.submenu %}
