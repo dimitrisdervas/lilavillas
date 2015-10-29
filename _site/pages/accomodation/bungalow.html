@@ -29,7 +29,10 @@
    <link rel="canonical" href="lilavillas.gr/lilavillas/pages/accomodation/bungalow.html">     
    <style>
 
-      
+      .bg {
+   background: url(/{{site.baseurl}}/assets/images/AMP_1146.jpg);
+}
+
 
    </style>     
                            
@@ -38,10 +41,7 @@
 
   <body>
     
-     
-         <div class="page bg">
-
-                  <!--      -->
+        <!--      -->
 <!-- PAGE -->
 <!--      -->
 <!-- DEBUG FILE: basic_components/page.html -->
@@ -111,160 +111,21 @@
 
    
       
-
-
-   <div  
    
-        class="header-wrapper"
-        
-        id="header-wrapper"
-        >
-      
+
 
 <!--                 -->
 <!-- SECTION         -->
 <!--                 -->
 <!-- DEBUG FILE: html_components/basic_components/page.html -->
 <!-- INCLUDE basic_components/pageIncludes/themeElement.html -->  
-   <header 
- 		class="header"
-	>
+   <header >
 
 
 
 
                   <!-- DIVS LOOP - Loop through the divs to create them -->   
                   
-
-
-
-                  <!--            -->
-                  <!-- ALIAS DIVS -->
-                  <!--            -->                  
-                  
-                  
-                  
-
-
-
-
-
-                        <!--                  -->
-                        <!--  DIVS            -->
-                        <!--                  -->
-                        <!-- DEBUG FILE: html_components/basic_components/page.html -->
-                        <!-- INCLUDE basic_components/pageIncludes/pageDivs.html -->
-                           <!--       -->
-<!-- ALIAS -->
-<!--       -->
-
-
-
-  
-      
-
-<div 
- 		class="logo"
-	>
-
-
-            <!-- LOOP THROUGH THE COMPONENTS OF THE CURENT DIV -->   
-                           
-
-                            <!--                  -->
-                            <!-- ALIAS COMPONENTS -->
-                            <!--                  -->                  
-                            
-                            
-                            
-
-
-
-                              <!--                        -->
-                              <!-- CUSTOM HTML SHORT CODE -->
-                              <!--                        -->
-                              <!-- CheckIF we have custom html code code - short e.x. <i class="material-icons">menu</i> -->         
-                                 
-
-
-
-
-                                 <!--                 -->
-                                 <!-- HTML COMPONENTS -->
-                                 <!--                 -->                      
-                                    
-                                    <!-- Include the html component template and bring it's details -->
-                                       <!--       -->
-<!-- ALIAS -->
-<!--       -->
-
-
-
-
-
-<!--  -->
-<!-- PAGE COMPONENTS -->
-<!--  -->
-<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
-
-<!-- TITLE COMPONENT -->
-  <!--                 -->
-<!-- COMPONENT TITLE -->
-<!--                 -->
-<!-- DEBUG FILE: html_components/component_includes/componentsTitle.html -->
-<!-- Check if there is a title for the html component and print it-->
-      
-
-
-<!--                       -->
-<!-- COMPONENT WRAPPER DIV -->
-<!--                       -->
-<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
-<!-- INCLUDE basic_components/pageIncludes/pageComponentsWrapper.html -->
-   
-   
-   
-
-
-
-
-<!--                   -->
-<!-- COMPONENT CONTENT -->
-<!--                   -->
-<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
-<!-- Include the html component template and bring it's details -->
-<!-- Capture the html component template -->
-  
-
-
-  
-   <a href="/"> 
-    
-       Lila Beach Front Villas
-    
-</a>            
- 
-
-
-
-
-
-
- 
-                                    <!-- EndIF htmlComponent.component -->
-                                    
-      
-                                          
-      
-
-
-
-                           <!--  End Component Loop -->
-                                    
-                        <!-- End DIV for simple divClass -->
-                        </div>      
-                     <!--  End DIVS LOOP -->
-                     
 
 
 
@@ -368,8 +229,7 @@
 
 
   
-  
-<!-- DATA -->
+  <!-- DATA -->
 <!-- USE DATA FROM _data/content -->
 <!-- Check the content type - Datat or Collections - Posts -->
 <!--                        -->
@@ -405,130 +265,89 @@
    
 
 
-
-<nav id="primary_nav_wrap">
-<ul>
-
-
+              
+  <ul id="slide-out" class="side-nav fixed">
+<!--      LOGO -->
+     <li class="logo">
+        <a href="/"> 
+           
+           Lila Beach Front Villas
+           
+         </a>   
+     </li>
+     
+<!-- MENU -->   
+     
+       
+        
+            <li class="menu-item menu-welcome">
+             <a href='/lilavillas//'>Welcome</a>
+                 </li>
+       
       
+        
+           <li class="menu-title">
+              <ul class="collapsible" data-collapsible="accordion" >
+                 <li>
+                    <a class='collapsible-header waves-effect waves-btn active'>Accomodation</a>
+                    <div class="collapsible-body">
+                        <ul>
+                           
+                              <li class="submenu-item">
+                                    <a href="/lilavillas/pages/accomodation/paradise.html">Villa Paradise </a>
+                                 </li>
+                              
+                              <li class="submenu-item">
+                                    <a href="/lilavillas/pages/accomodation/lila2.html">Villa Lila 2 </a>
+                                 </li>
+                              
+                              <li class="submenu-item">
+                                    <a href="/lilavillas/pages/accomodation/bungalow.html">Villa Beach Bungalow </a>
+                                 </li>
+                              
+
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
          
-            <li class="menu-item menu-welcome" data-theme-menu="">
-            <a class="drop-target" href="/lilavillas//">Welcome
-               
-               </a>
-          
-
-
-   
-         
-         </li>
- 
-
       
-         
-             <li class="menu-item nolink menu-accomodation" data-theme-menu="">
-               <div class="menu-title">Accomodation</div>
-         
-
-
-   
-<ul>
+        
+            <li class="menu-item menu-map-location">
+             <a href='/lilavillas/pages/map.html'>Map - Location</a>
+                 </li>
+       
       
-          <li class="submenu-item" data-theme-menu="">
-            <a href="/lilavillas/pages/accomodation/paradise.html">Villa Paradise
-               
-               </a>
-              </li>
-          
-          <li class="submenu-item" data-theme-menu="">
-            <a href="/lilavillas/pages/accomodation/lila2.html">Villa Lila 2
-               
-               </a>
-              </li>
-          
-          <li class="submenu-item" data-theme-menu="">
-            <a href="/lilavillas/pages/accomodation/bungalow.html">Villa Beach Bungalow
-               
-               </a>
-              </li>
-          
-   </ul>
-   
-         
-         </li>
- 
-
+        
+            <li class="menu-item menu-facilities">
+             <a href='/lilavillas/pages/facilities.html'>Facilities</a>
+                 </li>
+       
       
-         
-            <li class="menu-item menu-map-location" data-theme-menu="">
-            <a class="drop-target" href="/lilavillas/pages/map.html">Map - Location
-               
-               </a>
-          
-
-
-   
-         
-         </li>
- 
-
+        
+            <li class="menu-item menu-rates">
+             <a href='/lilavillas/pages/prices.html'>Rates</a>
+                 </li>
+       
       
-         
-            <li class="menu-item menu-facilities" data-theme-menu="">
-            <a class="drop-target" href="/lilavillas/pages/facilities.html">Facilities
-               
-               </a>
-          
-
-
-   
-         
-         </li>
- 
-
+        
+            <li class="menu-item menu-reservation">
+             <a href='/lilavillas/pages/reservation.html'>Reservation</a>
+                 </li>
+       
       
-         
-            <li class="menu-item menu-prices" data-theme-menu="">
-            <a class="drop-target" href="/lilavillas/pages/prices.html">Prices
-               
-               </a>
-          
-
-
-   
-         
-         </li>
- 
-
-      
-         
-            <li class="menu-item menu-reservation" data-theme-menu="">
-            <a class="drop-target" href="/lilavillas/pages/reservation.html">Reservation
-               
-               </a>
-          
-
-
-   
-         
-         </li>
- 
-
-      
-         
-            <li class="menu-item menu-contact-us" data-theme-menu="">
-            <a class="drop-target" href="/lilavillas/pages/contact.html">Contact us
-               
-               </a>
-          
-
-
-   
-         
-         </li>
- 
-</ul>
-</nav>
+        
+            <li class="menu-item menu-contact-us">
+             <a href='/lilavillas/pages/contact.html'>Contact us</a>
+                 </li>
+       
+        
+  </ul>
+<div class="mobile-nav">
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+   </div>
+              
 
 
  
@@ -558,9 +377,11 @@
            <!-- EndSection name cases -->
         
       <!-- SECTION WRAPPER END -->
-   </div>
+   
   <!-- End loop in sections -->
-       
+     
+     
+         <div class="page bg">   
                   
                   <!--      -->
 <!-- PAGE -->
@@ -2417,10 +2238,7 @@
       <!-- SECTION WRAPPER END -->
    
   <!-- End loop in sections -->
-
-                                  
-                   
-            
+                               
 
                </div>
  

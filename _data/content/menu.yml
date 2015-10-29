@@ -16,7 +16,7 @@
 - name: Facilities
   url: pages/facilities.html
   
-- name: Prices
+- name: Rates
   url: pages/prices.html
   
 - name: Reservation

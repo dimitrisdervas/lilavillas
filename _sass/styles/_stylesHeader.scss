@@ -50,25 +50,35 @@
              }
           }                 
       }
+
 .side-nav.fixed {
    background: #4979B3;
    background: #538ED5; 
    background: #2E4E75;
+   li.logo:hover,
+   li.logo.active {
+      background: transparent;
+   }   
    .logo {
-      padding: 30px 20px;
-      text-align: center;            
-      a {
-         color: #fff;
-         font-size: 48px;
-         font-family: $lila-logo;
-         line-height: 1.2;
-         height: auto;
+         padding: 30px 20px;
+         text-align: center;            
+         a {
+            color: #fff;
+            font-size: 48px;
+            font-family: $lila-logo;
+            line-height: 1.2;
+            height: auto;
+         }
       }
-   }
-   li:hover {
-      color: #d8c6bc;
-      background: #1C3048;
-   }        
+   li.menu-item:hover,
+   li.menu-item.active {
+         color: #d8c6bc;
+         background: #1C3048;
+      }     li.menu-item:hover,
+   li.menu-item.active {
+         color: #d8c6bc;
+         background: #1C3048;
+      }   
    a {
       color: #f4f0f0;
       display: block;
@@ -81,22 +91,25 @@
    .waves-btn .waves-ripple { 
       /* The alpha value allows the text and background color
      of the button to still show through. */
-      background-color: rgba(3, 65, 244, 0.65);
+      background-color: rgba(73, 121, 179, 0.65);
     }
-   li.active a.collapsible-header {
-      color: #2E4E75;
-   }
+
    .menu-title {
       color: #efefef;
-      padding: 5px;
+      padding: 0px;
       line-height: 1.3em;
       background: #4979B3;
       font-size: 19px;
       border-bottom: 1px solid #769ECE;
+        li:hover,
+        li.active {
+         color: #d8c6bc;
+         background: #1C3048;
+      }   
    }
    .submenu-item {
       text-align: right;
       background: #3F81D0;
    }
 }                 
-      
+            

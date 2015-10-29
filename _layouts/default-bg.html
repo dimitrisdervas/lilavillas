@@ -8,19 +8,11 @@
 
   <body>
     
+        {% include basic_components/page.html config-file='header-materialize' %}     
      
-         <div class="page">
-
-                  {% include basic_components/page.html config-file='header' %}       
+         <div class="page bg">   
                   
-            <div class="content">
-               <div class="topspacer"></div>
-               {{ content }}
-            </div>
-                  
-                                  
-                   
-            
+                  {{ content }}                               
 
                </div>
  
@@ -29,7 +21,7 @@
       <script type="text/javascript" src="{{ site.baseurl }}/js/components.js"></script> 
             {% include basic_components/perpagePlugins.html %}
 
-                  
+       <script>
 
      
   </body>

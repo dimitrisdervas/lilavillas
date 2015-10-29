@@ -1,3 +1,84 @@
 @include susy-media(wide) {
- 
+   .page {
+      @include layout($full-width);
+      @include container;  
+   }
+   .mobile-nav a {
+      display: none;
+   }
+.bg {
+    background: url(../assets/images/AMP_1146.jpg);
+    background-size: cover;  
+    height: 100%;
+}
+.gallery {
+    height: 100%;
+}
+/* HEADER */
+.header-wrapper {
+   @include span( 2 of 12);
+   height: 100%;
+   text-align: center;
+/*    min-width: 200px;
+   max-width: 250px; */
+}
+/* TOP SPACER */
+.topspacer {
+   height: 20vh;
+   background: transparent;
+   width: 100%;
+}
+/* CONTENT */
+.content {
+   @include span( 10 of 12 );
+   height: 100%;
+}
+.content-gallery {
+   @include span( 10 of 12 );
+   min-width: 400px;
+   height: 100%;
+}
+.content-nobg {
+   @include span( 10 of 12 last);
+   @include push( 2 of 12 );
+}
+.mainbar {    
+   @include layout( $symmetric );  
+   @include span( 3 of 10 );
+   margin-left: gutters(10);
+/*    max-width: 300px;
+   min-width: 230px; */
+   padding: 30px 20px;
+}
+.sidebar {
+   @include layout( $symmetric );
+   @include span( 3 of 10 ); 
+   padding: 30px 25px 20px;
+/*    max-width: 280px;
+   min-width: 220px; */
+}
+/* VILLAS GALLERY */
+.gallery-slideshow {
+   height: 100%;
+   .post-image {
+      align-items: flex-start;
+   }
+}
+.gallery-thumbnails {
+   display: flex;
+   flex-wrap: nowrap;
+}
+
+/* MAP */
+#map-canvas {
+   width: 100%;
+}
+/* FOOTER */
+.footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+       z-index: 3;
+   height: 5vh;
+}
 } 

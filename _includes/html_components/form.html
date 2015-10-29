@@ -143,8 +143,7 @@
                            <!-- Just print the fields -->
                            {% for field in fields  %}
                   <div {% include basic_components/pageIncludes/themeElement.html elementData=field.wrapperDiv.theme %}>
-                           <!--  Check what type of field we are prinitng -->
-                              <label for="{{ field.data.id }}">{{ field.data.label }}</label>
+                         
 
                               {% case field.field  %}
                                  {% when 'textarea' %}
@@ -157,7 +156,7 @@
                               <!-- DROPDOWN BOX --> 
                                  {% when 'select' %}
                                        <select {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}>
-                                          {% for option in field.data.options %}
+                                          {% for option in field.options %}
                                              <option value="{{ option.option }}">{{ option.option }}</option>
                                           {%  endfor %}
                                        </select>
@@ -171,6 +170,8 @@
                                        </button>
                               <!--  End case of fields -->
                                {% endcase %}
+                       <!--  Check what type of field we are prinitng -->
+                              <label for="{{ field.data.id }}">{{ field.data.label }}</label>
                            <!--  End loop in fields -->
                                 </div>
                              {% endfor %} 

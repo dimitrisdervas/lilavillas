@@ -43,3 +43,13 @@ $full-width: (
 /*   debug: (image: show), */
 );
 
+$susy-media: (
+  normal:  (
+    media: screen,
+    min-width: 960px,
+  ),
+  mobile:  (
+    media: screen,
+    max-width: 736px,
+  ),
+);

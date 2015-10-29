@@ -23,7 +23,7 @@
                  </li>
        {% else %}
            <li class="menu-title">
-              <ul class="collapsible collapsible-accordion" >
+              <ul class="collapsible" data-collapsible="accordion" >
                  <li>
                     <a class='collapsible-header waves-effect waves-btn active'>{{ menu.name }}</a>
                     <div class="collapsible-body">
@@ -42,7 +42,9 @@
          {% endif %}
       {% endfor %}  
   </ul>
+<div class="mobile-nav">
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+   </div>
               
 
 

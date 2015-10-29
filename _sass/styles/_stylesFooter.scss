@@ -1,18 +1,18 @@
-@include susy-media(wide) { 
+@include susy-media(normal) { 
 .footer-wrapper {
     border-top: 1px solid #ccc;
     background: #fff;
 }
    .footer {
-/*       display: flex;
+      display: flex;
       justify-content: flex-end;
-      align-items: center; */
+      align-items: center;
    .logo {
       padding: 0 25px;
       }
    }
    .contact-footer {
-/*          display: flex; */
+         display: flex;
       .field {
          color: #999;
          font-weight: normal;      
