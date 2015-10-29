@@ -1,11 +1,11 @@
 ---
-layout: default-bg
+layout: default-bg-center
 config:
  - section: 
     data:
       htmlelement: section
     theme:
-     class: section-prices 
+      class: section-prices 
    divs:
       - div: 
          theme:
@@ -19,19 +19,18 @@ config:
                data-type: data-list
                fields: 
                 - field: title
-                - field: text
+                - field: subtitle1
+                - field: subtitle2
           - component: posts-list
             data:
-               title: Seasons
                class: rate
                content-type: rates
                folder: paradise
                data-type: data-list
                groupFieldsElement: ul
                fields: 
-                - field: price 
                 - field: season
-                - field: date
+                - field: price 
       - div: 
          theme:
           class: prices-list     
@@ -44,19 +43,18 @@ config:
                data-type: data-list
                fields: 
                 - field: title
-                - field: text
+                - field: subtitle1
+                - field: subtitle2
           - component: posts-list
             data:
-               title: Seasons
                class: rate
                content-type: rates
                folder: lila2
                data-type: data-list
                groupFieldsElement: ul
                fields: 
-                - field: price 
                 - field: season
-                - field: date
+                - field: price 
       - div: 
          theme:
           class: prices-list     
@@ -69,19 +67,18 @@ config:
                data-type: data-list
                fields: 
                 - field: title
-                - field: text
+                - field: subtitle1
+                - field: subtitle2
           - component: posts-list
             data:
-               title: Seasons
                class: rate
                content-type: rates
                folder: bungalow
                data-type: data-list
                groupFieldsElement: ul
                fields: 
-                - field: price 
                 - field: season
-                - field: date
+                - field: price 
 css: |
       .bg {
          background: url(/lilavillas/assets/images/AMP_1060.jpg);

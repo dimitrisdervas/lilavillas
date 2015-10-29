@@ -14,7 +14,10 @@
    .gallery {
        height: 100%;
    }
-   
+   .center {
+      display: flex;
+      align-items: center;
+   }
    .mobile-nav a {
       display: none;
    }
@@ -79,6 +82,12 @@
    .gallery-thumbnails {
       display: flex;
       flex-wrap: nowrap;
+   }
+/*    RATES */
+   .section-prices {
+   @include span( 10 of 12);
+      max-width: 1050px;
+      margin-left: gutters(12);
    }
    /* MAP */
    #map-canvas {

@@ -502,6 +502,10 @@ th {
   .gallery {
     height: 100%; }
 
+  .center {
+    display: flex;
+    align-items: center; }
+
   .mobile-nav a {
     display: none; }
 
@@ -572,6 +576,14 @@ th {
   .gallery-thumbnails {
     display: flex;
     flex-wrap: nowrap; }
+
+  /*    RATES */
+  .section-prices {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    max-width: 1050px;
+    margin-left: 1.69492%; }
 
   /* MAP */
   #map-canvas {
@@ -1083,62 +1095,67 @@ section.content-gallery,
       font-size: 13px;
       padding: 0 20px;
       line-height: 1.75em; } }
-.content .section-prices {
-  margin-left: 40px;
-  max-width: 1050px; }
-.content .prices-list {
-  width: 32.20339%;
-  float: left;
-  max-width: 280px;
-  margin-left: 40px;
-  background: #ffffff;
-  padding: 25px 25px 20px; }
-  .content .prices-list:nth-child(3n + 1) {
-    margin-left: 0;
-    margin-right: -100%;
-    clear: both;
-    margin-left: 0; }
-  .content .prices-list:nth-child(3n + 2) {
-    margin-left: 33.89831%;
-    margin-right: -100%;
-    clear: none; }
-  .content .prices-list:nth-child(3n + 3) {
-    margin-left: 67.79661%;
-    margin-right: -100%;
-    clear: none; }
-  .content .prices-list .title {
-    color: #c1935c;
-    font-family: 'Vollkorn',"Arial",sans-serif;
-    font-size: 48px;
-    line-height: .9em;
-    letter-spacing: -3px;
-    margin-left: -4px; }
-  .content .prices-list .text {
-    line-height: 1.2em; }
-  .content .prices-list .component-title {
-    color: #000;
-    font-size: 17px;
-    margin-bottom: 9px; }
-  .content .prices-list .season {
-    font-size: 22px;
-    color: #000;
-    font-weight: bold;
-    margin-bottom: 8px; }
-  .content .prices-list .price {
-    margin-bottom: 3px;
-    font-size: 24px;
-    background: #C1935C;
-    padding: 5px 8px;
-    line-height: 1.2;
-    overflow: hidden;
-    color: #fff; }
-  .content .prices-list .date {
-    width: 100%;
+.section-prices {
+  text-align: left; }
+  .section-prices .prices-list {
+    width: 32.20339%;
     float: left;
-    margin-right: 1.69492%;
-    font-size: 13px;
-    margin-bottom: 20px;
-    line-height: 1.5em; }
+    /*             max-width: 280px; */
+    background: #ffffff;
+    padding: 25px 25px 20px; }
+    .section-prices .prices-list:nth-child(3n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    .section-prices .prices-list:nth-child(3n + 2) {
+      margin-left: 33.89831%;
+      margin-right: -100%;
+      clear: none; }
+    .section-prices .prices-list:nth-child(3n + 3) {
+      margin-left: 67.79661%;
+      margin-right: -100%;
+      clear: none; }
+    .section-prices .prices-list .title {
+      color: #c1935c;
+      font-size: 48px;
+      line-height: .9em;
+      letter-spacing: -3px;
+      margin-left: -4px;
+      margin-bottom: 20px; }
+    .section-prices .prices-list .subtitle1, .section-prices .prices-list .subtitle2 {
+      line-height: 1.2em; }
+    .section-prices .prices-list .title,
+    .section-prices .prices-list .subtitle2 {
+      margin-bottom: 20px; }
+    .section-prices .prices-list ul li {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between; }
+    .section-prices .prices-list .season {
+      font-size: 22px;
+      color: #000;
+      font-weight: bold;
+      margin-bottom: 8px; }
+    .section-prices .prices-list .price {
+      font-size: 24px;
+      background: #C1935C;
+      padding: 5px 8px;
+      line-height: 1.2;
+      overflow: hidden;
+      color: #fff;
+      margin-bottom: 30px; }
+    .section-prices .prices-list .date {
+      width: 100%;
+      float: left;
+      margin-right: 1.69492%;
+      font-size: 13px;
+      line-height: 1.5em; }
+    .section-prices .prices-list .date2 {
+      width: 50%;
+      float: right;
+      margin-right: 0;
+      margin-bottom: 20px; }
 
 .content .section-facilities {
   margin-left: 40px;

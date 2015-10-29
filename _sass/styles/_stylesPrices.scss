@@ -1,29 +1,29 @@
-.content {
-   .section-prices {
-      margin-left: 40px;
-      max-width: 1050px;
-   }
+.section-prices {   
+   text-align: left;
       .prices-list {
             @include gallery( 4 of 12);
-            max-width: 280px;
-            margin-left: 40px;
+/*             max-width: 280px; */
             background: #ffffff;
             padding: 25px 25px 20px;
          .title {
             color: #c1935c;
-            font-family: 'Vollkorn',"Arial",sans-serif;
             font-size: 48px;
             line-height: .9em;
             letter-spacing: -3px;
             margin-left: -4px;
+            margin-bottom: 20px;
          }
-         .text {
-                line-height: 1.2em;
+         .subtitle1, .subtitle2 {
+            line-height: 1.2em;
          }
-         .component-title {
-            color: #000;
-            font-size: 17px;
-            margin-bottom: 9px;
+         .title,
+         .subtitle2 {
+                        margin-bottom: 20px;
+                     }
+         ul li {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
          }
          .season {
              font-size: 22px;
@@ -31,20 +31,23 @@
              font-weight: bold;
              margin-bottom: 8px;
          }
-         .price {
-            margin-bottom: 3px;
+         .price {            
             font-size: 24px;
             background: #C1935C;
             padding: 5px 8px;
             line-height: 1.2;
             overflow: hidden;
             color: #fff;
+            margin-bottom: 30px;
          }
          .date {
             @include span( 100% );
             font-size: 13px;
-            margin-bottom: 20px;
             line-height: 1.5em;
+         }
+         .date2 {
+           @include span( 50% last );
+            margin-bottom: 20px;
          }
    }
 }
