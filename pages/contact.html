@@ -12,11 +12,12 @@ config:
           class: topspacer  
       - div:
          theme:
-          class: contact-form mainbar
+          class: contact-form-materialize mainbar 
         components:                
          - component: form
            data:
             title: Contact us
+            javascript-plugin: form
             theme:
               class: form    
             fields:
@@ -36,13 +37,19 @@ config:
                      type: text      
                      placeholder: phone
                  - field: textarea
+                   wrapperDiv:
+                     theme:
+                        class: input-field
                    data:
-                    class: message
+                    class: materialize-textarea
                     type: text
-                    placeholder: message
+                    id: textarea
+                    label: message
                  - field: button
                    data:
-                    class: submit-button
+                    class: submit-button btn waves-effect
+                    type: submit 
+                    name: action
                     button-text: Ask Owner
       - div: 
          theme:

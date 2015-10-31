@@ -14,7 +14,7 @@ config:
          - component: form
            data:
             title: Reservation
-            javascript-plugin: rome
+            javascript-plugin: form
             theme:
               class: form    
             fields:
@@ -42,41 +42,27 @@ config:
                      class: phone validate
                      type: text      
                      label: phone
-                 - field: input
+                 - field: date
                    wrapperDiv:
                      theme:
-                        class: input-field
+                       class: checkin
                    data: 
-                    class: input
-                    id: checkin
-                    type: text
-                    name: Checkin
-                    label: Checkin
+                     label: Checkin
+                 - field: date
                    wrapperDiv:
                      theme:
-                        class: checkin   
-                 - field: input
-                   wrapperDiv:
-                     theme:
-                        class: input-field
+                       class: checkout
                    data: 
-                    class: input
-                    id: checkout
-                    type: text
-                    name: Checkout
-                    label: Checkout
-                   wrapperDiv:
-                     theme:
-                        class: checkout   
+                     label: Checkout
                  - field: select
                    wrapperDiv:
                      theme:
-                        class: input-field    
+                        class: input-field persons   
                    data:                  
                      name: persons
-                     label: Persons
                    options:
-                        - option: "- Select -"
+                        - option: Persons
+                          data: disabled selected
                         - option: 1
                         - option: 2
                         - option: 3
@@ -88,27 +74,27 @@ config:
                  - field: select
                    wrapperDiv:
                      theme:
-                        class: input-field
+                        class: input-field villa
                    data:   
                      name: villa-type
-                     label: Villa
                    options:
-                        - option: "- Select -"
+                        - option: Choose Villa
+                          data: disabled selected
                         - option: Paradise
                         - option: Lila2
                         - option: Beach Bungalow
                  - field: textarea
                    wrapperDiv:
                      theme:
-                        class: input-field
+                        class: input-field message
                    data:
-                    class: materialize-textarea
+                    class: materialize-textarea 
                     type: text
                     id: textarea
                     label: message
                  - field: button
                    data:
-                    class: submit-button btn waves-effect
+                    class: submit-button btn waves-effect 
                     type: submit 
                     name: action
                     button-text: Ask Owner

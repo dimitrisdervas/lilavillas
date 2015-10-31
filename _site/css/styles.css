@@ -1215,36 +1215,42 @@ section.content-gallery,
 .gallery-thumb {
   padding: 3px 1px; }
 
-.contact-form {
+.contact-form-materialize {
   background: #EEECE1;
   padding: 20px 35px 20px 20px; }
-  .contact-form .component-title {
+  .contact-form-materialize .component-title {
     color: #c1935c;
     font-size: 48px;
     line-height: .9em;
     letter-spacing: -3px;
     margin-left: -4px;
     margin-bottom: 20px; }
-  .contact-form select {
-    display: block;
-    max-width: 100%;
-    padding: 0.4375em;
-    font-size: 12px;
-    margin-bottom: 1.18125em;
-    width: 100%; }
-    @media (min-width: 600px) {
-      .contact-form select {
-        font-size: calc( 12px + (20 - 12) * ((100vw - 600px) / (1140 - 600)) ); } }
-    @media (min-width: 1140px) {
-      .contact-form select {
-        font-size: 20px;
-        margin-bottom: 0.51406em; } }
-  .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="password"], .contact-form textarea {
-    width: 100%; }
-  .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="password"], .contact-form textarea, .contact-form input[type="submit"], .contact-form button, .contact-form select {
-    font-size: 15px; }
-  .contact-form label {
-    font-size: 13px; }
+
+textarea {
+  overflow-y: hidden;
+  padding: 1.6rem 0;
+  resize: none;
+  min-height: 3rem; }
+
+/*  */
+/* RESERVATION */
+/*  */
+.checkout,
+.villa {
+  width: 48%;
+  float: right;
+  margin-right: 0; }
+
+.checkin,
+.persons {
+  width: 48%;
+  float: left;
+  margin-right: 1.69492%; }
+
+.message {
+  width: 100%;
+  float: left;
+  margin-right: 1.69492%; }
 
 .contact-details {
   /*       max-width: 280px;
@@ -1263,29 +1269,6 @@ section.content-gallery,
     margin-bottom: 15px;
     font-size: 15px;
     color: #fff; }
-
-button {
-  border: 0;
-  background: #2E4E75;
-  color: #fff; }
-
-button:hover {
-  background: #4979B3; }
-
-/*  */
-/* RESERVATION */
-/*  */
-.checkout,
-.villa {
-  width: 48%;
-  float: right;
-  margin-right: 0; }
-
-.checkin,
-.persons {
-  width: 48%;
-  float: left;
-  margin-right: 1.69492%; }
 
 /* .header-wrapper {
    height: 100%;

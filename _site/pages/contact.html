@@ -538,7 +538,7 @@
       
 
 <div 
- 		class="contact-form mainbar"
+ 		class="contact-form-materialize mainbar"
 	>
 
 
@@ -635,8 +635,10 @@
                            <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
                            <!-- Just print the fields -->
                            
-                  <div >
-                         
+                     <div >
+                        
+                               <!--  Check what type of field we are prinitng -->
+                              <label for=""></label>                 
 
                               
                                        <input 
@@ -648,13 +650,14 @@
 	>
                               <!-- DROPDOWN BOX --> 
                                  
-                       <!--  Check what type of field we are prinitng -->
-                              <label for=""></label>
+
                            <!--  End loop in fields -->
                                 </div>
                              
-                  <div >
-                         
+                     <div >
+                        
+                               <!--  Check what type of field we are prinitng -->
+                              <label for=""></label>                 
 
                               
                                        <input 
@@ -666,13 +669,14 @@
 	>
                               <!-- DROPDOWN BOX --> 
                                  
-                       <!--  Check what type of field we are prinitng -->
-                              <label for=""></label>
+
                            <!--  End loop in fields -->
                                 </div>
                              
-                  <div >
-                         
+                     <div >
+                        
+                               <!--  Check what type of field we are prinitng -->
+                              <label for=""></label>                 
 
                               
                                        <input 
@@ -684,42 +688,46 @@
 	>
                               <!-- DROPDOWN BOX --> 
                                  
-                       <!--  Check what type of field we are prinitng -->
-                              <label for=""></label>
+
                            <!--  End loop in fields -->
                                 </div>
                              
-                  <div >
-                         
+                     <div 
+ 		class="input-field"
+	>
+                        
+                               <!--  Check what type of field we are prinitng -->
+                              <label for="textarea">message</label>                 
 
                               
-
                                        <textarea 
- 		class="message"
+ 		class="materialize-textarea"
 	
  		type="text"
 	
- 		placeholder="message"
+ 		id="textarea"
+	
+ 		label="message"
 	>
    </textarea>
                               <!-- INPUT --> 
                                  
-                       <!--  Check what type of field we are prinitng -->
-                              <label for=""></label>
+
                            <!--  End loop in fields -->
                                 </div>
                              
-                  <div >
-                         
+                     <div >
+                        
+                               <!--  Check what type of field we are prinitng -->
+                              <label for=""></label>                 
 
                               
-                                       <button type="">
+                                       <button  class="submit-button btn waves-effect"  type="submit"  name="action"  button-text="Ask Owner"  >
                                              Ask Owner
                                        </button>
                               <!--  End case of fields -->
                                
-                       <!--  Check what type of field we are prinitng -->
-                              <label for=""></label>
+
                            <!--  End loop in fields -->
                                 </div>
                               
@@ -1382,6 +1390,25 @@
    
       
          
+          
+            
+
+  <script type="text/javascript">
+       $(document).ready(function() {
+            
+                  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+                  $('select').material_select();  
+                
+               
+             
+       });
+ </script>
+
+
+          
         
      
    

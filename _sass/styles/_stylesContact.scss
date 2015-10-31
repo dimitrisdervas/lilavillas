@@ -1,4 +1,4 @@
-.contact-form {
+.contact-form-materialize {
    background: #EEECE1;
    padding: 20px 35px 20px 20px;
    .component-title {
@@ -9,26 +9,26 @@
       margin-left: -4px;
       margin-bottom: 20px;
    }
-
-select {
-   @include t-input;
-   width: 100%;
 }
-input[type="text"], input[type="email"], input[type="password"], textarea {
-   width: 100%;
+textarea {
+    overflow-y: hidden;
+    padding: 1.6rem 0;
+    resize: none;
+    min-height: 3rem;
 }
-input[type="text"], input[type="email"], input[type="password"], textarea ,input[type="submit"], button , select {
-   font-size: 15px;
+/*  */
+/* RESERVATION */
+/*  */
+.checkout,
+.villa {
+   @include span(48% last);
 }
-label {
-  font-size: 13px;
+.checkin,
+.persons {
+   @include span(48%);
 }
-#checkin {
-   
-}
-#checkout {
-   
-}
+.message {
+    @include span(100%);
 }
 .contact-details {
 /*       max-width: 280px;
@@ -49,23 +49,4 @@ label {
       font-size: 15px;
       color: #fff;
    }
-}
-button {
-    border: 0;
-    background: #2E4E75;
-    color: #fff;
-}
-button:hover {
-    background: #4979B3;
-}
-/*  */
-/* RESERVATION */
-/*  */
-.checkout,
-.villa {
-   @include span(48% last);
-}
-.checkin,
-.persons {
-   @include span(48%);
 }
