@@ -1,11 +1,11 @@
 ---
-layout: default-bg
+layout: default-bg-center
 config:
  - section: 
     data:
-      htmlelement: section
+      htmlelement: section 
     theme:
-     class: section-facilities 
+     class: section-facilities
    divs:
       - div: 
          theme:
@@ -19,7 +19,8 @@ config:
                data-type: data-list
                fields: 
                 - field: title
-                - field: text
+                - field: subtitle1
+                - field: subtitle2
           - component: posts-list
             data:
                title: Facilities
@@ -44,7 +45,8 @@ config:
                data-type: data-list
                fields: 
                 - field: title
-                - field: text
+                - field: subtitle1
+                - field: subtitle2
           - component: posts-list
             data:
                title: Facilities
@@ -69,7 +71,9 @@ config:
                data-type: data-list
                fields: 
                 - field: title
-                - field: text
+                  link: url
+                - field: subtitle1
+                - field: subtitle2
           - component: posts-list
             data:
                title: Facilities

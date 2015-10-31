@@ -1,25 +1,29 @@
 .section-prices {   
    text-align: left;
+   display: flex;
       .prices-list {
-            @include gallery( 4 of 12);
-/*             max-width: 280px; */
+/*             @include gallery( 4 of 12); */
+            max-width: 280px;
+            display: flex; /* FLEX */
+            flex-direction: column; /* FLEX */
             background: #ffffff;
             padding: 25px 25px 20px;
+            margin-left: gutters(12); /* FLEX */
          .title {
             color: #c1935c;
             font-size: 48px;
             line-height: .9em;
             letter-spacing: -3px;
             margin-left: -4px;
-            margin-bottom: 20px;
+            flex-grow: 1; /* FLEX */
          }
          .subtitle1, .subtitle2 {
             line-height: 1.2em;
          }
          .title,
          .subtitle2 {
-                        margin-bottom: 20px;
-                     }
+            margin-bottom: 20px;
+         }
          ul li {
             display: flex;
             flex-wrap: nowrap;

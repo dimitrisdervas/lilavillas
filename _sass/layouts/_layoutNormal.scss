@@ -82,10 +82,15 @@
    .gallery-thumbnails {
       display: flex;
       flex-wrap: nowrap;
+      position: absolute;
+      bottom: 30px;
+      z-index: 52;
+      background: #fff;
    }
 /*    RATES */
-   .section-prices {
-   @include span( 10 of 12);
+   .section-prices,
+   .section-facilities {
+      @include span( 10 of 12);
       max-width: 1050px;
       margin-left: gutters(12);
    }
@@ -99,5 +104,6 @@
        bottom: 0;
        width: 100vw;
        z-index: 3;
+       padding: 5px 0;
    }
 }
