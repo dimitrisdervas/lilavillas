@@ -1072,7 +1072,8 @@ section.content-gallery,
   align-items: flex-end;
   font-size: 48px;
   color: #FFF;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 50% 50%; }
 
 .slideshow-title {
   box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);

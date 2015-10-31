@@ -18,6 +18,10 @@
    <!-- LINK  -->                 
                               {% when 'link' %}
                                 {% include html_components/fieldsCases/linkCase.html field_Data=field.data field_Field=field.field %}
+   <!-- LINK  -->                 
+                              {% when 'fixed-button' %}
+                                {% include html_components/fieldsCases/fixedbuttonCase.html field_Data=field.data field_Field=field.field %}
+
    <!-- PERCENTAGE -->
                               {% when 'percentage' %}
                                 {% include html_components/fieldsCases/percentageCase.html field_Data=field.data field_Field=field.field %}
