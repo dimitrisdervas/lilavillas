@@ -1201,6 +1201,11 @@ section.content-gallery,
       color: #79797a;
       font-size: 15px; }
 
+.gallery-thumbnails img {
+  width: auto;
+  display: block;
+  height: 50px; }
+
 .gallery-title {
   box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
   background: transparent;
