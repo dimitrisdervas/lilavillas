@@ -43,6 +43,9 @@ config:
                      type: text      
                      label: phone
                  - field: input
+                   wrapperDiv:
+                     theme:
+                        class: input-field
                    data: 
                     class: input
                     id: checkin
@@ -53,6 +56,9 @@ config:
                      theme:
                         class: checkin   
                  - field: input
+                   wrapperDiv:
+                     theme:
+                        class: input-field
                    data: 
                     class: input
                     id: checkout
@@ -92,13 +98,19 @@ config:
                         - option: Lila2
                         - option: Beach Bungalow
                  - field: textarea
+                   wrapperDiv:
+                     theme:
+                        class: input-field
                    data:
-                    class: message
+                    class: materialize-textarea
                     type: text
-                    placeholder: message
+                    id: textarea
+                    label: message
                  - field: button
                    data:
-                    class: submit-button
+                    class: submit-button btn waves-effect
+                    type: submit 
+                    name: action
                     button-text: Ask Owner
  - section: 
     data:
