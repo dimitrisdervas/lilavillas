@@ -28,8 +28,7 @@
                                        <input type="date" class="datepicker {{ field.data.class }}">
                      
                                  {% when 'textarea' %}
-                                       <textarea {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}>
-   </textarea>
+                                       <textarea {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}></textarea>
                               <!-- INPUT --> 
                                  {% when 'input' %}
                                        <input {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}>
