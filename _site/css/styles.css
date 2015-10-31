@@ -1078,8 +1078,9 @@ section.content-gallery,
   box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
   background: transparent;
   background: rgba(0, 0, 0, 0.15);
-  margin: 0 0px 140px 80px;
-  line-height: 1em; }
+  margin: 0 0 15rem 80px;
+  line-height: 1em;
+  font-size: 64px; }
 
 @media screen and (min-width: 960px) {
   .footer-wrapper {

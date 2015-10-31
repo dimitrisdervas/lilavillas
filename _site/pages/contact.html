@@ -896,8 +896,8 @@
 
 
                
-                  <div class="label -email">
-                     email
+                  <div class="label -Εmail">
+                     Εmail
                   </div>
               
 
@@ -940,8 +940,8 @@
 
 
                
-                  <div class="label -gps">
-                     gps
+                  <div class="label -Gps">
+                     Gps
                   </div>
               
 
@@ -1423,10 +1423,17 @@
   <script type="text/javascript">
        $(document).ready(function() {
             
-                  $('.datepicker').pickadate({
+                  $('.datepicker-checkin').pickadate({
     selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15 // Creates a dropdown of 15 years to control year
+    selectYears: +2 // Creates a dropdown of 15 years to control year
   });
+
+$('.datepicker-checkout').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: +2, // Creates a dropdown of 15 years to control year
+    min: + 2
+  });
+
                   $('select').material_select();  
                 
                
