@@ -1265,7 +1265,8 @@ textarea {
     color: #323232; }
   .contact-details .phone,
   .contact-details .email,
-  .contact-details .address {
+  .contact-details .address,
+  .contact-details .gps {
     margin-bottom: 15px;
     font-size: 15px;
     color: #fff; }
