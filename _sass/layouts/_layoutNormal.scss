@@ -8,8 +8,8 @@
        background-size: cover; 
        background-position: 50% 50%;
        height: 100%;
-      @include span( 10 of 12 );
-      @include push( 2 of 12 );
+       @include span( 10 of 12 );
+       @include push( 2 of 12 );
    }
    .gallery {
        height: 100%;
