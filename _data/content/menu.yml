@@ -9,16 +9,7 @@
      url: pages/accomodation/lila2.html
    - name: Villa Beach Bungalow
      url: pages/accomodation/bungalow.html
-     
-- name: Galleries
-  submenu:
-   - name: Villa Paradise
-     url: pages/gallery/paradise.html
-   - name: Villa Lila 2
-     url: pages/gallery/lila2.html
-   - name: Villa Beach Bungalow
-     url: pages/gallery/bungalow.html
-     
+          
 - name: Map - Location
   url: pages/map.html
   

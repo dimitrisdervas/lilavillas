@@ -1223,14 +1223,12 @@ section.content-gallery,
   padding: 3px 1px; }
 
 .contact-form-materialize {
-  background: #EEECE1;
-  padding: 20px 35px 20px 20px; }
+  background: #EEECE1; }
   .contact-form-materialize .component-title {
     color: #c1935c;
     font-size: 48px;
     line-height: .9em;
     letter-spacing: -3px;
-    margin-left: -4px;
     margin-bottom: 20px; }
 
 textarea {
