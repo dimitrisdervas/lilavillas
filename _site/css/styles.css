@@ -636,20 +636,16 @@ a {
       color: #fff;
       font-size: 48px;
       font-family: "Tangerine", "Damion", "Grand+Hotel", "Cambria", "Georgia", "serif";
-      line-height: 1.2;
       height: auto; }
   .side-nav.fixed .logo-title {
-    font-size: 2em; }
+    font-size: 2em;
+    line-height: 0.8em; }
   .side-nav.fixed .logo-subtitle {
     font-size: 0.8em; }
-  .side-nav.fixed li.menu-item:hover,
-  .side-nav.fixed li.menu-item.active {
-    color: #d8c6bc;
+  .side-nav.fixed li.menu-item:hover {
     background: #1C3048; }
-  .side-nav.fixed li.menu-item:hover,
   .side-nav.fixed li.menu-item.active {
-    color: #d8c6bc;
-    background: #1C3048; }
+    background: #77933C; }
   .side-nav.fixed a {
     color: #f4f0f0;
     display: block;
@@ -666,16 +662,19 @@ a {
     color: #efefef;
     padding: 0px;
     line-height: 1.3em;
-    background: #4979B3;
-    font-size: 19px;
-    border-bottom: 1px solid #769ECE; }
-    .side-nav.fixed .menu-title li:hover,
-    .side-nav.fixed .menu-title li.active {
-      color: #d8c6bc;
+    font-size: 19px; }
+    .side-nav.fixed .menu-title .collapsible li:hover {
       background: #1C3048; }
+    .side-nav.fixed .menu-title .collapsible li.active {
+      background: #4571A7; }
+    .side-nav.fixed .menu-title .collapsible-body li:hover {
+      background: #1C3048; }
+    .side-nav.fixed .menu-title .collapsible-body li.active {
+      color: #d8c6bc;
+      background: #77933C; }
   .side-nav.fixed .submenu-item {
     text-align: right;
-    background: #3F81D0; }
+    background: #4571A7; }
 
 .side-nav .collapsible-body li a {
   margin: 0; }

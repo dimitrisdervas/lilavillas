@@ -18,19 +18,35 @@
 <!-- MENU -->   
      
        {% for menu in posts limit:{{include.component-data.limit}} offset:{{include.component-data.offset}} %}
+<!--      {{ page.url }}
+    {{ menu.url}}  -->
         {% if menu.url %}
-            <li class="menu-item menu-{{ menu.name | slugify }}">
-             <a href='{{ site.baseurl }}/{{ menu.url }}'>{{ menu.name }}</a>
-                 </li>
+            {% if menu.url == page.url %}
+               <li class="menu-item menu-{{ menu.name | slugify }} active">
+            {% else %}
+               <li class="menu-item menu-{{ menu.name | slugify }}">
+            {% endif %}
+                <a class="waves-effect waves-btn" href='{{ site.baseurl }}{{ menu.url }}'>{{ menu.name }}</a>
+                    </li>
+
        {% else %}
            <li class="menu-title">
               <ul class="collapsible" data-collapsible="accordion" >
                  <li>
-                    <a class='collapsible-header waves-effect waves-btn'>{{ menu.name }}</a>
+                    {% assign menuTitle = menu.name | slugify %}
+                    {% if page.url contains menuTitle  %}
+                       <a class='collapsible-header waves-effect waves-btn active'>{{ menu.name }}</a>
+                    {% else %}
+                       <a class='collapsible-header waves-effect waves-btn'>{{ menu.name }}</a>
+                    {% endif %}                    
                     <div class="collapsible-body">
                         <ul>
                            {% for submenu in menu.submenu %}
-                              <li class="submenu-item">
+                                 {% if submenu.url == page.url %}
+                                    <li class="submenu-item active">
+                                 {% else %}
+                                    <li class="submenu-item">
+                                 {% endif %}
                                     <a href="{{ site.baseurl }}/{{ submenu.url }}">{{ submenu.name }} </a>
                                  </li>
                               {% endfor %}

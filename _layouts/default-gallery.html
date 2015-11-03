@@ -8,21 +8,39 @@ layout: compress
   {% include basic_components/head.html %}
 
   <body>
-    
+
   {% include basic_components/page.html config-file='header-materialize' %}
      
+    
          <div class="page gallery"> 
-                  
+            
+           
                   {{ content }}
 
                </div>
  
-{% include basic_components/page.html config-file='footer' %}
+         {% include basic_components/page.html config-file='footer' %}
 
       <script type="text/javascript" src="{{ site.baseurl }}/js/components.js"></script> 
             {% include basic_components/perpagePlugins.html %}
 
-     
+     <script type="text/javascript" src="http://perfbar.khalidlafi.com.global.prod.fastly.net/perfbar-0.0.2.min.js"></script>
+     <script type="text/javascript">
+     perfBar.init({
+       budget: { 
+         'loadTime': {
+           max: 200
+         },
+         'redirectCount': {
+           max: 1
+         },
+         'globalJS': {
+           min: 2,
+           max: 5
+         }
+       }
+     });
+     </script>
   </body>
 
 </html>

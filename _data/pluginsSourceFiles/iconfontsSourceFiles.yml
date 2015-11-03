@@ -3,5 +3,4 @@
 - name: Et-Line
   css: css/fonts/et-line/et-line.css
 - name: Material-Design-Icons
-  state: active
   css: css/fonts/material-design-icons/material-design-icons.css

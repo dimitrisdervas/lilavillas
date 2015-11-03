@@ -65,30 +65,27 @@
       background: transparent;
    }   
   .logo {
-   padding: 30px 10px;
-   text-align: center;            
-   a {
-      color: #fff;
-      font-size: 48px;
-      font-family: $lila-logo;
-      line-height: 1.2;
-      height: auto;
+      padding: 30px 10px;
+      text-align: center;            
+      a {
+         color: #fff;
+         font-size: 48px;
+         font-family: $lila-logo;
+         height: auto;
+         }
       }
-   }
    .logo-title {
       font-size: 2em;
-   }
+      line-height: 0.8em;
+      }
    .logo-subtitle {
       font-size: 0.8em;
-   }
-   li.menu-item:hover,
-   li.menu-item.active {
-         color: #d8c6bc;
+      }   
+   li.menu-item:hover {
          background: #1C3048;
-      }     li.menu-item:hover,
+      }   
    li.menu-item.active {
-         color: #d8c6bc;
-         background: #1C3048;
+         background: #77933C;
       }   
    a {
       color: #f4f0f0;
@@ -109,18 +106,24 @@
       color: #efefef;
       padding: 0px;
       line-height: 1.3em;
-      background: #4979B3;
       font-size: 19px;
-      border-bottom: 1px solid #769ECE;
-        li:hover,
-        li.active {
+      .collapsible li:hover{
+         background: #1C3048; 
+      }
+      .collapsible li.active {
+          background: #4571A7;
+      }
+       .collapsible-body li:hover{
+         background: #1C3048;  
+      }
+       .collapsible-body li.active {
          color: #d8c6bc;
-         background: #1C3048;
+         background: #77933C;
       }   
    }
    .submenu-item {
       text-align: right;
-      background: #3F81D0;
+      background: #4571A7;
    }
 }                 
 .side-nav .collapsible-body li a {
