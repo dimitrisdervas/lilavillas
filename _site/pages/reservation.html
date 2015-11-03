@@ -16,11 +16,11 @@
 <!-- Icon Fοnts -->
    
          
-               <link rel="stylesheet" href="/lilavillas/css/fonts/font-awesome/font-awesome.min.css">  
-            
       
          
-               <link rel="stylesheet" href="/lilavillas/css/fonts/et-line/et-line.css">  
+      
+         
+               <link rel="stylesheet" href="/lilavillas/css/fonts/material-design-icons/material-design-icons.css">  
             
       
    
@@ -345,8 +345,20 @@
        
         
   </ul>
+
 <div class="mobile-nav">
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+   
+   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+   
+   <div class="logo">
+      <a href="/lilavillas/"> 
+         
+         <div class="logo-title">Lila Beach Front Villas</div>
+         
+      </a> 
+   </div>
+   
    </div>
               
 
@@ -462,7 +474,7 @@
 <!-- DEBUG FILE: html_components/basic_components/page.html -->
 <!-- INCLUDE basic_components/pageIncludes/themeElement.html -->  
    <section 
- 		class="mainbar facilities"
+ 		class="mainbar facilities z-depth-2"
 	>
 
 
@@ -600,10 +612,8 @@
  		class="input-field"
 	>
                         
-                               <!--  Check what type of field we are prinitng -->
-                              <label for="">name</label>                 
-
                               
+                              <label for="">name</label>                 
                                        <input 
  		label="name"
 	
@@ -621,10 +631,8 @@
  		class="input-field"
 	>
                         
-                               <!--  Check what type of field we are prinitng -->
-                              <label for="">email</label>                 
-
                               
+                              <label for="">email</label>                 
                                        <input 
  		label="email"
 	
@@ -642,10 +650,8 @@
  		class="input-field"
 	>
                         
-                               <!--  Check what type of field we are prinitng -->
-                              <label for="">phone</label>                 
-
                               
+                              <label for="">phone</label>                 
                                        <input 
  		class="phone validate"
 	
@@ -663,10 +669,9 @@
  		class="checkin"
 	>
                         
-                               <!--  Check what type of field we are prinitng -->
-                              <label for="">Checkin</label>                 
-
                               
+  
+                                       <label for="">Checkin</label>                 
                                        <input type="date" class="datepicker datepicker-checkin">
                      
                                  
@@ -678,10 +683,9 @@
  		class="checkout"
 	>
                         
-                               <!--  Check what type of field we are prinitng -->
-                              <label for="">Checkout</label>                 
-
                               
+  
+                                       <label for="">Checkout</label>                 
                                        <input type="date" class="datepicker datepicker-checkout">
                      
                                  
@@ -693,9 +697,6 @@
  		class="input-field persons"
 	>
                         
-                               <!--  Check what type of field we are prinitng -->
-                              <label for=""></label>                 
-
                               
                                        <select>
                                           
@@ -736,6 +737,7 @@
                                           
                                           
                                        </select>
+                               <label for="">Persons</label>
                               <!-- CHECKABLE  -->                 
                                  
 
@@ -746,9 +748,6 @@
  		class="input-field villa"
 	>
                         
-                               <!--  Check what type of field we are prinitng -->
-                              <label for=""></label>                 
-
                               
                                        <select>
                                           
@@ -769,6 +768,7 @@
                                           
                                           
                                        </select>
+                               <label for=""></label>
                               <!-- CHECKABLE  -->                 
                                  
 
@@ -779,9 +779,6 @@
  		class="input-field message"
 	>
                         
-                               <!--  Check what type of field we are prinitng -->
-                              <label for="textarea">message</label>                 
-
                               
                                        <textarea 
  		class="materialize-textarea"
@@ -800,9 +797,6 @@
                              
                      <div >
                         
-                               <!--  Check what type of field we are prinitng -->
-                              <label for=""></label>                 
-
                               
                                        <button  class="submit-button btn waves-effect"  type="submit"  name="action"  button-text="Ask Owner"  >
                                              Ask Owner
@@ -911,7 +905,7 @@
 <!-- DEBUG FILE: html_components/basic_components/page.html -->
 <!-- INCLUDE basic_components/pageIncludes/themeElement.html -->  
    <section 
- 		class="sidebar contact-details"
+ 		class="sidebar contact-details z-depth-1"
 	>
 
 
@@ -1576,6 +1570,9 @@
 
   <script type="text/javascript">
        $(document).ready(function() {
+          
+          $(".button-collapse").sideNav();
+          
             
                   $('.datepicker-checkin').pickadate({
     selectMonths: true, // Creates a dropdown to control month

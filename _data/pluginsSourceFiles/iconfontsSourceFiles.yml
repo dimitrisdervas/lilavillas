@@ -1,6 +1,7 @@
 - name: FontAwesome
-  state: active
   css: css/fonts/font-awesome/font-awesome.min.css
 - name: Et-Line
-  state: active
   css: css/fonts/et-line/et-line.css
+- name: Material-Design-Icons
+  state: active
+  css: css/fonts/material-design-icons/material-design-icons.css

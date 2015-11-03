@@ -44,10 +44,6 @@
        "layouts/layoutHeader",
        "layouts/layoutFrontpage",
        "layouts/layoutBlog",
-       "layouts/layoutWide",
-       "layouts/layoutNormal",
-       "layouts/layoutNarrower",   
-       "layouts/layoutMobile",
        "layouts/layoutFooter"
    ;
 
@@ -69,5 +65,10 @@
       "styles/stylesBlog",
       "styles/stylesMap" 
    ;
-      
+@import 
+       "layouts/layoutWide",
+       "layouts/layoutNormal",
+       "layouts/layoutNarrower",   
+       "layouts/layoutMobile"
+   ;      
 

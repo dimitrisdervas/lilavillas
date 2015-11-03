@@ -19,18 +19,18 @@
                            {% for field in fields  %}
                      <div {% include basic_components/pageIncludes/themeElement.html elementData=field.wrapperDiv.theme %}>
                         
-                               <!--  Check what type of field we are prinitng -->
-                              <label for="{{ field.data.id }}">{{ field.data.label }}</label>                 
-
                               {% case field.field  %}
                         
                                  {% when 'date' %}
+  
+                                       <label for="{{ field.data.id }}">{{ field.data.label }}</label>                 
                                        <input type="date" class="datepicker {{ field.data.class }}">
                      
                                  {% when 'textarea' %}
                                        <textarea {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}></textarea>
                               <!-- INPUT --> 
                                  {% when 'input' %}
+                              <label for="{{ field.data.id }}">{{ field.data.label }}</label>                 
                                        <input {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}>
                               <!-- DROPDOWN BOX --> 
                                  {% when 'select' %}
@@ -43,8 +43,10 @@
                                           {% endif %}
                                           {%  endfor %}
                                        </select>
+                               <label for="{{ field.data.id }}">{{ field.data.label }}</label>
                               <!-- CHECKABLE  -->                 
                                  {% when 'check' %}
+                                      <label for="{{ field.data.id }}">{{ field.data.label }}</label>
                                        <input type="checkbox" checked>
                               <!-- BUTTONS -->
                                  {% when 'button' %}

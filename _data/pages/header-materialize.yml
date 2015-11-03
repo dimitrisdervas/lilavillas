@@ -8,6 +8,7 @@
      components:
        - component: materialize/sidenav-fixed
          data:
+          javascript-plugin: sidenav
           logo:
            title: Lila 
            subtitle: Beach Front Villas
