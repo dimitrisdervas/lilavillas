@@ -2,12 +2,12 @@
    text-align: left;
    display: flex;
       .prices-list {
-/*             @include gallery( 4 of 12); */
             max-width: 280px;
             display: flex; /* FLEX */
             flex-direction: column; /* FLEX */
-            background: #ffffff;
+            background: transparent;
             padding: 25px 25px 20px;
+            color: #fff;
             margin-left: gutters(12); /* FLEX */
          .title {
             color: #c1935c;
@@ -31,8 +31,6 @@
          }
          .season {
              font-size: 22px;
-             color: #000;
-             font-weight: bold;
              margin-bottom: 8px;
          }
          .price {            
@@ -52,6 +50,9 @@
          .date2 {
            @include span( 50% last );
             margin-bottom: 20px;
+         }
+         .more {
+            color: #fff;
          }
    }
 }

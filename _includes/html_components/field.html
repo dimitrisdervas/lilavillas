@@ -6,24 +6,30 @@
 
 
 
-               {% if field.data.label %}
+<!--                {% if field.data.label %}
                   <div class="label {{field.data.class}}-{{field.data.label}}">
                      {{ field.data.label }}
                   </div>
-              {% endif %}
+              {% endif %} -->
 
                
-           <div class="field {{field.field}} {{field.data.class}}">
+
+              
               {% if include.component-data.folder %}
-                      {{ site.data.content.[include.component-data.folder].[include.component-data.content-type].[field.field] }}
+                 {% assign fieldContent = site.data.content.[include.component-data.folder].[include.component-data.content-type] %}
               {% else %}
-                    {% if field.link %}
-                       <a href="{{site.baseurl}}{{ site.data.content.[include.component-data.content-type].[field.link] }}">{{ site.data.content.[include.component-data.content-type].[field.field] }}</a>
-                    {% else %}
-                       {{ site.data.content.[include.component-data.content-type].[field.field] }}
-                    {% endif%}
+                 {% assign fieldContent = site.data.content.[include.component-data.content-type] %}
               {% endif %}
-            </div>
+              
+                    {% if field.data.link %}
+                       <a class="{{ field.data.class }}" href="{{site.baseurl}}{{ fieldContent.[field.data.link] }}">{{ fieldContent.[field.field] }}</a>
+                    {% else %}
+                          <div class="field {{field.field}} {{field.data.class}}">
+                                {{ fieldContent.[field.field] }}
+                          </div>
+                    {% endif%}
+              
+
 
 
 

@@ -731,14 +731,14 @@ section.content-gallery,
   text-align: left;
   display: flex; }
   .section-prices .prices-list {
-    /*             @include gallery( 4 of 12); */
     max-width: 280px;
     display: flex;
     /* FLEX */
     flex-direction: column;
     /* FLEX */
-    background: #ffffff;
+    background: transparent;
     padding: 25px 25px 20px;
+    color: #fff;
     margin-left: 1.69492%;
     /* FLEX */ }
     .section-prices .prices-list .title {
@@ -760,8 +760,6 @@ section.content-gallery,
       justify-content: space-between; }
     .section-prices .prices-list .season {
       font-size: 22px;
-      color: #000;
-      font-weight: bold;
       margin-bottom: 8px; }
     .section-prices .prices-list .price {
       font-size: 24px;
@@ -782,6 +780,8 @@ section.content-gallery,
       float: right;
       margin-right: 0;
       margin-bottom: 20px; }
+    .section-prices .prices-list .more {
+      color: #fff; }
 
 .section-facilities {
   display: flex;
@@ -844,7 +844,19 @@ section.content-gallery,
   opacity: 0.9; }
 
 .gallery-thumb {
-  padding: 3px 1px; }
+  padding: 2px 1px 0; }
+
+.owl-carousel.owl-loaded {
+  display: flex;
+  flex-direction: column; }
+
+.owl-theme .owl-nav {
+  margin-top: -10em;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  position: fixed;
+  float: right;
+  width: 100%; }
 
 .contact-form-materialize {
   background: #EEECE1; }

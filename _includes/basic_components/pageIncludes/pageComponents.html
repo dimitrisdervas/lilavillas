@@ -46,8 +46,11 @@
 
     {% endfor %}
 {% else %}
-
+{% if htmlComponent.component == custom %}
+   {% capture htmlComponentHtml %}html_components/custom/{{ htmlComponent.name }}.html{% endcapture %}
+{% else %}
   {% capture htmlComponentHtml %}html_components/{{ htmlComponent.component }}.html{% endcapture %}
+{% endif %}
   {% include {{ htmlComponentHtml }} component-data=htmlComponent.data %} 
 
 {% endif %}

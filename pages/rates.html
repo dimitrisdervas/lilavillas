@@ -30,10 +30,21 @@ config:
                groupFieldsElement: ul
                fields: 
                 - field: season
-                - field: price 
+                - field: price
+          - component: field
+            data:
+               class: facility
+               content-type: title
+               folder: paradise
+               data-type: data-list
+               fields: 
+                - field: link
+                  data:
+                    link: url
+                    class: waves-effect waves-teal btn-flat more
       - div: 
          theme:
-          class: prices-list     
+          class: prices-list z-depth-2     
         components:
           - component: field
             data:
@@ -43,7 +54,6 @@ config:
                data-type: data-list
                fields: 
                 - field: title
-                - field: subtitle1
                 - field: subtitle2
           - component: posts-list
             data:
@@ -55,9 +65,20 @@ config:
                fields: 
                 - field: season
                 - field: price 
+          - component: field
+            data:
+               class: facility
+               content-type: title
+               folder: lila2
+               data-type: data-list
+               fields: 
+                - field: link
+                  data:
+                    link: url
+                    class: waves-effect waves-teal btn-flat more
       - div: 
          theme:
-          class: prices-list     
+          class: prices-list z-depth-2     
         components:
           - component: field
             data:
@@ -67,7 +88,6 @@ config:
                data-type: data-list
                fields: 
                 - field: title
-                - field: subtitle1
                 - field: subtitle2
           - component: posts-list
             data:
@@ -79,6 +99,17 @@ config:
                fields: 
                 - field: season
                 - field: price 
+          - component: field
+            data:
+               class: facility
+               content-type: title
+               folder: bungalow
+               data-type: data-list
+               fields: 
+                - field: link
+                  data:
+                    link: url
+                    class: waves-effect waves-teal btn-flat more
 css: |
       .bg {
          background-image: url(/lilavillas/assets/images/AMP_1060.jpg);

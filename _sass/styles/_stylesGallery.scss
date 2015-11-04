@@ -21,5 +21,18 @@
 }
 
 .gallery-thumb {
-   padding: 3px 1px;
+   padding: 2px 1px 0;
+}
+
+.owl-carousel.owl-loaded {
+    display: flex;
+    flex-direction: column;
+}
+.owl-theme .owl-nav {
+    margin-top: -10em;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    position: fixed;
+    float: right;
+    width: 100%;
 }
