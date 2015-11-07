@@ -1,5 +1,7 @@
+.success-message {
+   display: none;
+}
 .contact-form-materialize {
-   background: #EEECE1;
    .component-title {
       color: #c1935c;
       font-size: 48px;
@@ -48,4 +50,14 @@ textarea {
       font-size: 15px;
       color: #fff;
    }
+}
+/* OVERIDE PARSLEY */
+.parsley-errors-list li {
+    color: #f44336;
+    opacity: 1;
+    font-size: 0.8em;
+}
+/* OVERIDE FORM MATERIALIZE */
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"], textarea.materialize-textarea {
+   margin-bottom: 5px;
 }

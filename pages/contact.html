@@ -5,14 +5,11 @@ config:
     data:
       htmlelement: section
     theme:
-      class: content 
+       class: mainbar facilities z-depth-2
    divs:
-      - div: 
-         theme:
-          class: topspacer  
       - div:
          theme:
-          class: contact-form-materialize mainbar z-depth-2
+          class: contact-form-materialize mainbar-inside
         components:                
          - component: form
            data:
@@ -60,9 +57,15 @@ config:
                     type: submit 
                     name: action
                     button-text: Ask Owner
+ - section: 
+    data:
+      htmlelement: section
+    theme:
+       class: sidebar contact-details z-depth-1
+   divs:
       - div: 
          theme:
-          class: contact-details sidebar z-depth-1
+          class: sidebar-inside 
         components:
          - component: field
            data:

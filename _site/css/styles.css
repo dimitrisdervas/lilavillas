@@ -409,7 +409,7 @@ th {
 .z-depth-1-half {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
-.z-depth-2, .facilities {
+.z-depth-2, .mainbar {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .z-depth-3 {
@@ -421,46 +421,54 @@ th {
 .z-depth-5 {
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
 
+.waves-effect.waves-greenlila .waves-ripple {
+  /* The alpha value allows the text and background color
+  of the button to still show through. */
+  background-color: rgba(119, 147, 60, 0.65); }
+
 /*  */
 /* FACILITIES */
 /*  */
-.facilities {
-  background: #EEECE1;
+.full-height {
   height: 100%; }
-  .facilities .title {
-    padding: 0 5px;
-    margin-bottom: 0;
-    color: #c1935c;
-    font-size: 40px;
-    line-height: .9em;
-    letter-spacing: -3px;
-    margin-left: -4px;
-    margin-bottom: 0.3em; }
-  .facilities .subtitle1,
-  .facilities .subtitle2 {
-    color: #79797a;
-    font-size: 17px;
-    line-height: 20px; }
-  .facilities .subtitle2 {
-    margin-bottom: 20px; }
-  .facilities .component-title {
-    padding: 0 5px;
-    margin-bottom: 0;
-    color: #000;
-    font-size: 19px;
-    margin-bottom: 9px;
-    padding-left: 15px; }
-  .facilities ul {
-    border: 1px solid #ccc;
-    padding: 5px;
-    background: #fff; }
-  .facilities li {
-    padding: 5px 10px;
-    list-style: none;
-    font-style: italic;
-    color: #79797a;
-    font-size: 15px;
-    line-height: 0.9em; }
+
+.mainbar {
+  background: #EEECE1; }
+
+.facilities .title {
+  padding: 0 5px;
+  margin-bottom: 0;
+  color: #c1935c;
+  font-size: 40px;
+  line-height: .9em;
+  letter-spacing: -3px;
+  margin-left: -4px;
+  margin-bottom: 0.3em; }
+.facilities .subtitle1,
+.facilities .subtitle2 {
+  color: #79797a;
+  font-size: 17px;
+  line-height: 20px; }
+.facilities .subtitle2 {
+  margin-bottom: 20px; }
+.facilities .component-title {
+  padding: 0 5px;
+  margin-bottom: 0;
+  color: #000;
+  font-size: 19px;
+  margin-bottom: 9px;
+  padding-left: 15px; }
+.facilities ul {
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: #fff; }
+.facilities li {
+  padding: 5px 10px;
+  list-style: none;
+  font-style: italic;
+  color: #79797a;
+  font-size: 15px;
+  line-height: 0.9em; }
 
 /* LINKS */
 .links {
@@ -478,10 +486,6 @@ th {
   .links a:hover {
     background: #94B946;
     color: #323232; }
-  .links ul li.bungalow .waves-effect.waves-greenlila .waves-ripple {
-    /* The alpha value allows the text and background color
-    of the button to still show through. */
-    background-color: rgba(119, 147, 60, 0.65); }
   .links ul li.bungalow a {
     padding: 0;
     color: #fff;
@@ -636,7 +640,8 @@ a {
       color: #fff;
       font-size: 48px;
       font-family: "Tangerine", "Damion", "Grand+Hotel", "Cambria", "Georgia", "serif";
-      height: auto; }
+      height: auto;
+      padding: 0; }
   .side-nav.fixed .logo-title {
     font-size: 2em;
     line-height: 0.8em; }
@@ -741,7 +746,7 @@ section.content-gallery,
     color: #fff;
     margin-left: 1.69492%;
     /* FLEX */ }
-    .section-prices .prices-list .title {
+    .section-prices .prices-list a.title {
       color: #c1935c;
       font-size: 48px;
       line-height: .9em;
@@ -768,7 +773,9 @@ section.content-gallery,
       line-height: 1.2;
       overflow: hidden;
       color: #fff;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      width: 145px;
+      /* WIDTH */ }
     .section-prices .prices-list .date {
       width: 100%;
       float: left;
@@ -781,7 +788,12 @@ section.content-gallery,
       margin-right: 0;
       margin-bottom: 20px; }
     .section-prices .prices-list .more {
-      color: #fff; }
+      color: #fff;
+      text-align: center; }
+      .section-prices .prices-list .more .waves-effect.waves-green .waves-ripple {
+        /* The alpha value allows the text and background color
+        of the button to still show through. */
+        background-color: rgba(121, 85, 72, 0.65); }
 
 .section-facilities {
   display: flex;
@@ -858,14 +870,15 @@ section.content-gallery,
   float: right;
   width: 100%; }
 
-.contact-form-materialize {
-  background: #EEECE1; }
-  .contact-form-materialize .component-title {
-    color: #c1935c;
-    font-size: 48px;
-    line-height: .9em;
-    letter-spacing: -3px;
-    margin-bottom: 20px; }
+.success-message {
+  display: none; }
+
+.contact-form-materialize .component-title {
+  color: #c1935c;
+  font-size: 48px;
+  line-height: .9em;
+  letter-spacing: -3px;
+  margin-bottom: 20px; }
 
 textarea {
   overflow-y: hidden;
@@ -911,6 +924,16 @@ textarea {
     margin-bottom: 15px;
     font-size: 15px;
     color: #fff; }
+
+/* OVERIDE PARSLEY */
+.parsley-errors-list li {
+  color: #f44336;
+  opacity: 1;
+  font-size: 0.8em; }
+
+/* OVERIDE FORM MATERIALIZE */
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"], textarea.materialize-textarea {
+  margin-bottom: 5px; }
 
 /* .header-wrapper {
    height: 100%;
@@ -1171,7 +1194,7 @@ textarea {
     display: flex;
     flex-wrap: nowrap;
     position: absolute;
-    bottom: 30px;
+    bottom: 33px;
     z-index: 52;
     background: #fff; }
 

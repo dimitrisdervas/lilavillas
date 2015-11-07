@@ -503,7 +503,7 @@
 <!-- DEBUG FILE: html_components/basic_components/page.html -->
 <!-- INCLUDE basic_components/pageIncludes/themeElement.html -->  
    <section 
- 		class="content"
+ 		class="mainbar facilities z-depth-2"
 	>
 
 
@@ -540,46 +540,7 @@
       
 
 <div 
- 		class="topspacer"
-	>
-
-
-            <!-- LOOP THROUGH THE COMPONENTS OF THE CURENT DIV -->   
-                                    
-                        <!-- End DIV for simple divClass -->
-                        </div>      
-                     <!--  End DIVS LOOP -->
-                     
-
-
-
-                  <!--            -->
-                  <!-- ALIAS DIVS -->
-                  <!--            -->                  
-                  
-                  
-                  
-
-
-
-
-
-                        <!--                  -->
-                        <!--  DIVS            -->
-                        <!--                  -->
-                        <!-- DEBUG FILE: html_components/basic_components/page.html -->
-                        <!-- INCLUDE basic_components/pageIncludes/pageDivs.html -->
-                           <!--       -->
-<!-- ALIAS -->
-<!--       -->
-
-
-
-  
-      
-
-<div 
- 		class="contact-form-materialize mainbar z-depth-2"
+ 		class="contact-form-materialize mainbar-inside"
 	>
 
 
@@ -664,7 +625,7 @@
 
   <!-- FROM HERE -->
 <!--  https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/The_native_form_widgets#Auto-complete_content -->
-<form data-parsley-validate>
+<form id="reservation-form" data-parsley-validate>
 <!-- Just print the fields -->
 <!-- Loop each field in the component -->
    <!--  If there is grouping div got fields -->
@@ -679,7 +640,7 @@
                            
                      <div 
  		class="input-field"
-	>
+	 >
                         
                               
                               <label for="">name</label>                 
@@ -689,7 +650,7 @@
  		type="text"
 	
  		label="name"
-	>
+	 required>
                               <!-- DROPDOWN BOX --> 
                                  
 
@@ -698,7 +659,7 @@
                              
                      <div 
  		class="input-field"
-	>
+	 >
                         
                               
                               <label for="">email</label>                 
@@ -708,7 +669,7 @@
  		type="text"
 	
  		label="email"
-	>
+	 required>
                               <!-- DROPDOWN BOX --> 
                                  
 
@@ -717,7 +678,7 @@
                              
                      <div 
  		class="input-field"
-	>
+	 >
                         
                               
                               <label for="">phone</label>                 
@@ -727,7 +688,7 @@
  		type="text"
 	
  		label="phone"
-	>
+	 required>
                               <!-- DROPDOWN BOX --> 
                                  
 
@@ -736,7 +697,7 @@
                              
                      <div 
  		class="input-field"
-	>
+	 >
                         
                               
                                        <textarea 
@@ -754,7 +715,7 @@
                            <!--  End loop in fields -->
                                 </div>
                              
-                     <div >
+                     <div  >
                         
                               
                                        <button  class="submit-button btn waves-effect"  type="submit"  name="action"  button-text="Ask Owner"  >
@@ -791,7 +752,87 @@
                         <!-- End DIV for simple divClass -->
                         </div>      
                      <!--  End DIVS LOOP -->
-                     
+                                       
+                <!-- END section -->
+            </section>
+           <!-- EndSection name cases -->
+        
+      <!-- SECTION WRAPPER END -->
+   
+  <!-- End loop in sections -->
+
+<!--  -->
+<!-- ALIAS SECTION-->
+<!--  -->
+
+
+
+
+
+
+<!-- CASES SECTION NAME -->
+   <!-- Check for custom staff -->
+   
+<!--               -->
+<!-- SECTION TITLE -->
+<!--               -->
+<!-- DEBUG FILE: html_components/basic_components/page.html -->
+<!-- INCLUDE basic_components/pageIncludes/title.html -->
+    <!--  -->
+<!-- ALIAS TITLE-->
+<!--  -->
+
+
+
+
+
+
+
+
+
+
+<!--                 -->
+<!-- TITLE -->
+<!--                 -->
+<!-- DEBUG FILE: html_components/component_includes/componentsTitle.html -->
+<!-- Check if there is a title for the html component and print it-->
+      
+
+
+<!--                  -->
+<!--  SECTION WRAPPER -->
+<!--                  -->
+<!-- DEBUG FILE: html_components/basic_components/page.html -->
+<!-- INCLUDE basic_components/pageIncludes/pageSectionWrapper.html -->
+   <!--       -->
+<!-- ALIAS -->
+<!--       -->
+
+
+
+ <!--                 -->
+<!--  SECTION WRAPPER -->
+<!--                 -->
+
+   
+      
+   
+
+
+<!--                 -->
+<!-- SECTION         -->
+<!--                 -->
+<!-- DEBUG FILE: html_components/basic_components/page.html -->
+<!-- INCLUDE basic_components/pageIncludes/themeElement.html -->  
+   <section 
+ 		class="sidebar contact-details z-depth-1"
+	>
+
+
+
+
+                  <!-- DIVS LOOP - Loop through the divs to create them -->   
+                  
 
 
 
@@ -821,7 +862,7 @@
       
 
 <div 
- 		class="contact-details sidebar z-depth-1"
+ 		class="sidebar-inside"
 	>
 
 
@@ -1487,9 +1528,6 @@
     
     
    
-       
-     
-   
       
          
           
@@ -1513,7 +1551,33 @@ $('.datepicker-checkout').pickadate({
   });
 
                   $('select').material_select();  
-                
+                  $("#reservation-form").submit(function() {
+            // validate form with parsley.
+            $(this).parsley().validate();
+            // if this form is valid
+            if ($(this).parsley().isValid()) {
+                $.ajax({
+                    dataType: 'jsonp',
+                    url: "http://getsimpleform.com/messages/ajax?form_api_token=4e4801ec96e34437f63d843c5ca3e435",
+                    data: $('#reservation-form').serialize() 
+                }).done(function() {
+                    //callback which can be used to show a thank you message
+                    //and reset the form
+                    $('.success-message').css( "display", "block" );                    
+                });               
+            }
+
+            // prevent default so the form doesn't submit. We can return true and
+            // the form will be submited or proceed with a ajax request.
+            event.preventDefault();
+        });
+
+window.Parsley.on('field:error', function() {
+  // This global callback will be called for any field that fails validation.
+//   console.log('Validation failed for: ', this.$element);
+  $(this.$element).addClass('invalid')
+});  
+                  
                
              
        });
@@ -1522,7 +1586,10 @@ $('.datepicker-checkout').pickadate({
 
           
         
-     
+    
+ 
+    
+    
    
       
          

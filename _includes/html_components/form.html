@@ -1,6 +1,6 @@
 <!-- FROM HERE -->
 <!--  https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/The_native_form_widgets#Auto-complete_content -->
-<form data-parsley-validate>
+<form id="reservation-form" data-parsley-validate>
 <!-- Just print the fields -->
 <!-- Loop each field in the component -->
    <!--  If there is grouping div got fields -->
@@ -17,24 +17,24 @@
                            <!-- DEBUG FILE: html_components/components_includes/fieldsCases.html -->
                            <!-- Just print the fields -->
                            {% for field in fields  %}
-                     <div {% include basic_components/pageIncludes/themeElement.html elementData=field.wrapperDiv.theme %}>
+                     <div {% include basic_components/pageIncludes/themeElement.html elementData=field.wrapperDiv.theme %} >
                         
                               {% case field.field  %}
                         
                                  {% when 'date' %}
   
                                        <label for="{{ field.data.id }}">{{ field.data.label }}</label>                 
-                                       <input type="date" class="datepicker {{ field.data.class }}">
+                                       <input type="date" class="datepicker {{ field.data.class }}" required>
                      
                                  {% when 'textarea' %}
                                        <textarea {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}></textarea>
                               <!-- INPUT --> 
                                  {% when 'input' %}
                               <label for="{{ field.data.id }}">{{ field.data.label }}</label>                 
-                                       <input {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}>
+                                       <input {% include basic_components/pageIncludes/themeElement.html elementData=field.data %} required>
                               <!-- DROPDOWN BOX --> 
                                  {% when 'select' %}
-                                       <select>
+                                       <select required>
                                           {% for option in field.options %}
                                              {% if forloop.first  %}
                                              <option value="" {{ option.data }} >{{ option.option }}</option>

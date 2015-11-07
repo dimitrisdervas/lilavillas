@@ -69,7 +69,6 @@
   js: bower_components/photoswipe/dist/photoswipe-ui-default.min.js
 
 - name: rome
-  state: active
   js: bower_components/rome/dist/rome.min.js
   css:
   - css: bower_components/rome/dist/rome.min.css

@@ -503,7 +503,7 @@
 <!-- DEBUG FILE: html_components/basic_components/page.html -->
 <!-- INCLUDE basic_components/pageIncludes/themeElement.html -->  
    <section 
- 		class="mainbar facilities z-depth-2"
+ 		class="mainbar full-height z-depth-2"
 	>
 
 
@@ -511,6 +511,159 @@
 
                   <!-- DIVS LOOP - Loop through the divs to create them -->   
                   
+
+
+
+                  <!--            -->
+                  <!-- ALIAS DIVS -->
+                  <!--            -->                  
+                  
+                  
+                  
+
+
+
+
+
+                        <!--                  -->
+                        <!--  DIVS            -->
+                        <!--                  -->
+                        <!-- DEBUG FILE: html_components/basic_components/page.html -->
+                        <!-- INCLUDE basic_components/pageIncludes/pageDivs.html -->
+                           <!--       -->
+<!-- ALIAS -->
+<!--       -->
+
+
+
+  
+      
+
+<div 
+ 		class="success-mesage"
+	>
+
+
+            <!-- LOOP THROUGH THE COMPONENTS OF THE CURENT DIV -->   
+                           
+
+                            <!--                  -->
+                            <!-- ALIAS COMPONENTS -->
+                            <!--                  -->                  
+                            
+                            
+                            
+
+
+
+                              <!--                        -->
+                              <!-- CUSTOM HTML SHORT CODE -->
+                              <!--                        -->
+                              <!-- CheckIF we have custom html code code - short e.x. <i class="material-icons">menu</i> -->         
+                                 
+
+
+
+
+                                 <!--                 -->
+                                 <!-- HTML COMPONENTS -->
+                                 <!--                 -->                      
+                                    
+                                    <!-- Include the html component template and bring it's details -->
+                                       <!--       -->
+<!-- ALIAS -->
+<!--       -->
+
+
+
+
+
+<!--  -->
+<!-- PAGE COMPONENTS -->
+<!--  -->
+<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
+
+<!-- TITLE COMPONENT -->
+  <!--                 -->
+<!-- COMPONENT TITLE -->
+<!--                 -->
+<!-- DEBUG FILE: html_components/component_includes/componentsTitle.html -->
+<!-- Check if there is a title for the html component and print it-->
+      
+
+
+<!--                       -->
+<!-- COMPONENT WRAPPER DIV -->
+<!--                       -->
+<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
+<!-- INCLUDE basic_components/pageIncludes/pageComponentsWrapper.html -->
+   
+   
+   
+
+
+
+
+<!--                   -->
+<!-- COMPONENT CONTENT -->
+<!--                   -->
+<!-- DEBUG FILE: html_components/basic_components/pageIncludes/pageComponents.html -->
+<!-- Include the html component template and bring it's details -->
+<!-- Capture the html component template -->
+  
+
+
+  
+
+  
+ 
+
+ 
+
+
+
+
+<!--                 -->
+
+               
+
+              
+              
+                 
+              
+              
+                    
+                          <div class="field success-message ">
+                                Thank you! We will get back to you to confirm your reservation!
+                          </div>
+                    
+              
+
+
+
+
+    
+
+
+
+
+
+
+ 
+                                    <!-- EndIF htmlComponent.component -->
+                                    
+      
+                                          
+      
+
+
+
+                           <!--  End Component Loop -->
+                                    
+                        <!-- End DIV for simple divClass -->
+                        </div>      
+                     <!--  End DIVS LOOP -->
+                     
 
 
 
@@ -625,7 +778,7 @@
 
   <!-- FROM HERE -->
 <!--  https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/The_native_form_widgets#Auto-complete_content -->
-<form data-parsley-validate>
+<form id="reservation-form" data-parsley-validate>
 <!-- Just print the fields -->
 <!-- Loop each field in the component -->
    <!--  If there is grouping div got fields -->
@@ -640,7 +793,7 @@
                            
                      <div 
  		class="input-field"
-	>
+	 >
                         
                               
                               <label for="">name</label>                 
@@ -650,7 +803,7 @@
  		class="name validate"
 	
  		type="text"
-	>
+	 required>
                               <!-- DROPDOWN BOX --> 
                                  
 
@@ -659,7 +812,7 @@
                              
                      <div 
  		class="input-field"
-	>
+	 >
                         
                               
                               <label for="">email</label>                 
@@ -668,8 +821,8 @@
 	
  		class="email validate"
 	
- 		type="text"
-	>
+ 		type="email"
+	 required>
                               <!-- DROPDOWN BOX --> 
                                  
 
@@ -678,7 +831,7 @@
                              
                      <div 
  		class="input-field"
-	>
+	 >
                         
                               
                               <label for="">phone</label>                 
@@ -688,7 +841,7 @@
  		type="text"
 	
  		label="phone"
-	>
+	 required>
                               <!-- DROPDOWN BOX --> 
                                  
 
@@ -697,12 +850,12 @@
                              
                      <div 
  		class="checkin"
-	>
+	 >
                         
                               
   
                                        <label for="">Checkin</label>                 
-                                       <input type="date" class="datepicker datepicker-checkin">
+                                       <input type="date" class="datepicker datepicker-checkin" required>
                      
                                  
 
@@ -711,12 +864,12 @@
                              
                      <div 
  		class="checkout"
-	>
+	 >
                         
                               
   
                                        <label for="">Checkout</label>                 
-                                       <input type="date" class="datepicker datepicker-checkout">
+                                       <input type="date" class="datepicker datepicker-checkout" required>
                      
                                  
 
@@ -725,10 +878,10 @@
                              
                      <div 
  		class="input-field persons"
-	>
+	 >
                         
                               
-                                       <select>
+                                       <select required>
                                           
                                              
                                              <option value="" disabled selected >Persons</option>
@@ -776,10 +929,10 @@
                              
                      <div 
  		class="input-field villa"
-	>
+	 >
                         
                               
-                                       <select>
+                                       <select required>
                                           
                                              
                                              <option value="" disabled selected >Choose Villa</option>
@@ -807,7 +960,7 @@
                              
                      <div 
  		class="input-field message"
-	>
+	 >
                         
                               
                                        <textarea 
@@ -825,7 +978,7 @@
                            <!--  End loop in fields -->
                                 </div>
                              
-                     <div >
+                     <div  >
                         
                               
                                        <button  class="submit-button btn waves-effect"  type="submit"  name="action"  button-text="Ask Owner"  >
@@ -1640,6 +1793,11 @@
    
       
          
+        
+     
+   
+      
+         
           
             
 
@@ -1661,7 +1819,33 @@ $('.datepicker-checkout').pickadate({
   });
 
                   $('select').material_select();  
-                
+                  $("#reservation-form").submit(function() {
+            // validate form with parsley.
+            $(this).parsley().validate();
+            // if this form is valid
+            if ($(this).parsley().isValid()) {
+                $.ajax({
+                    dataType: 'jsonp',
+                    url: "http://getsimpleform.com/messages/ajax?form_api_token=4e4801ec96e34437f63d843c5ca3e435",
+                    data: $('#reservation-form').serialize() 
+                }).done(function() {
+                    //callback which can be used to show a thank you message
+                    //and reset the form
+                    $('.success-message').css( "display", "block" );                    
+                });               
+            }
+
+            // prevent default so the form doesn't submit. We can return true and
+            // the form will be submited or proceed with a ajax request.
+            event.preventDefault();
+        });
+
+window.Parsley.on('field:error', function() {
+  // This global callback will be called for any field that fails validation.
+//   console.log('Validation failed for: ', this.$element);
+  $(this.$element).addClass('invalid')
+});  
+                  
                
              
        });

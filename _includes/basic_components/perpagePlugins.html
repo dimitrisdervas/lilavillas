@@ -61,7 +61,8 @@
                 {% when 'form'%}
                   {% include basic_components/javascriptPluginsCases/pickadate.js pickadateData= component.data.javascript-plugin-data %}
                   {% include basic_components/javascriptPluginsCases/formSelect.js formselectData= component.data.javascript-plugin-data %}  
-                
+                  {% include basic_components/javascriptPluginsCases/simpleformAjax.js simpleformData= component.data.javascript-plugin-data %}  
+                  
                {% when 'owl-carousel' %}
                   {% include basic_components/javascriptPluginsCases/owlSlideshow.js slideshowOwlData= component.data.javascript-plugin-data %}
  

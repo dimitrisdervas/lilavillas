@@ -5,8 +5,18 @@ config:
     data:
       htmlelement: section
     theme:
-       class: mainbar facilities z-depth-2
+       class: mainbar full-height z-depth-2
    divs:
+      - div:
+         theme: 
+            class: success-mesage
+        components:                
+         - component: field
+           data: 
+            content-type: strings
+            data-type: data-list
+            fields:
+               - field: success-message
       - div:
          theme:
           class: contact-form-materialize mainbar-inside 
@@ -33,7 +43,7 @@ config:
                    data:
                     label: email
                     class: email validate
-                    type: text
+                    type: email
                  - field: input
                    wrapperDiv:
                      theme:

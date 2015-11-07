@@ -9,7 +9,7 @@
             padding: 25px 25px 20px;
             color: #fff;
             margin-left: gutters(12); /* FLEX */
-         .title {
+         a.title {
             color: #c1935c;
             font-size: 48px;
             line-height: .9em;
@@ -41,6 +41,7 @@
             overflow: hidden;
             color: #fff;
             margin-bottom: 30px;
+            width: 145px; /* WIDTH */
          }
          .date {
             @include span( 100% );
@@ -53,6 +54,12 @@
          }
          .more {
             color: #fff;
+            text-align: center;
+            .waves-effect.waves-green .waves-ripple {
+           /* The alpha value allows the text and background color
+           of the button to still show through. */
+            background-color: rgba(121, 85, 72, 0.65);
+    }
          }
    }
 }
