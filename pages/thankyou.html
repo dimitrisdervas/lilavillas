@@ -1,0 +1,31 @@
+---
+layout: default
+title: thankyou
+cssClass: bg
+config:
+ - section: 
+    data:
+      htmlelement: section
+    theme:
+       class: mainbar facilities z-depth-2
+   divs:
+      - div:
+         theme:
+          class: thankyou
+        components:                
+         - component: field
+           data:
+            title: Thank you
+            content-type: strings   
+            fields:
+               - field: thankyou
+
+
+css: |
+      .bg {
+         background-image: url(/assets/images/AMP_1076.jpg);
+      }
+---
+
+
+{% include basic_components/page.html %}

@@ -9,7 +9,7 @@ description: > # this means to ignore newlines until "baseurl:"
    its cleanness and facilities, Lila Villas, will be your perfect refuge for your summer 
    relaxation and the most convenient base for your trips to the island.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "lilavillas.gr" # the base hostname & protocol for your site
+url: "http://lilavillas.gr" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
