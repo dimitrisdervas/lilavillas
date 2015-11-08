@@ -1,5 +1,7 @@
 <!-- DEBUG FILE: basic_components/perpagePlugins.html -->
-{% if page.config-file %}
+{% if include.config-file %}
+    {% assign config = site.data.pages.[include.config-file] %}
+{% elsif page.config-file %}
    {% assign config = site.data.pages.[page.config-file] %}
 {% else %}
    {% assign config = page.config %}
@@ -26,9 +28,7 @@
 
   <script type="text/javascript">
        $(document).ready(function() {
-          
-          $(".button-collapse").sideNav();
-          
+                    
             {% case component.data.javascript-plugin %}  
           
                {% when 'gmap' %}
