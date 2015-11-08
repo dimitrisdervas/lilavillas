@@ -7,7 +7,7 @@ title: Lila Villas
 email: info@lilavillas.gr
 description: > # this means to ignore newlines until "baseurl:"
 
-baseurl: "/lilavillas" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "lilavillas.gr" # the base hostname & protocol for your site
 
 # Build settings
