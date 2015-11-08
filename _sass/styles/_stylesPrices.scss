@@ -1,69 +1,4 @@
-.section-prices {   
-   text-align: left;
-   display: flex;
-      .prices-list {
-            max-width: 280px;
-            display: flex; /* FLEX */
-            flex-direction: column; /* FLEX */
-            background: transparent;
-            padding: 25px 25px 20px;
-            color: #fff;
-            margin-left: gutters(12); /* FLEX */
-         a.title {
-            color: #c1935c;
-            font-size: 48px;
-            line-height: .9em;
-            letter-spacing: -3px;
-            margin-left: -4px;
-            flex-grow: 1; /* FLEX */
-         }
-         .subtitle1, .subtitle2 {
-            line-height: 1.2em;
-         }
-         .title,
-         .subtitle2 {
-            margin-bottom: 20px;
-         }
-         ul li {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-         }
-         .season {
-             font-size: 22px;
-             margin-bottom: 8px;
-         }
-         .price {            
-            font-size: 24px;
-            background: #C1935C;
-            padding: 5px 8px;
-            line-height: 1.2;
-            overflow: hidden;
-            color: #fff;
-            margin-bottom: 30px;
-            width: 145px; /* WIDTH */
-         }
-         .date {
-            @include span( 100% );
-            font-size: 13px;
-            line-height: 1.5em;
-         }
-         .date2 {
-           @include span( 50% last );
-            margin-bottom: 20px;
-         }
-         .more {
-            color: #fff;
-            text-align: center;
-            .waves-effect.waves-green .waves-ripple {
-           /* The alpha value allows the text and background color
-           of the button to still show through. */
-            background-color: rgba(121, 85, 72, 0.65);
-    }
-         }
-   }
-}
-
+/* ACCOMODATION PAGE */
 .rates {
    ul {
       li {
@@ -102,4 +37,74 @@
 .rd-back,
 .rd-next {
    color: #323232;
+}
+
+/* RATES PAGE */
+.section-prices {   
+   text-align: left;
+   display: flex;
+      .prices-list {
+            max-width: 280px;
+            display: flex; /* FLEX */
+            flex-direction: column; /* FLEX */
+            background: transparent;
+            padding: 25px 25px 20px;
+            color: #fff;
+            margin-left: gutters(12); /* FLEX */
+         a.title {
+            color: #c1935c;
+            font-size: 48px;
+            line-height: .9em;
+            letter-spacing: -3px;
+            margin-left: -4px;
+            flex-grow: 1; /* FLEX */
+         }
+         .subtitle1, .subtitle2 {
+            line-height: 1.2em;
+         }
+         .title,
+         .subtitle2 {
+            margin-bottom: 20px;
+         }
+         ul li {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            background: transparent;
+            
+         }
+         .season {
+             font-size: 22px;
+             margin-bottom: 8px;
+             color: #fff;
+         }
+         .price {            
+            font-size: 24px;
+            background: #C1935C;
+            padding: 5px 8px;
+            line-height: 1.2;
+            overflow: hidden;
+            color: #fff;
+            margin-bottom: 30px;
+            width: 145px; /* WIDTH */
+         }
+         .date {
+            @include span( 100% );
+            font-size: 13px;
+            line-height: 1.5em;
+         }
+         .date2 {
+           @include span( 50% last );
+            margin-bottom: 20px;
+         }
+         .more {
+            color: #fff;
+            text-align: center;
+            .waves-effect.waves-green .waves-ripple {
+           /* The alpha value allows the text and background color
+           of the button to still show through. */
+            background-color: rgba(121, 85, 72, 0.65);
+    }
+         }
+   }
 }

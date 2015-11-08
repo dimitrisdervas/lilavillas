@@ -16,7 +16,11 @@
 
      </div>                          
 
-     {% include basic_components/page.html config-file='footer' %}
+   
+     {% unless page.url contains 'gallery' %}     
+        {% include basic_components/page.html config-file='footer' %}
+     
+     {% endunless %}
 
       <script type="text/javascript" src="{{ site.baseurl }}/js/components.js"></script> 
      

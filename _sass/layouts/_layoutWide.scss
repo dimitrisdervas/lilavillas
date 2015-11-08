@@ -1,5 +1,6 @@
 @include susy-media(wide) {
-   .content-gallery {
+   .content-gallery,
+   .map {
       margin-left: 240px;
       height: 100%;
    }
