@@ -11,6 +11,13 @@
    .sidebar {
      min-width: 220px;
    }
+/* HEADER */
+   header {
+     
+   }
+   .side-nav {
+        width:240px;
+   }
 /* PAGE */
    .page {
       @include layout($full-width);
@@ -35,13 +42,6 @@
    }
    .mobile-nav a {
       display: none;
-   }
-   /* HEADER */
-   header {
-     
-   }
-   .side-nav {
-        width:240px;
    }
 /* FRONTPAGE */
    .content-gallery {

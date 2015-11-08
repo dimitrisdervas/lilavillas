@@ -20,6 +20,8 @@
                      <div {% include basic_components/pageIncludes/themeElement.html elementData=field.wrapperDiv.theme %} >
                         
                               {% case field.field  %}
+                        {% when %}
+                        <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
                         
                                  {% when 'date' %}
   

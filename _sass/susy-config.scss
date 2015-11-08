@@ -44,8 +44,13 @@ $full-width: (
 );
 
 $susy-media: (
+   wide: (
+    media: screen,
+    min-width: 1440px,
+   ),
   normal:  (
     media: screen,
+    max-width: 1439px,
     min-width: 737px,
   ),
   mobile:  (
