@@ -515,41 +515,6 @@ th {
   padding: 0px 5px;
   margin-bottom: 5px; }
 
-.rates {
-  background: transparent; }
-  .rates ul li {
-    background: #C4BD97;
-    margin: 5px 0;
-    float: left;
-    padding: 10px;
-    width: 100%; }
-  .rates .season {
-    float: left;
-    font-size: 22px;
-    color: #000;
-    font-weight: bold;
-    margin-bottom: 8px; }
-  .rates .price {
-    background: transparent;
-    float: right;
-    margin-bottom: 3px;
-    font-size: 24px;
-    line-height: 1.2;
-    overflow: hidden;
-    color: #fff; }
-  .rates .date {
-    width: 100%;
-    float: left;
-    margin-right: 1.69492%;
-    font-size: 13px;
-    color: #323232;
-    line-height: 1.5; }
-
-/* DATE POPUP */
-.rd-back,
-.rd-next {
-  color: #323232; }
-
 html {
   box-sizing: border-box; }
 
@@ -753,6 +718,39 @@ section.content-gallery,
         /* The alpha value allows the text and background color
         of the button to still show through. */
         background-color: rgba(121, 85, 72, 0.65); }
+
+.rates ul li {
+  background: #C4BD97;
+  margin: 5px 0;
+  float: left;
+  padding: 10px;
+  width: 100%; }
+.rates .season {
+  float: left;
+  font-size: 22px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 8px; }
+.rates .price {
+  background: transparent;
+  float: right;
+  margin-bottom: 3px;
+  font-size: 24px;
+  line-height: 1.2;
+  overflow: hidden;
+  color: #fff; }
+.rates .date {
+  width: 100%;
+  float: left;
+  margin-right: 1.69492%;
+  font-size: 13px;
+  color: #323232;
+  line-height: 1.5; }
+
+/* DATE POPUP */
+.rd-back,
+.rd-next {
+  color: #323232; }
 
 .section-facilities {
   display: flex;
@@ -1063,7 +1061,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 
   .mainbar {
     max-width: 300px;
-    min-width: 230px; }
+    min-width: 280px; }
 
   .sidebar {
     min-width: 220px; }

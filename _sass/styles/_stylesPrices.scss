@@ -63,3 +63,43 @@
          }
    }
 }
+
+.rates {
+   ul {
+      li {
+         @extend .z-depth-1;
+         background: #C4BD97;
+         margin: 5px 0;
+         float: left;
+         padding: 10px;
+         width: 100%;
+      }
+   }
+   .season {
+      float: left;
+      font-size: 22px;
+      color: #000;
+      font-weight: bold;
+      margin-bottom: 8px;
+   }
+   .price {
+      background: transparent;
+      float: right;
+      margin-bottom: 3px;
+      font-size: 24px;
+      line-height: 1.2;
+      overflow: hidden;
+      color: #fff;
+   }
+   .date {
+      @include span( 100% );
+      font-size: 13px;
+      color: #323232;
+      line-height: 1.5;
+   }
+}
+/* DATE POPUP */
+.rd-back,
+.rd-next {
+   color: #323232;
+}

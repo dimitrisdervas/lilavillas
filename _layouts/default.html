@@ -8,13 +8,13 @@
 
   <body>
     
-                  {% include basic_components/page.html config-file='header-materialize' %}         
-                  
-                  <div class="page {{ page.title }} {{ page.cssClass }}">     
+     {% include basic_components/page.html config-file='header-materialize' %}         
 
-                     {{ content }}
+     <div class="page {{ page.title }} {{ page.cssClass }}">     
 
-                  </div>                          
+        {{ content }}
+
+     </div>                          
 
      {% include basic_components/page.html config-file='footer' %}
 
