@@ -369,6 +369,18 @@ th {
 /*  */
 /* Layouts */
 /*  */
+/* MAP */
+#map-canvas {
+  width: 100%; }
+
+/* FOOTER */
+.footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: 3;
+  padding: 5px 0; }
+
 .blog {
   max-width: 100%;
   margin-left: auto;
@@ -570,59 +582,6 @@ a {
   line-height: inherit;
   background-color: transparent; }
 
-/* .header-wrapper {
-   background: #4979B3;
-   background: #538ED5; 
-   background: #2E4E75;
-   .header {
-         .logo {
-             padding: 30px 0;
-             text-align: center;            
-            a {
-               color: #fff;
-               font-size: 48px;
-               font-family: $lila-logo;
-               line-height: 1.2;
-               }
-            }
-
-           .menu ul {
-              li {
-                 font-size: 18px;
-              }
-              a {
-                 color: #f4f0f0;
-                 display: block;
-                 display: block;
-                 font-size: 18px;
-                 padding: 10px;
-                 line-height: 1em;
-              }
-              a:hover {
-                 color: #d8c6bc;
-                 background: #1C3048;
-                 }
-              .nolink {
-                 display: block;
-                 font-size: 18px;
-                 padding: 10px 0;
-                 line-height: 1em;
-              }
-              .menu-title {
-                  color: #efefef;
-                  padding: 5px;
-                  line-height: 1.3em;
-                  background: #4979B3;
-                  font-size: 19px;
-                  border-bottom: 1px solid #769ECE;
-              }
-              .submenu-item {
-                  text-align: right;
-                  background: #3F81D0;
-              }
-             }
-          }                 
-      } */
 .mobile-nav {
   background: #2E4E75; }
 
@@ -712,7 +671,7 @@ section.content-gallery,
   line-height: 1em;
   font-size: 64px; }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 737px) {
   .footer-wrapper {
     border-top: 1px solid #ccc;
     background: #fff; }
@@ -1097,7 +1056,19 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
     width: 100vw;
     z-index: 3;
     height: 5vh; } }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 737px) {
+  /*    MIN MAX */
+  header {
+    width: 240px; }
+
+  .mainbar {
+    max-width: 300px;
+    min-width: 230px; }
+
+  .sidebar {
+    min-width: 220px; }
+
+  /* PAGE */
   .page {
     max-width: 100%;
     margin-left: auto;
@@ -1107,18 +1078,20 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
       display: block;
       clear: both; }
 
-  /* ACCOMODATION PAGE */
+  /*    WITH BACKGROUND */
   .bg {
     background-size: cover;
     background-position: 50% 50%;
     height: 100%;
     width: 83.33333%;
     float: left;
-    margin-left: 16.66667%; }
+    margin-left: 240px; }
 
+  /*    WITH GALLERY */
   .gallery {
     height: 100%; }
 
+  /*   THREE COLUMNS ex. RATES  */
   .center {
     display: flex;
     align-items: center; }
@@ -1127,35 +1100,14 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
     display: none; }
 
   /* HEADER */
-  .header-wrapper {
-    width: 16.66667%;
-    float: left;
-    height: 100%;
-    text-align: center;
-    /*    min-width: 200px;
-       max-width: 250px; */ }
-
   .side-nav {
-    width: 16.66667%;
-    float: left; }
-
-  /* TOP SPACER */
-  .topspacer {
-    height: 20vh;
-    background: transparent;
-    width: 100%; }
-
-  /* CONTENT */
-  .content {
-    width: 83.33333%;
-    float: left;
-    height: 100%; }
+    width: 240px; }
 
   /* FRONTPAGE */
   .content-gallery {
     width: 83.33333%;
     float: left;
-    margin-left: 16.66667%;
+    margin-left: 240px;
     min-width: 400px;
     height: 100%; }
 
@@ -1166,14 +1118,12 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
     margin-right: 0;
     margin-left: 16.66667%; }
 
-  /* ACCOMODATION */
+  /* e.x. ACCOMODATION , Reservation, Contact */
   .mainbar {
     width: 28.57143%;
     float: left;
     margin-right: 2.04082%;
     margin-left: 2.04082%;
-    /*    max-width: 300px;
-       min-width: 230px; */
     padding: 30px 20px; }
 
   .sidebar {
@@ -1181,8 +1131,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
     float: left;
     margin-right: 2.04082%;
     padding: 30px 25px 20px;
-    max-width: 280px;
-    /*       min-width: 220px; */ }
+    max-width: 280px; }
 
   /* VILLAS GALLERY */
   .gallery-slideshow {
@@ -1205,19 +1154,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
     float: left;
     margin-right: 1.69492%;
     max-width: 1050px;
-    margin-left: 1.69492%; }
-
-  /* MAP */
-  #map-canvas {
-    width: 100%; }
-
-  /* FOOTER */
-  .footer-wrapper {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    z-index: 3;
-    padding: 5px 0; } }
+    margin-left: 1.69492%; } }
 @media narrower {
   .page {
     max-width: 100%;
@@ -1317,10 +1254,13 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
       clear: both; }
 
   .bg {
-    background: none; }
+    /*        background: none; */ }
 
   .gallery {
     height: 100%; }
+
+  .center {
+    display: block; }
 
   .mobile-nav {
     width: 100%;
@@ -1369,7 +1309,6 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
       text-align: center; }
 
   /* CONTENT */
-  .content,
   .content-gallery {
     width: 100%;
     float: left;
@@ -1425,7 +1364,39 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
     margin-left: 0;
     margin-right: 0;
     display: flex;
-    flex-wrap: nowrap; }
+    flex-wrap: wrap; }
+
+  /* ACOOMODATION */
+  .section-facilities {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+
+  .full-height {
+    height: auto; }
+
+  /*    RATES */
+  .section-prices {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+
+  .section-prices {
+    display: block;
+    margin-top: 20px; }
+
+  .section-prices .prices-list {
+    /* background: #ececec;
+     color: #323232; */
+    margin-bottom: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+
+  .more {
+    color: #323232; }
 
   /* RESERVATION - CONTACT */
   .contact-form {
@@ -1451,6 +1422,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
     float: left;
     margin-left: 0;
     margin-right: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: center; }
@@ -1465,4 +1437,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
       font-weight: normal;
       font-size: 13px;
       padding: 0 20px;
-      line-height: 1.75em; } }
+      line-height: 1.75em; }
+
+  .footer-wrapper {
+    margin-top: 120px; } }

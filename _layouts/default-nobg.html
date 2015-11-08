@@ -1,32 +1,13 @@
 ---
+layout: default
 ---
 
-<!DOCTYPE html>
-<html lang="gr">
 
-  {% include basic_components/head.html %}
-
-  <body>
-    
-  {% include basic_components/page.html config-file='header-materialize' %} 
      
-         <div class="page">     
-                  
-                  {{ content }}
-                                  
-                   
-            
+<div class="page {{page.title}}">     
 
-               </div>
+   {{ content }}
+
+</div>
  
-     {% include basic_components/page.html config-file='footer' %}
 
-      <script type="text/javascript" src="{{ site.baseurl }}/js/components.js"></script> 
-            {% include basic_components/perpagePlugins.html %}
-
-                  
-
-     
-  </body>
-
-</html>

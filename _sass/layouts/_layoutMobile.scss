@@ -4,10 +4,13 @@
       @include container;  
   }
    .bg {
-       background: none;
+/*        background: none; */
    }
    .gallery {
        height: 100%;
+   }
+   .center {
+      display: block;
    }
    .mobile-nav {
       @include span( 12 of 12);
@@ -58,7 +61,6 @@
    
    
    /* CONTENT */
-   .content, 
    .content-gallery {
       @include span( 12 of 12 );
       height: auto;
@@ -98,7 +100,34 @@
    .gallery-thumbnails {
       @include span( 12 of 12 ); 
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
+   }
+/* ACOOMODATION */
+   .section-facilities {
+      @include span( 12 of 12);
+   }
+   .full-height {
+    height: auto;
+   }
+   
+/*    RATES */
+   .section-prices {
+      @include span( 12 of 12);
+   }
+   .section-prices {
+      display: block;
+      margin-top: 20px;
+   }
+   .section-prices .prices-list {
+   /* background: #ececec;
+    color: #323232; */
+    margin-bottom: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+   }
+   .more {
+      color: #323232;
    }
 /* RESERVATION - CONTACT */
    .contact-form {
@@ -115,6 +144,7 @@
    /* FOOTER */
    .footer-wrapper {
       @include span( 12 of 12 ); 
+      position: relative;
       display: flex;
       flex-direction: column;
       text-align: center; 
@@ -133,5 +163,8 @@
          padding: 0 20px;
          line-height: 1.75em;
       }
+   }
+   .footer-wrapper  {
+          margin-top: 120px;
    }
 }

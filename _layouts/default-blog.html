@@ -9,25 +9,21 @@
   <body>
     
      
-         <div class="page blog">
+         <div class="page blog {{page.title}}">
 
                   {% include basic_components/page.html config-file='header-horizontal' %}       
                   
                   {{ content }}
-                                  
-                   
-            
 
                </div>
  
      {% include basic_components/page.html config-file='footer' %}
 
       <script type="text/javascript" src="{{ site.baseurl }}/js/components.js"></script> 
+     
             {% include basic_components/perpagePlugins.html %}
 
-                  
 
-     
   </body>
 
 </html>

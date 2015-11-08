@@ -1,10 +1,12 @@
+gems:
+  - jekyll-sitemap
+
+
 # Site settings
 title: Lila Villas
 email: info@lilavillas.gr
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+
 baseurl: "/lilavillas" # the subpath of your site, e.g. /blog/
 url: "lilavillas.gr" # the base hostname & protocol for your site
 
@@ -13,7 +15,12 @@ markdown: kramdown
 
 # Compress layout - Settings
 compress_html:
-  comments: ["<!-- ", " -->"]
+  clippings: []
+  comments: []
+  endings: []
+  profile: false
+  ignore:
+    envs: []
     
 collections:
   rooms:

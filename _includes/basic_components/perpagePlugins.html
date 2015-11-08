@@ -1,6 +1,6 @@
 <!-- DEBUG FILE: basic_components/perpagePlugins.html -->
 {% if page.config-file %}
-   {% assign config = site.data.pages[page.config-file] %}
+   {% assign config = site.data.pages.[page.config-file] %}
 {% else %}
    {% assign config = page.config %}
 {% endif %}
@@ -44,12 +44,12 @@
                {% when 'list.js' %}                
                   {% include basic_components/javascriptPluginsCases/listjs.js listjsData= component.data.javascript-plugin-data %}
                
-                {% when 'jplist' %}                
+               {% when 'jplist' %}                
                   {% include basic_components/javascriptPluginsCases/jplist.js jplistData= component.data.javascript-plugin-data %}
                 
                {% when 'masonry' %}               
                
-                {% when 'sidenav' %}                
+               {% when 'sidenav' %}                
                   {% include basic_components/javascriptPluginsCases/sidenav.js sidenavData= component.data.javascript-plugin-data %}
                
                {% when 'rome' %} 
@@ -58,7 +58,7 @@
                {% when 'dropjs' %} 
                   {% include basic_components/javascriptPluginsCases/dropdown.js dropdownData= component.data.javascript-plugin-data %}
                  
-                {% when 'form'%}
+               {% when 'form'%}
                   {% include basic_components/javascriptPluginsCases/pickadate.js pickadateData= component.data.javascript-plugin-data %}
                   {% include basic_components/javascriptPluginsCases/formSelect.js formselectData= component.data.javascript-plugin-data %}  
                   {% include basic_components/javascriptPluginsCases/simpleformAjax.js simpleformData= component.data.javascript-plugin-data %}  
