@@ -12,7 +12,9 @@
    .center {
       display: block;
    }
-   .mobile-nav {
+   
+/* MOBILE NAV */
+   .menu-container {
       @include span( 12 of 12);
       display: flex;
       align-items: center;
@@ -29,7 +31,6 @@
              text-align: left;
          }
       }
-/*       STYLES  LOGO MOBILE */
         .logo {
          padding: 10px 0px;
          text-align: center;            
@@ -48,16 +49,7 @@
             font-size: 0.8em;
          }
    }
-   /* HEADER */
-   .header-wrapper {
-      @include span( 12 of 12);
-      text-align: center;
-      height: auto;
-      .header .menu a {
-         text-align: center;
-      }
-   }
-   
+ 
    
    
    /* CONTENT */
@@ -91,7 +83,7 @@
       @include span( 12 of 12 );  
       height: 100%;
       .post-image {
-         align-items: flex-end;
+         align-items: flex-start;
       }
    }
    .owl-carousel {

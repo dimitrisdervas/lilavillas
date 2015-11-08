@@ -1,23 +1,6 @@
 @include susy-media(wide) {
-   
-   header {
-   }
-   .side-nav {
-        @include span(2 of 12);
-   }
-/* PAGE */
-   .page {
-      @include layout($full-width);
-      @include container;  
-   }
-   
-/* FRONTPAGE */
    .content-gallery {
-      @include span( 10 of 12 );
-      margin-left: span(2 of 12);;
+      margin-left: 240px;
       height: 100%;
    }
-   
-
-
 }

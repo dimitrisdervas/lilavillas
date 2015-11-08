@@ -24,8 +24,12 @@
                     {% if field.data.link %}
                        <a class="{{ field.data.class }}" href="{{site.baseurl}}{{ fieldContent.[field.data.link] }}">{{ fieldContent.[field.field] }}</a>
                     {% else %}
-                          <div class="field {{field.field}} {{field.data.class}}">
-                                {{ fieldContent.[field.field] }}
+                          <div class="field {{field.field}} {{field.data.class}}">                               
+                                {% if field.data.icon %}
+                                   <i class="material-icons">{{ fieldContent.[field.field] }}</i>
+                                {% else %}
+                                    {{ fieldContent.[field.field] }}
+                                {% endif %}
                           </div>
                     {% endif%}
               

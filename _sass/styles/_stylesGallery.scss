@@ -6,7 +6,6 @@
    }
 }
 
-
 .gallery-title {
     box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
     background: transparent;
@@ -29,10 +28,26 @@
     flex-direction: column;
 }
 .owl-theme .owl-nav {
-    margin-top: -10em;
     text-align: center;
     -webkit-tap-highlight-color: transparent;
-    position: fixed;
-    float: right;
+    position: absolute;
     width: 100%;
+    height: auto;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+.slideshow-buttons {
+    position: fixed;
+    bottom: 80px;
+    z-index: 25;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   i {
+      font-size: 4em;
+   }
 }

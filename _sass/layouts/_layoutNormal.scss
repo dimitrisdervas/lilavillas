@@ -1,9 +1,6 @@
 @include susy-media(normal) {
  
-/*    MIN MAX */
-   header {
-      width:240px;
-   }
+/* MIN MAX */
    .mainbar {
       max-width: 300px;
       min-width: 280px;
@@ -12,12 +9,7 @@
      min-width: 220px;
    }
 /* HEADER */
-   header {
-     
-   }
-   .side-nav {
-        width:240px;
-   }
+   
 /* PAGE */
    .page {
       @include layout($full-width);
@@ -28,7 +20,7 @@
        background-size: cover; 
        background-position: 50% 50%;
        height: 100%;
-       @include span( 10 of 12 );
+/*        @include span( 10 of 12 last); */
        margin-left: 240px;
    }
 /*    WITH GALLERY */
@@ -40,12 +32,13 @@
       display: flex;
       align-items: center;
    }
-   .mobile-nav a {
+/* MENU CONTAINER */
+   .menu-container {
       display: none;
    }
 /* FRONTPAGE */
    .content-gallery {
-      @include span( 10 of 12 );
+/*       @include span( 10 of 12 last ); */
       margin-left: 240px;
       min-width: 400px;
       height: 100%;

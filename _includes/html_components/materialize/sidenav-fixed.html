@@ -1,6 +1,19 @@
 <!-- DATA -->
 <!-- USE DATA FROM _data/content -->
 <!-- Check the content type - Datat or Collections - Posts -->
+<div class="menu-container">
+   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+     <div class="logo">
+         <a href="{{site.baseurl}}/"> 
+            {% if include.component-data.image %}
+            <img src="{{include.component-data.logo.image}}" alt="{{ site.title }}">
+            {% else %}
+            <div class="logo-title">{{ include.component-data.logo.title}} {{ include.component-data.logo.subtitle}}</div>
+            {% endif %}
+         </a> 
+      </div>
+</div>
+
 {% include html_components/component_includes/componentContentType.html %}              
   <ul id="slide-out" class="side-nav fixed">
 <!--      LOGO -->
@@ -59,23 +72,4 @@
          {% endif %}
       {% endfor %}  
   </ul>
-
-<div class="mobile-nav">
-
-   
-   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-   
-   <div class="logo">
-      <a href="{{site.baseurl}}/"> 
-         {% if include.component-data.image %}
-         <img src="{{include.component-data.logo.image}}" alt="{{ site.title }}">
-         {% else %}
-         <div class="logo-title">{{ include.component-data.logo.title}} {{ include.component-data.logo.subtitle}}</div>
-         {% endif %}
-      </a> 
-   </div>
-   
-   </div>
-              
-
 

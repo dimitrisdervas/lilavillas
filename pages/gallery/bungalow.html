@@ -20,7 +20,9 @@ config:
                  items: 1
                  loop: true
                  autoplay: true
-                 nav: true
+                 mouseDrag: true
+                 touchDrag: true
+                 nav: false
                  margin: 10
                  dots: false
                  URLhashListener: true
@@ -45,11 +47,32 @@ config:
                      - field: title
                        data:
                         class: gallery-title
+      - div: 
+         theme:
+          class: slideshow-buttons
+        components:
+         - component: field
+           data:
+            content-type: strings
+            fields:
+               - field: previous
+                 data: 
+                   icon: previous
+                   class: previous
+               - field: stop
+                 data: 
+                   icon: stop
+                   class: pause
+               - field: next
+                 data: 
+                   icon: next
+                   class: next
+      - div: 
+         theme:
+          class: gallery-thumbnails
+        components:
          - component: posts-list
            data:
-            wrapperDiv:
-             theme:
-                class: gallery-thumbnails
             content-type: gallery
             folder: bungalow
             data-type: data-list

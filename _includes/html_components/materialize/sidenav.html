@@ -1,48 +1,81 @@
 <!-- DATA -->
 <!-- USE DATA FROM _data/content -->
 <!-- Check the content type - Datat or Collections - Posts -->
-{% include html_components/component_includes/componentContentType.html %}
-
-  <ul class="right hide-on-med-and-down">
-     
-      {% for menu in posts limit:{{include.component-data.limit}} offset:{{include.component-data.offset}} %}
-        {% if menu.url %}
-            <li class="menu-item menu-{{ menu.name | slugify }}">
-             <a href='{{ site.baseurl }}/{{ menu.url }}'>{{ menu.name }}</a></li>
-       {% else %}
-           <li><a class='menu-item dropdown-button' href='#' data-activates='{{ menu.name | sluggify }}'>{{ menu.name }}</a></li>
-         {% endif %}
-      {% endfor %}  
-   </ul>
-              
-                
-                
+{% include html_components/component_includes/componentContentType.html %}              
   <ul id="slide-out" class="side-nav fixed">
+<!--      LOGO -->
+     <li class="logo">
+        <a href="{{site.baseurl}}/"> 
+           {% if include.component-data.image %}
+           <img src="{{include.component-data.logo.image}}" alt="{{ site.title }}">
+           {% else %}
+              <div class="logo-title">{{ include.component-data.logo.title}}</div>
+              <div class="logo-subtitle">{{ include.component-data.logo.subtitle}}</div>
+           {% endif %}
+         </a>   
+     </li>
+     
+<!-- MENU -->   
+     
        {% for menu in posts limit:{{include.component-data.limit}} offset:{{include.component-data.offset}} %}
+<!--      {{ page.url }}
+    {{ menu.url}}  -->
         {% if menu.url %}
-            <li class="menu-item menu-{{ menu.name | slugify }}">
-             <a href='{{ site.baseurl }}/{{ menu.url }}'>{{ menu.name }}</a>
-                 </li>
+            {% if menu.url == page.url %}
+               <li class="menu-item menu-{{ menu.name | slugify }} active">
+            {% else %}
+               <li class="menu-item menu-{{ menu.name | slugify }}">
+            {% endif %}
+                <a class="waves-effect waves-btn" href='{{ site.baseurl }}{{ menu.url }}'>{{ menu.name }}</a>
+                    </li>
+
        {% else %}
-           <li><a class='menu-item dropdown-button' href='#' data-activates='{{ menu.name | sluggify }}'>{{ menu.name }}</a></li>
+           <li class="menu-title">
+              <ul class="collapsible" data-collapsible="accordion" >
+                 <li>
+                    {% assign menuTitle = menu.name | slugify %}
+                    {% if page.url contains menuTitle  %}
+                       <a class='collapsible-header waves-effect waves-btn active'>{{ menu.name }}</a>
+                    {% else %}
+                       <a class='collapsible-header waves-effect waves-btn'>{{ menu.name }}</a>
+                    {% endif %}                    
+                    <div class="collapsible-body">
+                        <ul>
+                           {% for submenu in menu.submenu %}
+                                 {% if submenu.url == page.url %}
+                                    <li class="submenu-item active">
+                                 {% else %}
+                                    <li class="submenu-item">
+                                 {% endif %}
+                                    <a href="{{ site.baseurl }}{{ submenu.url }}">{{ submenu.name }} </a>
+                                 </li>
+                              {% endfor %}
+
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </li>
          {% endif %}
       {% endfor %}  
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-</nav>
-               
- <!-- Dropdown Structure -->
-{% for menu in posts limit:{{include.component-data.limit}} offset:{{include.component-data.offset}} %}   
-   {% if menu.submenu %}
-       <ul id='{{ menu.name | sluggify }}' class='dropdown-content'>
-            {% for submenu in menu.submenu %}
-                <li class="submenu-item" data-theme-menu="{{ include.component-data.theme }}">
-                  <a href="{{ site.baseurl }}/{{ submenu.url }}">{{ submenu.name }} </a>
-                    </li>
-                {% endfor %}
-         </ul>
-   {% endif %}
-{% endfor %}
 
+<div class="mobile-nav">
+
+   
+   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+   
+   <div class="logo">
+      <a href="{{site.baseurl}}/"> 
+         {% if include.component-data.image %}
+         <img src="{{include.component-data.logo.image}}" alt="{{ site.title }}">
+         {% else %}
+         <div class="logo-title">{{ include.component-data.logo.title}} {{ include.component-data.logo.subtitle}}</div>
+         {% endif %}
+      </a> 
+   </div>
+   
+   </div>
+              
 
 
