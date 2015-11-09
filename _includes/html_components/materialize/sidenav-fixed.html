@@ -46,8 +46,8 @@
            <li class="menu-title">
               <ul class="collapsible" data-collapsible="accordion" >
                  <li>
-                    {% assign menuTitle = menu.name | slugify %}
-                    {% if page.url contains menuTitle  %}
+                    {% assign menuTitle = menu.name | slugify %}                    
+                    {% if page.url contains menuTitle or page.url contains "gallery" %}
                        <a class='collapsible-header waves-effect waves-btn active'>{{ menu.name }}</a>
                     {% else %}
                        <a class='collapsible-header waves-effect waves-btn'>{{ menu.name }}</a>
@@ -55,7 +55,7 @@
                     <div class="collapsible-body">
                         <ul>
                            {% for submenu in menu.submenu %}
-                                 {% if submenu.url == page.url %}
+                                 {% if submenu.url == page.url or submenu.url contains page.villa %}
                                     <li class="submenu-item active">
                                  {% else %}
                                     <li class="submenu-item">
