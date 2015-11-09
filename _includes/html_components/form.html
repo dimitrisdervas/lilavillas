@@ -37,7 +37,7 @@
                                        <input {% include basic_components/pageIncludes/themeElement.html elementData=field.data %} required>
                               <!-- DROPDOWN BOX --> 
                                  {% when 'select' %}
-                                       <select required name="{{ field.data.name }}">
+                                       <select required name="{{ field.data.name }}" id="{{field.data.id}}">
                                           {% for option in field.options %}
                                              {% if forloop.first  %}
                                              <option value="" {{ option.data }} >{{ option.option }}</option>

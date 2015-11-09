@@ -1,6 +1,6 @@
 - title: contact
   url: /pages/contact.html
 - title: reservation
-  url: /pages/reservation.html
+  url: /pages/reservation.html?villa=bungalow
 - title: view gallery
   url: /pages/gallery/bungalow.html
