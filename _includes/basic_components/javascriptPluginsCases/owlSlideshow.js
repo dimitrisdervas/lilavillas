@@ -8,7 +8,8 @@ owl.owlCarousel({
 $('.play').on('click',function(){
     owl.trigger('autoplay.play.owl',[1000])
 })
-$('.pause').on('click',function(){
+
+$('.stop').on('click',function(){
     owl.trigger('autoplay.stop.owl')
 })
 
