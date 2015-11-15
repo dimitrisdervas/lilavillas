@@ -38,6 +38,17 @@
     justify-content: space-between;
     padding: 0 25px;
 }
+@include susy-media(mobile) {
+   .slideshow-buttons {
+          justify-content: center;  
+   }
+}
+@include susy-media(normal) {
+   .slideshow-buttons {
+          justify-content: flex-end;
+           padding-right: 35rem;
+   }
+}
 .slideshow-buttons {
     position: fixed;
     bottom: 80px;
@@ -46,7 +57,7 @@
     cursor: pointer;
     display: flex;
     width: 100%;
-    justify-content: center;
+ 
    i {
       font-size: 4em;
    }

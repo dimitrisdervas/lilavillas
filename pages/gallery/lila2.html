@@ -44,13 +44,30 @@ config:
                      - field: title
                        data:
                         class: gallery-title
+      - div: 
+         theme:
+          class: slideshow-buttons
+        components:
+         - component: field
+           data:
+            content-type: strings
+            fields:
+               - field: previous
+                 data: 
+                   icon: previous
+                   class: previous
+               - field: next
+                 data: 
+                   icon: next
+                   class: next
+      - div: 
+         theme:
+          class: gallery-thumbnails
+        components:
          - component: posts-list
            data:
-            wrapperDiv:
-             theme:
-                class: gallery-thumbnails
             content-type: gallery
-            folder: lila2
+            folder: bungalow
             data-type: data-list
             fields:
                  - field: thumbnail

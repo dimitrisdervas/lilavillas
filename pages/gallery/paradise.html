@@ -46,12 +46,28 @@ config:
                         class: gallery-title
       - div: 
          theme:
-          class: gallery-thumbnails    
+          class: slideshow-buttons
+        components:
+         - component: field
+           data:
+            content-type: strings
+            fields:
+               - field: previous
+                 data: 
+                   icon: previous
+                   class: previous
+               - field: next
+                 data: 
+                   icon: next
+                   class: next
+      - div: 
+         theme:
+          class: gallery-thumbnails
         components:
          - component: posts-list
            data:
             content-type: gallery
-            folder: paradise
+            folder: bungalow
             data-type: data-list
             fields:
                  - field: thumbnail
