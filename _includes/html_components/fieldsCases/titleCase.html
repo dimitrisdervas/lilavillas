@@ -45,7 +45,10 @@
         {% endfor %}>
         
            {{ post.[include.field_Field] }} 
-        
+              {% if include.field_Data.addfields %}
+                  {% assign fields = include.field_Data.addfields %}                                     
+                  {% include html_components/component_includes/fieldsCases.html %}
+               {% endif%}
       {% endcase %}
 
    </div>

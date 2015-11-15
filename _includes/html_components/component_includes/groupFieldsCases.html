@@ -12,6 +12,9 @@
    <!-- LINK  -->                 
                               {% when 'link' %}
                                 {% include html_components/fieldsCases/linkCase.html field_Data=field.data field_Field=field.field %}
+   <!-- PAGINATION -->
+                              {% when 'pagination' %}
+                                   <div class="page-number">{{ pagination }}</div>
    <!-- PERCENTAGE -->
                               {% when 'percentage' %}
                                 {% include html_components/fieldsCases/percentageCase.html field_Data=field.data field_Field=field.field %}
@@ -45,6 +48,7 @@
                                                                                                            
                               {% when 'lorem' %}
                                   <p>{% raw %}{{ simpsum(20) }}{% endraw %}</p>
+                              
 
                     {% else %}
 <!-- Print every field as separate div -->

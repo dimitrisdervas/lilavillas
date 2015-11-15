@@ -35,8 +35,12 @@
 
 <!-- Just print the fields -->
 <!-- Loop each field in the component -->
+
+              {% capture pagination %}{{forloop.index}} / {{forloop.length }}{% endcapture %}
               {% assign fields = include.component-data.fields %}
               {% include html_components/component_includes/fieldsCases.html componentData=include.component-data %}
+               
+ 
 
 <!--  END IF to check for GROUP -->
            {% endif %}

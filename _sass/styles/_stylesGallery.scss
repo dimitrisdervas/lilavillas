@@ -18,7 +18,9 @@
     padding: 10px;
     opacity: 0.9;
 }
-
+.page-number {
+    display: inline;
+}
 .gallery-thumb {
    padding: 2px 1px 0;
 }
@@ -61,4 +63,5 @@
    i {
       font-size: 4em;
    }
+   
 }
