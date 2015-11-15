@@ -21,7 +21,6 @@ config:
             javascript-plugin-data:
                  items: 1
                  loop: true
-                 autoplay: true
                  mouseDrag: true
                  touchDrag: true
                  nav: false
@@ -49,26 +48,6 @@ config:
                      - field: title
                        data:
                         class: gallery-title
-      - div: 
-         theme:
-          class: slideshow-buttons
-        components:
-         - component: field
-           data:
-            content-type: strings
-            fields:
-               - field: previous
-                 data: 
-                   icon: previous
-                   class: previous
-               - field: stop
-                 data: 
-                   icon: stop
-                   class: pause
-               - field: next
-                 data: 
-                   icon: next
-                   class: next
       - div: 
          theme:
           class: gallery-thumbnails

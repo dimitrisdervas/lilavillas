@@ -24,8 +24,7 @@
                                  {% when 'redirect' %}
                                        <input type='hidden' name='redirect_to' value='{{site.url}}{{site.baseurl}}/{{field.data.url}}' />
                         
-                                 {% when 'date' %}
-  
+                                 {% when 'date' %}  
                                        <label for="{{ field.data.id }}">{{ field.data.label }}</label>                 
                                        <input type="date" class="datepicker {{ field.data.class }}" name="{{ field.data.name }}" required>
                      
@@ -33,7 +32,7 @@
                                        <textarea {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}></textarea>
                               <!-- INPUT --> 
                                  {% when 'input' %}
-                              <label for="{{ field.data.id }}">{{ field.data.label }}</label>                 
+                                       <label for="{{ field.data.id }}">{{ field.data.label }}</label>                 
                                        <input {% include basic_components/pageIncludes/themeElement.html elementData=field.data %} required>
                               <!-- DROPDOWN BOX --> 
                                  {% when 'select' %}
