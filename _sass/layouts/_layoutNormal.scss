@@ -12,7 +12,7 @@
    
 /* PAGE */
    .page {
-      @include layout($full-width);
+      @include layout($symmetric);
       @include container;  
    }
 /*    WITH BACKGROUND */
@@ -83,5 +83,18 @@
       max-width: 1050px;
       margin-left: gutters(12);
    }
-
+   .section-suggestions {
+      @include span( 85% );
+      margin: 0 span(1);
+      .main-suggestions {
+         @include span( 10 of 12 );
+      }
+      .sidebar-suggestions {
+         @include span( 2 of 12 last );
+      }
+      .scrollpsy-block {
+            margin-top: 2em;
+          position: fixed;
+      }
+   }
 }

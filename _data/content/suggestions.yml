@@ -1,27 +1,34 @@
-- place: "Balos (45km)"
+- title: "Balos (45km)"
+  titleSlug: balos
   description: "Balos lagoon famous for it’s white sand and turquoise water"
-  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg
+  image: balos.jpg
 
-- place: "Falassarna (48km)"
+- title: "Falassarna (48km)"
+  titleSlug: falassarna
   description: "On the far west end of Crete, with golden sand and crystal clear water"
-  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg
+  image: falassarna.jpg
   
-- place: "Elafonissi (68km)"
+- title: "Elafonissi (68km)"
+  titleSlug: elafonisi
   description: "On the southwest tip of Crete, discover it’s pink sand and deep blue water"
-  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg    
+  image: elafonisi.jpg 
   
-- place: "Sfakia region (75km)"
+- title: "Sfakia region (75km)"
+  titleSlug: sfakia
   description: "Combining the roughness of the mountains with the pebble beaches and deep blue water."
-  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg   
+  image: sfakia.jpg
   
-- place: "Kournas-Aptera(48km)"
+- title: "Kournas-Aptera(48km)"
+  titleSlug:  kournas
   description: "Visit the largest natural lake of Crete and take a detour to one archaeological site with minoan and roman ruins and majestic views."
-  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg    
+  image: samaria.jpg    
   
-- place: "Samaria gorge (40km)"
+- title: "Samaria gorge (40km)"
+  titleSlug: samaria
   description: "The longest gorge in Europe, with the unique flora and fauna; hike from  the white mountains to the Libyan sea."
-  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg    
+  image: samaria.jpg
   
-- place: "Therisso gorge (20km) (link Google maps)"
+- title: "Therisso gorge (20km)"
+  titleSlug: therisso
   description: "A beautiful drive through the breathtaking scenery."
-  image: https://c2.staticflickr.com/4/3688/10414297716_7105ab2834_c.jpg
+  image: therisso.jpg

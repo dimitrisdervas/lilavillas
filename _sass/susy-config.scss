@@ -20,21 +20,6 @@ $symmetric: (
 /*   debug: (image: show), */
 );
 
-$header: (
-  columns: 3 2 3,
-  container: auto,
-  output: isolate,
-/*   debug: (image: show)   */
-);   
-
-$map-portofolio: (
-  columns: 12,
-  container: 1170px,
-  gutters: 0,
-  output: float,
-);
-
-
 $full-width: (
   columns: 12,
   container: auto,

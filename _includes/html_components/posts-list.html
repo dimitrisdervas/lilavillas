@@ -8,8 +8,8 @@
 <!-- MASONRY -->
    {% include html_components/component_includes/divMasonrySizer.html %}
 
-<!--    GROUP FIELDS ELEMENT -->
-   {% include html_components/component_includes/groupFieldsElement.html %}
+<!-- UL   GROUP FIELDS ELEMENT -->
+   {% include html_components/component_includes/groupFieldsElementUL.html %}
 
 <!-- LIST JS FILTERS HTML -->
    {% include html_components/component_includes/listsjsFilters.html %}
@@ -18,6 +18,9 @@
    {{ groupdivUl }}
 <!-- Loop through the posts and set a limit if there it exists -->
    {% for post in posts limit:{{include.component-data.limit}} offset:{{include.component-data.offset}}%} 
+
+ <!-- DIV - LI   GROUP FIELDS ELEMENT -->
+ {% include html_components/component_includes/groupFieldsElementDIV.html %}
 <!--  Component group fields html element-->  
    {{ groupdivDiv }}
 
@@ -35,12 +38,8 @@
 
 <!-- Just print the fields -->
 <!-- Loop each field in the component -->
-
-              {% capture pagination %}{{forloop.index}} / {{forloop.length }}{% endcapture %}
               {% assign fields = include.component-data.fields %}
               {% include html_components/component_includes/fieldsCases.html componentData=include.component-data %}
-               
- 
 
 <!--  END IF to check for GROUP -->
            {% endif %}

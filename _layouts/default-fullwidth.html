@@ -1,0 +1,36 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="gr">
+
+  {% include basic_components/head.html %}
+
+  <body>
+    
+     {% include basic_components/page.html config-file='header-materialize' %}         
+
+     <div class="page {{ page.title }} {{ page.cssClass }}">     
+
+        {{ content }}
+
+     </div>                          
+
+   
+     {% if page.url contains 'gallery' %}   
+        <div class="footer-gallery">
+           {% include basic_components/page.html config-file='footer' %}
+        </div>
+     {% else %}
+         {% include basic_components/page.html config-file='footer' %}
+     {% endif%}
+     
+     
+      <script type="text/javascript" src="{{ site.baseurl }}/js/components.js"></script> 
+     
+     {% include basic_components/perpagePlugins.html config-file='header-materialize' %}
+     {% include basic_components/perpagePlugins.html %}
+     
+  </body>
+
+</html>

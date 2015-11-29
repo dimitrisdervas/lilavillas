@@ -11,16 +11,12 @@
   divs:
    - div: 
       theme:
-       class: logo
+       class: menu
      components:
-       - component: logo
+       - component: materialize/navbar
          data:
-           text: Lila Beach Front Villas
-   - div: 
-      theme:
-        class: menu
-     components:
-       - component: menu
-         data:
+          javascript-plugin: sidenav
+          logo:
+           title: Lila Villas 
           content-type: menu
           data-type: data-list

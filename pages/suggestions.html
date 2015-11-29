@@ -1,27 +1,68 @@
 ---
-layout: default
+layout: default-fullwidth
+seoTitle: "Lilavillas - Suggestions"
+title: suggestions
+cssClass: bg
 config:
  - section: 
     data:
       htmlelement: section
     theme:
      class: section-suggestions
+   sectionTitle:
+      title: "Places to Go"
    divs:
+      - components:
+         - component: gmap
+           data:
+            javascript-plugin: gmap
+            javascript-plugin-data:
+              apiKey: AIzaSyDMnz5pux1SPWE0DFlrXitKQO1S_8FnXbg
+              gmapFilePath: googleMap-suggestions.js
+              id: map-canvas        
+              class: map-canvas
+              height: 450px
       - div: 
          theme:
-          class: suggestions     
+          class: main-suggestions     
         components:
           - component: posts-list
             data:
                class: suggestion
                content-type: suggestions
                data-type: data-list
+               javascript-plugin: scrollpsy
+               groupFieldsElement: div
+               groupFieldsElement-data:
+                 class: post section scrollspy
+                 id: post.titleSlug
                fields: 
-                - field: place
-                - field: description
+                - field: title
+                  data:
+                    class: title
                 - field: image
                   data:
                     image-hash: image
+                    images-path: /assets/images/suggestions/
+                - field: description
+                  data:
+                    class: description
+      - div: 
+           theme:
+             class: sidebar-suggestions scrollpsy-latest
+        components:
+               - component: posts-list
+                 data:
+                  content-type: suggestions
+                  data-type: data-list
+                  wrapperDiv:
+                   theme:
+                     class: scrollpsy-block
+                  fields:
+                       - field: title
+                         data:
+                           class: title-link
+                           link-field: titleSlug
 ---
 
 {% include basic_components/page.html %}

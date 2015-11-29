@@ -31,6 +31,7 @@
    of the button to still show through. */
    background-color: rgba(119, 147, 60, 0.65);
 }
+
 /*  */
 /* FACILITIES */
 /*  */
@@ -108,15 +109,59 @@
       color: #323232;
    }
    ul li.bungalow {
+      .link-wrapper{
+        display: flex;
+         padding: 5px 15px;
+         align-items: center;
+      }
          a {
             padding: 0 ;
             color: #fff;
             display: block;
+            background: transparent;
          }
          a:hover {
             color: #323232;
          }
    }
+}
+.suggestions {
+   .section-header {
+    background: #eeece1;
+    line-height: 4rem;
+    font-size: 42px;
+    padding: 10px;
+    color: #c1935c;
+    font-weight: bold;
+   }
+   .post {
+      margin-bottom: 40px;
+   }
+   .post-image {
+      margin-bottom: 15px;
+   }
+   .title {
+      font-size: 34px;
+      font-weight: bold;
+      color: #2E4E75;
+   }
+}
+.scrollpsy-block {
+   a {
+		padding-left: 20px;
+      color: #2e4e75;
+	}
+   a:hover {
+      border-left: 1px solid #F44336;
+		padding-left: 19px;
+      color: #768CA7;
+   }
+	a.active {
+		border-left: 3px solid #F44336;
+		padding-left: 18px;
+	   line-height: 2;
+      font-weight: bold;
+	}
 }
 /*  */
 /* RATES */

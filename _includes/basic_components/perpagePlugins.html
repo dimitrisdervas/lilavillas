@@ -51,7 +51,10 @@
                
                {% when 'sidenav' %}                
                   {% include basic_components/javascriptPluginsCases/sidenav.js sidenavData= component.data.javascript-plugin-data %}
-               
+                  
+               {% when 'scrollpsy' %}                
+                  {% include basic_components/javascriptPluginsCases/scrollpsy.js scrollpsyData= component.data.javascript-plugin-data %}  
+                  
                {% when 'rome' %} 
                   {% include basic_components/javascriptPluginsCases/rome.js %}
                   
