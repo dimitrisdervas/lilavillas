@@ -21,3 +21,6 @@
 
 - name: Contact us
   url: /pages/contact.html
+
+- name: Suggestions
+  url: /pages/suggestions.html

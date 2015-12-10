@@ -18,9 +18,14 @@
   description: "Combining the roughness of the mountains with the pebble beaches and deep blue water."
   image: sfakia.jpg
   
-- title: "Kournas-Aptera(48km)"
+- title: "Kournas(48km)"
   titleSlug: kournas
-  description: "Visit the largest natural lake of Crete and take a detour to one archaeological site with minoan and roman ruins and majestic views."
+  description: "Visit the largest natural lake of Crete"
+  image: kournas.jpg   
+
+- title: "Aptera"
+  titleSlug: aptera
+  description: "An archaeological site with minoan and roman ruins and majestic views."
   image: aptera.jpg    
   
 - title: "Samaria gorge (40km)"
