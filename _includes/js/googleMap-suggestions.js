@@ -1,13 +1,13 @@
 var LocationData = [
    [35.514523, 23.943559, "Lila Villas"],
-   [35.5792671, 23.5887205, "Balos"],
-   [35.5019631, 23.5799002, "Falassarna"],
-   [35.2695139, 23.5304403, "Elafonisi"],
-   [35.20209, 24.10890, "Sfakia"],
-   [35.3303832, 24.2761982, "Kournas"],
-   [35.46543, 24.14779, "Aptera"],  
-   [35.2911342, 23.9593437, "Samaria Gorge"],
-   [35.4323351, 23.9833843, "Therisso Gorge"],
+   [35.5792671, 23.5887205, "Balos", "balos"],
+   [35.5019631, 23.5799002, "Falassarna","falassarna"],
+   [35.2695139, 23.5304403, "Elafonisi","elafonisi"],
+   [35.20209, 24.10890, "Sfakia","sfakia"],
+   [35.3303832, 24.2761982, "Kournas","kournas"],
+   [35.46543, 24.14779, "Aptera","aptera"],  
+   [35.2911342, 23.9593437, "Samaria Gorge","samaria"],
+   [35.4323351, 23.9833843, "Therisso Gorge","therisso"],
    
 ];
 
@@ -268,13 +268,12 @@ function initialize()
             position: latlng,
             map: map,
             title: p[2],
-            mob: p[3],
-            address: p[4]
+            address: p[3]
         });
         
         
         google.maps.event.addListener(marker, 'click', function() {
-            infowindow.setContent( "<div class='map-sugtitle'>" + this.title );
+            infowindow.setContent( "<div class='map-sugtitle'>" + "<a href='#" + this.address + "'>" + this.title + "</a>");
             infowindow.open(map, this);
         });
     }
