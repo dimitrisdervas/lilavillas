@@ -26,17 +26,17 @@
                         
                                  {% when 'date' %}  
                                        <label for="{{ field.data.id }}">{{ field.data.label }}</label>                 
-                                       <input type="date" class="datepicker {{ field.data.class }}" name="{{ field.data.name }}" required>
+                                       <input type="date" class="datepicker {{ field.data.class }}" name="{{ field.data.name }}" {{field.data.required}}>
                      
                                  {% when 'textarea' %}
                                        <textarea {% include basic_components/pageIncludes/themeElement.html elementData=field.data %}></textarea>
                               <!-- INPUT --> 
                                  {% when 'input' %}
                                        <label for="{{ field.data.id }}">{{ field.data.label }}</label>                 
-                                       <input {% include basic_components/pageIncludes/themeElement.html elementData=field.data %} required>
+                                       <input {% include basic_components/pageIncludes/themeElement.html elementData=field.data %} {{field.data.required}}>
                               <!-- DROPDOWN BOX --> 
                                  {% when 'select' %}
-                                       <select required name="{{ field.data.name }}" id="{{field.data.id}}">
+                                       <select {{field.data.required}} name="{{ field.data.name }}" id="{{field.data.id}}">
                                           {% for option in field.options %}
                                              {% if forloop.first  %}
                                              <option value="" {{ option.data }} >{{ option.option }}</option>

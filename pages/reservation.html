@@ -43,6 +43,7 @@ config:
                     label: name
                     class: name validate
                     type: text
+                    required: required
                  - field: input
                    wrapperDiv:
                      theme:
@@ -52,6 +53,7 @@ config:
                     label: email
                     class: email validate
                     type: email
+                    required: required
                  - field: input
                    wrapperDiv:
                      theme:
@@ -69,6 +71,7 @@ config:
                      name: checkin
                      label: Checkin
                      class: datepicker-checkin
+                     required: required
                  - field: date
                    wrapperDiv:
                      theme:
@@ -77,6 +80,7 @@ config:
                      name: checkout
                      label: Checkout
                      class: datepicker-checkout
+                     required: required
                  - field: select
                    wrapperDiv:
                      theme:
@@ -85,6 +89,7 @@ config:
                      name: persons
                      label: Persons
                      name: persons
+                     required: required
                    options:
                         - option: Persons
                           data: disabled selected
@@ -103,6 +108,7 @@ config:
                    data:   
                      name: villa-type
                      id: villa
+                     required: required
                    options:
                         - option: Choose Villa
                           data: disabled selected
