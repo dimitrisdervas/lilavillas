@@ -26,11 +26,6 @@
 .z-depth-5{
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 }
-.waves-effect.waves-greenlila .waves-ripple {
-   /* The alpha value allows the text and background color
-   of the button to still show through. */
-   background-color: rgba(119, 147, 60, 0.65);
-}
 
 /*  */
 /* FACILITIES */
@@ -108,22 +103,31 @@
       background: #94B946;
       color: #323232;
    }
-   ul li.bungalow {
-      .link-wrapper{
-        display: flex;
-         padding: 5px 15px;
-         align-items: center;
-      }
-         a {
-            padding: 0 ;
-            color: #fff;
-            display: block;
-            background: transparent;
-         }
-         a:hover {
-            color: #323232;
-         }
-   }
+   // tried to add materialize css buttons
+   // ul li.bungalow {
+   //      .link-wrapper{
+   //        display: flex;
+   //         padding: 5px 15px;
+   //         align-items: center;
+   //         background: rgba(119, 147, 60, 1);
+   //      }
+   //      .waves-effect.waves-greenlila .waves-ripple {
+   //           The alpha value allows the text and background color
+   //           of the button to still show through.
+   //           background-color: rgba(119, 147, 60, 0.65);
+   //        }
+   //        .btn:hover, .btn-large:hover {
+   //            background-color: #8dab50;
+   //        }
+   //       a {
+   //          padding: 0;
+   //          color: #fff;
+   //          display: block;
+   //       }
+   //       a:hover {
+   //          color: #fff;
+   //       }
+   // }
 }
 .suggestions {
    .section-header {
