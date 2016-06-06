@@ -5,9 +5,9 @@
   submenu:
    - name: Villa Paradise
      url: /pages/accomodation/paradise.html
-   - name: Villa Lila 2
+   - name: Villa Lila
      url: /pages/accomodation/lila2.html
-   - name: Villa Beach Bungalow
+   - name: Lila Beach Bungalow
      url: /pages/accomodation/bungalow.html
           
 - name: Map - Location
